@@ -1,8 +1,8 @@
 # 啤酒之歌
 
-背诵那首备受喜爱的经典歌词,即实地考察的最爱:墙上的99瓶啤酒.
+背诵那首备受喜爱的经典歌词,即去实地考察时的最爱: 墙上的99瓶啤酒.
 
-请注意,并非所有经文都相同.
+请注意,并非所有歌词都相同.
 
 ```text
 99 bottles of beer on the wall, 99 bottles of beer.
@@ -308,41 +308,41 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
 
 ## 奖励积分
 
-你是否通过了测试并且代码干净了?如果您愿意,可以尝试以下一些额外的事情:
+你是否通过了测试，并且代码干净了? 如果您愿意,可以尝试以下加分项:
 
 -   尽可能多地删除重复.
 -   优化可读性,即使它意味着引入重复.
--   如果您删除了所有重复项,那么您是否有很多条件?如果它适用于这种语言,请尝试用多态替换条件.它的可读性如何?
+-   如果您删除了所有重复项,那么您是否有很多条件? 如果它适用于这种语言,请尝试用多态替换条件语句。它的可读性如何?
 
-那么请在提交的评论中分享您的想法.这个实验是否使代码更好?更差?你从中学到了什么吗?
+那么请在提交的评论中，分享您的想法.这个实验是否让代码更好? 更差?你从中学到了什么?
 
-## 锈蚀安装
+## Rust装置
 
-参考[运动帮助页面][help-page]用于Rust安装和学习资源.
+参考[我们的帮助页面][help-page]的Rust安装和学习资源.
 
 ## 编写代码
 
-执行测试:
+用下列方法执行测试:
 
 ```bash
 $ cargo test
 ```
 
-除了第一次测试外,所有测试都被忽略了在第一个测试通过后,打开位于的测试源文件`tests`目录并删除`#[ignore]`从下一次测试中标记并再次通过测试.每个单独的测试都是一个函数`#[test]`它上面的旗帜.继续,直到通过每个测试.
+除了第一次测试外,所有的测试都被忽略了。在获得第一个测试通过后,打开位于`tests`目录和，在下一个测试标志删除`#[ignore]`,并使测试再次通过。每个单独的测试都是一个函数.`#[test]`标志在上面。继续,直到你通过每一个测试.
 
-如果您希望在不编辑测试源文件的情况下运行所有​​测试,请使用:
+如果希望在不编辑测试源文件的情况下，运行所有测试,请使用:
 
 ```bash
 $ cargo test -- --ignored
 ```
 
-例如,运行特定测试`some_test`, 您可以使用:
+运行特定的测试,例如`some_test`,您可以使用:
 
 ```bash
 $ cargo test some_test
 ```
 
-如果忽略特定测试,请使用:
+如果忽略特定测试,则使用:
 
 ```bash
 $ cargo test some_test -- --ignored
@@ -350,13 +350,13 @@ $ cargo test some_test -- --ignored
 
 要了解有关Rust测试的更多信息,请参阅[在线测试文档][rust-tests]
 
-一定要阅读[Modules](https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html)章节如果你还没有,它将帮助你组织你的文件.
+如果你还没有，请务必阅读[Modules](https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html)章节，它将帮助你组织你的文件.
 
-## 反馈,问题,请求
+## 反馈、提问、拉取请求
 
-该[exercism/rust](https://github.com/exercism/rust)GitHub上的存储库是所有Rust练习的主页.如果您有关于练习的反馈,或者想要帮助实施新的练习,请前往那里并创建一个问题.铁轨团队成员很乐意为您提供帮助!
+这个[exercism/rust](https://github.com/exercism/rust)在Github上的储存库是所有Rust演习的所在地。如果你有关于锻炼的反馈,或者想帮助建立新的练习,就去那里创造一个问题.rust track 团队的队员们很乐意帮忙!
 
-如果你想了解更多关于运动的知识,请看看[contribution guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
+如果你想了解更多关于exercism.io的知识,请看一下[contribution guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
 
 [help-page]: https://exercism.io/tracks/rust/learning
 
@@ -366,10 +366,10 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 资源
+## 来源
 
-学习Chris Pine的课程<http://pine.fm/LearnToProgram/?Chapter=06>
+这是一个介绍使用者，使用Exercism进行练习.<http://en.wikipedia.org/wiki/%22Hello,_world!%22_program>
 
-## 提交不完整的解决方案
+## 提交不完全解法
 
-可以提交不完整的解决方案,以便您了解其他人如何完成练习.
+有可能提交一个不完整的解决方案,这样你就可以看到其他人是如何完成练习的.

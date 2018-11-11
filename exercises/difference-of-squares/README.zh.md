@@ -1,16 +1,24 @@
 # 平方差
 
-求和的平方与前n个自然数的平方之和之间的差值.
+求,前n个自然数的和平方，与，平方和,之间的差值.
 
-前十个自然数之和的平方为(1+2+).+10=55=3025.
+例如:
 
-前十个自然数的平方和为1乘2++…+ 10=385.
+前十个自然数之和的平方为:
 
-因此,前十个自然数之和的平方和前十个自然数之和的平方之差是3025-385=2640.
+- `(1 + 2 + ... + 10)² = 55² = 3025.`
 
-## 锈蚀装置
+前十个自然数的平方和为:
 
-参考[练习帮助页面][help-page]用于锈蚀安装和学习资源.
+- `1² + 2² + ... + 10² = 385.`
+
+因此,前十个自然数之和的平方,和,前十个自然数之和的平方之差是:
+
+- `3025 - 385 = 2640.`
+
+## Rust装置
+
+参考[我们的帮助页面][help-page]的Rust安装和学习资源.
 
 ## 编写代码
 
@@ -20,9 +28,9 @@
 $ cargo test
 ```
 
-除了第一次测试外,所有的测试都被忽略了.在获得第一个测试通过后,打开位于`tests`目录和删除`#[ignore]`从下一个测试标志,并使测试再次通过.每个单独的测试都是一个函数.`#[test]`旗帜在上面.继续,直到你通过每一个测试.
+除了第一次测试外,所有的测试都被忽略了。在获得第一个测试通过后,打开位于`tests`目录和，在下一个测试标志删除`#[ignore]`,并使测试再次通过。每个单独的测试都是一个函数.`#[test]`标志在上面。继续,直到你通过每一个测试.
 
-如果希望在不编辑测试源文件的情况下运行所有测试,请使用:
+如果希望在不编辑测试源文件的情况下，运行所有测试,请使用:
 
 ```bash
 $ cargo test -- --ignored
@@ -40,15 +48,15 @@ $ cargo test some_test
 $ cargo test some_test -- --ignored
 ```
 
-要了解有关锈蚀试验的更多信息,请参阅[在线测试文档][rust-tests]
+要了解有关Rust测试的更多信息,请参阅[在线测试文档][rust-tests]
 
-请务必阅读[Modules](https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html)如果你还没有,它将帮助你组织你的文件.
+如果你还没有，请务必阅读[Modules](https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html)章节，它将帮助你组织你的文件.
 
-## 反馈、问题、拉动请求
+## 反馈、提问、拉取请求
 
-这个[exercism/rust](https://github.com/exercism/rust)在Github上的储存库是所有锈蚀演习的所在地.如果你有关于锻炼的反馈,或者想帮助实施新的锻炼,就去那里创造一个问题.铁锈队的队员们很乐意帮忙!
+这个[exercism/rust](https://github.com/exercism/rust)在Github上的储存库是所有Rust演习的所在地。如果你有关于锻炼的反馈,或者想帮助建立新的练习,就去那里创造一个问题.rust track 团队的队员们很乐意帮忙!
 
-如果你想了解更多关于运动的知识,请看一下[contribution guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
+如果你想了解更多关于exercism.io的知识,请看一下[contribution guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
 
 [help-page]: https://exercism.io/tracks/rust/learning
 
@@ -60,8 +68,8 @@ $ cargo test some_test -- --ignored
 
 ## 来源
 
-项目欧拉问题6<http://projecteuler.net/problem=6>
+这是一个介绍使用者，使用Exercism进行练习.<http://en.wikipedia.org/wiki/%22Hello,_world!%22_program>
 
-## 提交不完全解
+## 提交不完全解法
 
 有可能提交一个不完整的解决方案,这样你就可以看到其他人是如何完成练习的.

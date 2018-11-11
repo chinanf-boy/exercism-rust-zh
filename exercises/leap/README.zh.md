@@ -22,7 +22,7 @@ on every year that is evenly divisible by 4
 
 为了一个令人愉快的,为什么有闰年现象的解释,请观看[这个YouTube视频][video].
 
-> 译: 我给个[李老师的视频]()
+> 译: 我给个**李永乐老师的视频**:>[youtube](https://www.youtube.com/watch?v=dbPmMDiKW-g) :> [bilibili](https://www.bilibili.com/video/av28872608?from=search&seid=4068395089995838126)
 
 [video]: http://www.youtube.com/watch?v=xX96xng7sAE
 
