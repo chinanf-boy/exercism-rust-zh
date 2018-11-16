@@ -66,7 +66,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 取自Neal Ford的功能思维第2章.<http://shop.oreilly.com/product/0636920029687.do>
 

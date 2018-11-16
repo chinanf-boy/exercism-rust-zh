@@ -99,7 +99,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 受"Ruby"中面向对象设计模式的数据结构和算法的启发,即单链表.<http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000>
 

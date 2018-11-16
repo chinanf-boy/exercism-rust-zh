@@ -76,7 +76,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 基于原始Luhn运动的锈迹保持器
 

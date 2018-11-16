@@ -74,7 +74,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 项目欧拉问题4<http://projecteuler.net/problem=4>
 

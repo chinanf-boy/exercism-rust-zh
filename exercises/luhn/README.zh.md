@@ -106,7 +106,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 维基百科上的LuHn算法<http://en.wikipedia.org/wiki/Luhn_algorithm>
 

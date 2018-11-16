@@ -73,7 +73,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 以数学家Lothar Collatz命名的一个未解决的数学问题<https://en.wikipedia.org/wiki/3x_%2B_1_problem>
 

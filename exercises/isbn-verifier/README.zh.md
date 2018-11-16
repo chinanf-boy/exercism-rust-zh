@@ -88,7 +88,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 将一个字符串转换成一个数字和一些基本的处理,利用一个可靠的真实世界的例子.<https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digit_calculation>
 

@@ -11,6 +11,16 @@
 
 「 [exercism.io](exercism.io) 的 Rust 练习 」
 
+## 直接 clone
+
+```
+git clone https://github.com/chinanf-boy/exercism-rust-zh
+```
+
+## `cd exercises`目录
+
+就是88个练习啦
+
 [中文](./readme.md) | [english](https://github.com/exercism/rust)
 
 ---

@@ -92,7 +92,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 红宝石-科恩三角项目,第1和2部分<http://rubykoans.com>
 

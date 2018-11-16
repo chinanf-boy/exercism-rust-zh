@@ -63,7 +63,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 维基百科<https://en.wikipedia.org/wiki/Isogram>
 

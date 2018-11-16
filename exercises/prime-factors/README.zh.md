@@ -78,7 +78,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 Uncle Bob的主要因素<http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata>
 

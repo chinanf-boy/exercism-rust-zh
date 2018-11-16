@@ -63,7 +63,7 @@ $ cargo test some_test -- --ignored
 [cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 这是一个介绍使用者，使用 Exercism 进行练习.<http://en.wikipedia.org/wiki/%22Hello,_world!%22_program>
 

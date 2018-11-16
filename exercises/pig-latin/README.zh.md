@@ -63,7 +63,7 @@ $ cargo test some_test -- --ignored
 
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
-## 来源
+## 资源
 
 猪拉丁文运动在第一次超声波教学中的应用<https://github.com/ultrasaurus/test-first-teaching/blob/master/learn_ruby/pig_latin/>
 
