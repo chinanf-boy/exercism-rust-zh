@@ -21,10 +21,9 @@
 <!-- repo = 'exercism/rust' -->
 <!-- commit = 'a390d5d84b51507f04d6125979abe5e42a42e7ae' -->
 <!-- time = '2018-11-04' -->
-
-| 翻译的原文 | 与日期        | 最新更新 | 更多                       |
-| ---------- | ------------- | -------- | -------------------------- |
-| [commit]   | ⏰ 2018-11-04 | ![last]  | [中文翻译][translate-list] |
+翻译的原文 | 与日期 | 最新更新 | 更多
+---|---|---|---
+[commit] | ⏰ 2018-11-04 | ![last] | [中文翻译][translate-list]
 
 [last]: https://img.shields.io/github/last-commit/exercism/rust.svg
 [commit]: https://github.com/exercism/rust/tree/a390d5d84b51507f04d6125979abe5e42a42e7ae
@@ -32,16 +31,18 @@
 <!-- doc-templite END generated -->
 
 - [ ] readme
-- [x] [hello world](./exercises/hello-world/README.zh.md)
-- [x] [千兆秒-Gigasecond](./exercises/gigasecond/README.zh.md)
-- [x] [闰年-Leap](./exercises/leap/README.zh.md)
-- [x] [雨滴声-Raindrops](./exercises/raindrops/README.zh.md)
-- [x] [反转字符串-Reverse String](./exercises/reverse-string/README.zh.md)
-- [x] [第n个素数-Nth Prime](./exercises/nth-prime/README.zh.md)
-- [x] [迟钝孩子-Bob](./exercises/bob/README.zh.md)
-- [x] [啤酒之歌-Beer Song](./exercises/beer-song/README.zh.md)
-- [x] [谚语串烧-Proverb](./exercises/proverb/README.zh.md)
-- [x] [平方差-Difference Of Squares](./exercises/difference-of-squares/README.zh.md)
+- [ ] [./exercises](./exercises) 共计 88个练习
+    - [x] [hello world](./exercises/hello-world/README.zh.md)
+    - [x] [千兆秒-Gigasecond](./exercises/gigasecond/README.zh.md)
+    - [x] [闰年-Leap](./exercises/leap/README.zh.md)
+    - [x] [雨滴声-Raindrops](./exercises/raindrops/README.zh.md)
+    - [x] [反转字符串-Reverse String](./exercises/reverse-string/README.zh.md)
+    - [x] [第n个素数-Nth Prime](./exercises/nth-prime/README.zh.md)
+    - [x] [迟钝孩子-Bob](./exercises/bob/README.zh.md)
+    - [x] [啤酒之歌-Beer Song](./exercises/beer-song/README.zh.md)
+    - [x] [谚语串烧-Proverb](./exercises/proverb/README.zh.md)
+    - [x] [平方差-Difference Of Squares](./exercises/difference-of-squares/README.zh.md)
+    - [ ] ...
 
 ### 贡献
 
