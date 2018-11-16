@@ -157,7 +157,7 @@ exercism 的 Rust 练习
 
 测试文件应使用以下格式:
 
-```
+``` rust
 extern crate exercise_name;
 
 use exercise_name::*;
@@ -219,7 +219,7 @@ Rust 练习的所有测试都可以，从 repo 的顶层运行`_test/check-exerc
 
 - 每项练习都应该:
 
-  ```
+  ``` bash
   exercises/exercise-name/
                           tests/exercise-name.rs  <- a test suite
                           src/lib.rs              <- an empty file or with exercise stubs
