@@ -20,6 +20,6 @@
 
 您可以运行一些奖金测试,这些测试测试您在浮点数字上的实现.若要启用它们,请使用`generic`特征标记,像这样:
 
-```bash
+
 cargo test --features generic
-```
+

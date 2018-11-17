@@ -70,7 +70,7 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
     - [ ] [DOT DSL](./exercises/dot-dsl/README.zh.md)
     - [ ] [Hamming](./exercises/hamming/README.zh.md)
     - [ ] [Simple Linked List](./exercises/simple-linked-list/README.zh.md)
-    - [ ] [Pascal's Triangle](./exercises/pascal-s-triangle/README.zh.md)
+    - [ ] [Pascal's Triangle](./exercises/pascals-triangle/README.zh.md)
     - [ ] [Scrabble Score](./exercises/scrabble-score/README.zh.md)
     - [ ] [Pangram](./exercises/pangram/README.zh.md)
     - [ ] [Paasio](./exercises/paasio/README.zh.md)

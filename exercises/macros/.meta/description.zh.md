@@ -24,6 +24,6 @@
    hm.insert('z', 32);
    hm
 }
-```
+
 
 请注意[`maplit` crate](https://crates.io/crates/maplit)提供了一个很好地解决这个问题的宏.请执行您自己的解决方案,而不是使用这个板条箱,请在查看其源之前尝试自己.

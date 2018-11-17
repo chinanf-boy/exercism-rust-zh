@@ -10,15 +10,15 @@
 
 在本文中,测试::本彻是不稳定的,只能在*每晚*锈.用货物运行基准:
 
-```
+
 cargo bench
-```
+
 
 如果你使用RuStuff.RS:
 
-```
+
 rustup run nightly cargo bench
-```
+
 
 -   [Benchmark tests](https://doc.rust-lang.org/stable/unstable-book/library-features/test.html)
 

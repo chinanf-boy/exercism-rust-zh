@@ -6,78 +6,29 @@
 
 测试的项目列表(及其值)为:
 
--   鸡蛋(1)
--   花生(2)
--   贝类(4)
--   草莓(8)
--   西红柿(16)
--   巧克力(32)
--   花粉(64)
--   猫(128)
+- 鸡蛋(1)
+- 花生(2)
+- 贝类(4)
+- 草莓(8)
+- 西红柿(16)
+- 巧克力(32)
+- 花粉(64)
+- 猫(128)
 
-因此,如果汤姆对花生和巧克力过敏,他会得到34分.
+因此,如果汤姆对花生和巧克力过敏,他会得到 34 分.
 
-现在,只要得到34分,你的程序应该可以说:
+现在,只要得到 34 分,你的程序应该可以说:
 
--   汤姆是否对上面列出的任何一种过敏原过敏.
--   汤姆过敏的所有过敏原.
+- 汤姆是否对上面列出的任何一种过敏原过敏.
+- 汤姆过敏的所有过敏原.
 
-注意:给定的分数可能包括过敏原**不**上面列出的(即分数为256,512,1024等的过敏原).您的程序应忽略乐谱的那些组成部分.例如,如果过敏分数是257,您的程序应该只报告鸡蛋(1)过敏.
-
-## 锈蚀安装
-
-参考[运动帮助页面][help-page]用于Rust安装和学习资源.
-
-## 编写代码
-
-执行测试:
-
-```bash
-$ cargo test
-```
-
-除了第一次测试外,所有测试都被忽略了在第一个测试通过后,打开位于的测试源文件`tests`目录并删除`#[ignore]`从下一次测试中标记并再次通过测试.每个单独的测试都是一个函数`#[test]`它上面的旗帜.继续,直到通过每个测试.
-
-如果您希望在不编辑测试源文件的情况下运行所有​​测试,请使用:
-
-```bash
-$ cargo test -- --ignored
-```
-
-例如,运行特定测试`some_test`, 您可以使用:
-
-```bash
-$ cargo test some_test
-```
-
-如果忽略特定测试,请使用:
-
-```bash
-$ cargo test some_test -- --ignored
-```
-
-要了解有关Rust测试的更多信息,请参阅[在线测试文档][rust-tests]
-
-一定要阅读[Modules](https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html)章节如果你还没有,它将帮助你组织你的文件.
-
-## 反馈,问题,请求
-
-该[exercism/rust](https://github.com/exercism/rust)GitHub上的存储库是所有Rust练习的主页.如果您有关于练习的反馈,或者想要帮助实施新的练习,请前往那里并创建一个问题.铁轨团队成员很乐意为您提供帮助!
-
-如果你想了解更多关于运动的知识,请看看[contribution guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
+注意:给定的分数可能包括过敏原**不**上面列出的(即分数为 256,512,1024 等的过敏原).您的程序应忽略乐谱的那些组成部分.例如,如果过敏分数是 257,您的程序应该只报告鸡蛋(1)过敏.
 
 [help-page]: https://exercism.io/tracks/rust/learning
-
 [modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-
 [cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-
 [rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
 
 ## 资源
 
-Jumpstart实验室热身<http://jumpstartlab.com>
-
-## 提交不完整的解决方案
-
-可以提交不完整的解决方案,以便您了解其他人如何完成练习.
+Jumpstart 实验室热身<http://jumpstartlab.com>

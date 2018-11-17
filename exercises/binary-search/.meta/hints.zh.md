@@ -18,9 +18,9 @@ subslices](https://doc.rust-lang.org/std/primitive.slice.html#method.get)(切片
 
 要运行奖励测试,请删除`#[ignore]`标记并执行测试`generic`功能,像这样:
 
-```bash
-$ cargo test --features generic
-```
+
+
+
 
 那么请在提交的评论中分享您的想法.这个实验是否使代码更好?更差?你从中学到了什么吗?
 

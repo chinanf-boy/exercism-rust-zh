@@ -4,7 +4,7 @@
 
 ```shell
 exercism download --exercise=luhn --track=rust
-```
+
 
 在原始的LuHn练习中,您只验证字符串,但LuHN算法也可以应用于整数.
 
