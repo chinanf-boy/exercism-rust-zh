@@ -1,13 +1,11 @@
-# exercism/rust [![explain]][source] [![translate-svg]][translate-list]
+# exercism/rust [![translate-svg]][translate-list]
 
-<!-- [![size-img]][size] -->
+<!-- [![explain]][source]  -->
 
 [explain]: http://llever.com/explain.svg
 [source]: https://github.com/chinanf-boy/Source-Explain
 [translate-svg]: http://llever.com/translate.svg
 [translate-list]: https://github.com/chinanf-boy/chinese-translate-list
-[size-img]: https://packagephobia.now.sh/badge?p=Name
-[size]: https://packagephobia.now.sh/result?p=Name
 
 「 [exercism.io](exercism.io) 的 Rust 练习 」
 
@@ -42,6 +40,8 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
 
 - [ ] readme
 - [ ] [./exercises](./exercises) 共计 88个练习
+    - [x] [如有需要，请看入门](./exercises/hello-world/GETTING_STARTED.zh.md)   
+    - [x] [准备](./exercises/prepare.md) 每个练习都有一个帮你，准备的小节，(过于重复，我直接拿出来)
     - [x] [hello world](./exercises/hello-world/README.zh.md)
     - [x] [千兆秒-Gigasecond](./exercises/gigasecond/README.zh.md)
     - [x] [闰年-Leap](./exercises/leap/README.zh.md)
