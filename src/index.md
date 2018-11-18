@@ -9,25 +9,30 @@
 
 - [ ] [测试改造]
 - `theme/book.js` 改造
-    - [ ] 使用`cargo test`的按钮
-    - [ ] 合并用户输入与测试用例
+    - [x] 使用`cargo test`
+    - [x] 合并用户输入与测试用例
 
-> 或者另外加`custom.js`
+修改默认主题的`book.js`
+
+如果你对这个修改过程感兴趣，请查阅[使用 Cargo test](./add-test-code.md)
 
 ## 说明，每个练习网页主要分为四个部分
 
 - 1. 说明/题目
-- 2. 未完成的代码(可编辑)
-- 3. 测试运行
-- 4. 示例答案
+- 2. 未完成的代码(可编辑，直接运行就好)
+- 3. 测试代码(不可编辑)
+- 4. 示例答案(不可编辑，直接运行就好)
 
-### 以下为，校对列表
+### 以下为
+
+- [x] 为校对
+- `>` 为测试修正
 
 ### 易
 
 ---
 
-- [x] [hello world](./hello-world/README.zh.md)
+- [x] `>` [hello world](./hello-world/README.zh.md) 
 - [x] [千兆秒-Gigasecond](./gigasecond/README.zh.md)
 - [x] [闰年-Leap](./leap/README.zh.md)
 - [x] [雨滴声-Raindrops](./raindrops/README.zh.md)

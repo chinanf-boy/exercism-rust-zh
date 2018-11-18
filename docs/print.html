@@ -1,0 +1,727 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>exercisms.io 快速练习</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="exercisms 的练习，网页版.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/chrome.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="highlight.css">
+    <link rel="stylesheet" href="tomorrow-night.css">
+    <link rel="stylesheet" href="ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    
+    <link rel="stylesheet" href="theme/custom.css">
+    
+
+    
+</head>
+
+<body class="light">
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">var path_to_root = "";</script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
+        if (theme === null || theme === undefined) { theme = 'light'; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch (e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <ol class="chapter"><li><a href="index.html"><strong aria-hidden="true">1.</strong> 88道练习，任点</a></li><li><ol class="section"><li><a href="hello-world/README.zh.html"><strong aria-hidden="true">1.1.</strong> hello world</a></li><li><a href="gigasecond/README.zh.html"><strong aria-hidden="true">1.2.</strong> 千兆秒-Gigasecond</a></li><li><a href="leap/README.zh.html"><strong aria-hidden="true">1.3.</strong> 闰年-Leap</a></li><li><a href="raindrops/README.zh.html"><strong aria-hidden="true">1.4.</strong> 雨滴声-Raindrops</a></li><li><a href="reverse-string/README.zh.html"><strong aria-hidden="true">1.5.</strong> 反转字符串-Reverse String</a></li><li><a href="nth-prime/README.zh.html"><strong aria-hidden="true">1.6.</strong> 第n个素数-Nth Prime</a></li><li><a href="bob/README.zh.html"><strong aria-hidden="true">1.7.</strong> 迟钝孩子-Bob</a></li><li><a href="beer-song/README.zh.html"><strong aria-hidden="true">1.8.</strong> 啤酒之歌-Beer Song</a></li><li><a href="proverb/README.zh.html"><strong aria-hidden="true">1.9.</strong> 谚语串烧-Proverb</a></li><li><a href="difference-of-squares/README.zh.html"><strong aria-hidden="true">1.10.</strong> 平方差-Difference Of Squares</a></li><li><a href="sum-of-multiples/README.zh.html"><strong aria-hidden="true">1.11.</strong> Sum Of Multiples</a></li><li><a href="grains/README.zh.html"><strong aria-hidden="true">1.12.</strong> Grains</a></li><li><a href="pythagorean-triplet/README.zh.html"><strong aria-hidden="true">1.13.</strong> Pythagorean Triplet</a></li><li><a href="prime-factors/README.zh.html"><strong aria-hidden="true">1.14.</strong> Prime Factors</a></li><li><a href="series/README.zh.html"><strong aria-hidden="true">1.15.</strong> Series</a></li><li><a href="armstrong-numbers/README.zh.html"><strong aria-hidden="true">1.16.</strong> Armstrong Numbers</a></li><li><a href="collatz-conjecture/README.zh.html"><strong aria-hidden="true">1.17.</strong> Collatz Conjecture</a></li><li><a href="diffie-hellman/README.zh.html"><strong aria-hidden="true">1.18.</strong> Diffie Hellman</a></li><li><a href="saddle-points/README.zh.html"><strong aria-hidden="true">1.19.</strong> Saddle Points</a></li><li><a href="isogram/README.zh.html"><strong aria-hidden="true">1.20.</strong> Isogram</a></li><li><a href="say/README.zh.html"><strong aria-hidden="true">1.21.</strong> Say</a></li><li><a href="run-length-encoding/README.zh.html"><strong aria-hidden="true">1.22.</strong> Run Length Encoding</a></li><li><a href="isbn-verifier/README.zh.html"><strong aria-hidden="true">1.23.</strong> ISBN Verifier</a></li><li><a href="perfect-numbers/README.zh.html"><strong aria-hidden="true">1.24.</strong> Perfect Numbers</a></li><li><a href="clock/README.zh.html"><strong aria-hidden="true">1.25.</strong> Clock</a></li><li><a href="dot-dsl/README.zh.html"><strong aria-hidden="true">1.26.</strong> DOT DSL</a></li><li><a href="hamming/README.zh.html"><strong aria-hidden="true">1.27.</strong> Hamming</a></li><li><a href="simple-linked-list/README.zh.html"><strong aria-hidden="true">1.28.</strong> Simple Linked List</a></li><li><a href="pascal-s-triangle/README.zh.html"><strong aria-hidden="true">1.29.</strong> Pascal's Triangle</a></li><li><a href="scrabble-score/README.zh.html"><strong aria-hidden="true">1.30.</strong> Scrabble Score</a></li><li><a href="pangram/README.zh.html"><strong aria-hidden="true">1.31.</strong> Pangram</a></li><li><a href="paasio/README.zh.html"><strong aria-hidden="true">1.32.</strong> Paasio</a></li><li><a href="nucleotide-count/README.zh.html"><strong aria-hidden="true">1.33.</strong> Nucleotide Count</a></li><li><a href="luhn/README.zh.html"><strong aria-hidden="true">1.34.</strong> Luhn</a></li><li><a href="largest-series-product/README.zh.html"><strong aria-hidden="true">1.35.</strong> Largest Series Product</a></li><li><a href="word-count/README.zh.html"><strong aria-hidden="true">1.36.</strong> Word Count</a></li><li><a href="atbash-cipher/README.zh.html"><strong aria-hidden="true">1.37.</strong> Atbash Cipher</a></li><li><a href="crypto-square/README.zh.html"><strong aria-hidden="true">1.38.</strong> Crypto Square</a></li><li><a href="rotational-cipher/README.zh.html"><strong aria-hidden="true">1.39.</strong> Rotational Cipher</a></li><li><a href="simple-cipher/README.zh.html"><strong aria-hidden="true">1.40.</strong> Simple Cipher</a></li><li><a href="rail-fence-cipher/README.zh.html"><strong aria-hidden="true">1.41.</strong> Rail Fence Cipher</a></li><li><a href="etl/README.zh.html"><strong aria-hidden="true">1.42.</strong> ETL</a></li><li><a href="accumulate/README.zh.html"><strong aria-hidden="true">1.43.</strong> Accumulate</a></li><li><a href="acronym/README.zh.html"><strong aria-hidden="true">1.44.</strong> Acronym</a></li><li><a href="sieve/README.zh.html"><strong aria-hidden="true">1.45.</strong> Sieve</a></li><li><a href="rna-transcription/README.zh.html"><strong aria-hidden="true">1.46.</strong> RNA Transcription</a></li><li><a href="triangle/README.zh.html"><strong aria-hidden="true">1.47.</strong> Triangle</a></li><li><a href="roman-numerals/README.zh.html"><strong aria-hidden="true">1.48.</strong> Roman Numerals</a></li><li><a href="all-your-base/README.zh.html"><strong aria-hidden="true">1.49.</strong> All Your Base</a></li><li><a href="grade-school/README.zh.html"><strong aria-hidden="true">1.50.</strong> Grade School</a></li><li><a href="binary-search/README.zh.html"><strong aria-hidden="true">1.51.</strong> Binary Search</a></li><li><a href="robot-simulator/README.zh.html"><strong aria-hidden="true">1.52.</strong> Robot Simulator</a></li><li><a href="bracket-push/README.zh.html"><strong aria-hidden="true">1.53.</strong> Bracket Push</a></li><li><a href="luhn-from/README.zh.html"><strong aria-hidden="true">1.54.</strong> Luhn From</a></li><li><a href="queen-attack/README.zh.html"><strong aria-hidden="true">1.55.</strong> Queen Attack</a></li><li><a href="bowling/README.zh.html"><strong aria-hidden="true">1.56.</strong> Bowling</a></li><li><a href="sublist/README.zh.html"><strong aria-hidden="true">1.57.</strong> Sublist</a></li><li><a href="space-age/README.zh.html"><strong aria-hidden="true">1.58.</strong> Space Age</a></li><li><a href="luhn-trait/README.zh.html"><strong aria-hidden="true">1.59.</strong> Luhn Trait</a></li><li><a href="macros/README.zh.html"><strong aria-hidden="true">1.60.</strong> Macros</a></li><li><a href="allergies/README.zh.html"><strong aria-hidden="true">1.61.</strong> Allergies</a></li><li><a href="variable-length-quantity/README.zh.html"><strong aria-hidden="true">1.62.</strong> Variable Length Quantity</a></li><li><a href="phone-number/README.zh.html"><strong aria-hidden="true">1.63.</strong> Phone Number</a></li><li><a href="wordy/README.zh.html"><strong aria-hidden="true">1.64.</strong> Wordy</a></li><li><a href="tournament/README.zh.html"><strong aria-hidden="true">1.65.</strong> Tournament</a></li><li><a href="custom-set/README.zh.html"><strong aria-hidden="true">1.66.</strong> Custom Set</a></li><li><a href="alphametics/README.zh.html"><strong aria-hidden="true">1.67.</strong> Alphametics</a></li><li><a href="two-bucket/README.zh.html"><strong aria-hidden="true">1.68.</strong> Two Bucket</a></li><li><a href="pig-latin/README.zh.html"><strong aria-hidden="true">1.69.</strong> Pig Latin</a></li><li><a href="diamond/README.zh.html"><strong aria-hidden="true">1.70.</strong> Diamond</a></li><li><a href="spiral-matrix/README.zh.html"><strong aria-hidden="true">1.71.</strong> Spiral Matrix</a></li><li><a href="palindrome-products/README.zh.html"><strong aria-hidden="true">1.72.</strong> Palindrome Products</a></li><li><a href="poker/README.zh.html"><strong aria-hidden="true">1.73.</strong> Poker</a></li><li><a href="grep/README.zh.html"><strong aria-hidden="true">1.74.</strong> Grep</a></li><li><a href="scale-generator/README.zh.html"><strong aria-hidden="true">1.75.</strong> Scale Generator</a></li><li><a href="decimal/README.zh.html"><strong aria-hidden="true">1.76.</strong> Decimal</a></li><li><a href="anagram/README.zh.html"><strong aria-hidden="true">1.77.</strong> Anagram</a></li><li><a href="protein-translation/README.zh.html"><strong aria-hidden="true">1.78.</strong> Protein Translation</a></li><li><a href="robot-name/README.zh.html"><strong aria-hidden="true">1.79.</strong> Robot Name</a></li><li><a href="book-store/README.zh.html"><strong aria-hidden="true">1.80.</strong> Book Store</a></li><li><a href="ocr-numbers/README.zh.html"><strong aria-hidden="true">1.81.</strong> OCR Numbers</a></li><li><a href="minesweeper/README.zh.html"><strong aria-hidden="true">1.82.</strong> Minesweeper</a></li><li><a href="dominoes/README.zh.html"><strong aria-hidden="true">1.83.</strong> Dominoes</a></li><li><a href="parallel-letter-frequency/README.zh.html"><strong aria-hidden="true">1.84.</strong> Parallel Letter Frequency</a></li><li><a href="rectangles/README.zh.html"><strong aria-hidden="true">1.85.</strong> Rectangles</a></li><li><a href="forth/README.zh.html"><strong aria-hidden="true">1.86.</strong> Forth</a></li><li><a href="circular-buffer/README.zh.html"><strong aria-hidden="true">1.87.</strong> Circular Buffer</a></li><li><a href="react/README.zh.html"><strong aria-hidden="true">1.88.</strong> React</a></li><li class="spacer"></li></ol></li><li><a href="add-test-code.html">修改mdBook主题</a></li></ol>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+            
+            <div id="menu-bar" class="menu-bar">
+                <div id="menu-bar-sticky-container">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents"
+                            aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!-- START - Rust Cookbook customization -->
+                        <button id="edit-button" class="icon-button" type="button" title="Fork and edit" aria-label="Fork and edit"
+                            aria-haspopup="true" aria-expanded="false" aria-controls="edit">
+                            <i class="fa fa-edit">Edit</i>
+                        </button>
+                        <!-- END - Rust Cookbook customization -->
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme"
+                            aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
+                            aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">exercisms.io 快速练习</h1>
+                    
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..."
+                        aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+            
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            </script>
+
+            <!-- // START - Rust Cookbook customization -->
+            <script>
+                document.getElementById("edit-button").addEventListener("click", function () {
+                    var editWindow = window.open("https://github.com/chinanf-boy/exercism-rust-zh/edit/master/src/print.md");
+                });</script>
+            <!-- // END - Rust Cookbook customization -->
+
+            <div id="content" class="content">
+                <main>
+                    <blockquote>
+<p>本库由，对<a href="https://github.com/chinanf-boy/exercism-rust-zh">exercism/rust的中文翻译</a>起头</p>
+</blockquote>
+<a class="header" href="#a但缺少网页练习功能借助a-hrefhttpsgithubcomrust-lang-nurserymdbookmdbooka工具完成" id="a但缺少网页练习功能借助a-hrefhttpsgithubcomrust-lang-nurserymdbookmdbooka工具完成"><h3>但缺少网页练习功能，借助<a href="https://github.com/rust-lang-nursery/mdBook">mdBook</a>工具，完成</h3></a>
+<a class="header" href="#todo" id="todo"><h2>TODO</h2></a>
+<ul>
+<li>[ ] [测试改造]</li>
+<li><code>theme/book.js</code> 改造
+<ul>
+<li>[x] 使用<code>cargo test</code></li>
+<li>[x] 合并用户输入与测试用例</li>
+</ul>
+</li>
+</ul>
+<p>修改默认主题的<code>book.js</code></p>
+<p>如果你对这个修改过程感兴趣，请查阅<a href="./add-test-code.html">使用 Cargo test</a></p>
+<a class="header" href="#a说明每个练习网页主要分为四个部分" id="a说明每个练习网页主要分为四个部分"><h2>说明，每个练习网页主要分为四个部分</h2></a>
+<ul>
+<li>
+<ol>
+<li>说明/题目</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>未完成的代码(可编辑，直接运行就好)</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>测试代码(不可编辑)</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>示例答案(不可编辑，直接运行就好)</li>
+</ol>
+</li>
+</ul>
+<a class="header" href="#a以下为" id="a以下为"><h3>以下为</h3></a>
+<ul>
+<li>[x] 为校对</li>
+<li><code>&gt;</code> 为测试修正</li>
+</ul>
+<a class="header" href="#a易" id="a易"><h3>易</h3></a>
+<hr />
+<ul>
+<li>[x] <code>&gt;</code> <a href="./hello-world/README.zh.html">hello world</a></li>
+<li>[x] <a href="./gigasecond/README.zh.html">千兆秒-Gigasecond</a></li>
+<li>[x] <a href="./leap/README.zh.html">闰年-Leap</a></li>
+<li>[x] <a href="./raindrops/README.zh.html">雨滴声-Raindrops</a></li>
+<li>[x] <a href="./reverse-string/README.zh.html">反转字符串-Reverse String</a></li>
+<li>[x] <a href="./nth-prime/README.zh.html">第n个素数-Nth Prime</a></li>
+<li>[x] <a href="./bob/README.zh.html">迟钝孩子-Bob</a></li>
+<li>[x] <a href="./beer-song/README.zh.html">啤酒之歌-Beer Song</a></li>
+<li>[x] <a href="./proverb/README.zh.html">谚语串烧-Proverb</a></li>
+<li>[x] <a href="./difference-of-squares/README.zh.html">平方差-Difference Of Squares</a></li>
+<li>[ ] <a href="./sum-of-multiples/README.zh.html">Sum Of Multiples</a></li>
+<li>[ ] <a href="./grains/README.zh.html">Grains</a></li>
+<li>[ ] <a href="./pythagorean-triplet/README.zh.html">Pythagorean Triplet</a></li>
+<li>[ ] <a href="./prime-factors/README.zh.html">Prime Factors</a></li>
+<li>[ ] <a href="./series/README.zh.html">Series</a></li>
+<li>[ ] <a href="./armstrong-numbers/README.zh.html">Armstrong Numbers</a></li>
+<li>[ ] <a href="./collatz-conjecture/README.zh.html">Collatz Conjecture</a></li>
+<li>[ ] <a href="./diffie-hellman/README.zh.html">Diffie Hellman</a></li>
+</ul>
+<a class="header" href="#a中等" id="a中等"><h3>中等</h3></a>
+<hr />
+<ul>
+<li>[ ] <a href="./saddle-points/README.zh.html">Saddle Points</a></li>
+<li>[ ] <a href="./isogram/README.zh.html">Isogram</a></li>
+<li>[ ] <a href="./say/README.zh.html">Say</a></li>
+<li>[ ] <a href="./run-length-encoding/README.zh.html">Run Length Encoding</a></li>
+<li>[ ] <a href="./isbn-verifier/README.zh.html">ISBN Verifier</a></li>
+<li>[ ] <a href="./perfect-numbers/README.zh.html">Perfect Numbers</a></li>
+<li>[ ] <a href="./clock/README.zh.html">Clock</a></li>
+<li>[ ] <a href="./dot-dsl/README.zh.html">DOT DSL</a></li>
+<li>[ ] <a href="./hamming/README.zh.html">Hamming</a></li>
+<li>[ ] <a href="./simple-linked-list/README.zh.html">Simple Linked List</a></li>
+<li>[ ] <a href="./pascal-s-triangle/README.zh.html">Pascal’s Triangle</a></li>
+<li>[ ] <a href="./scrabble-score/README.zh.html">Scrabble Score</a></li>
+<li>[ ] <a href="./pangram/README.zh.html">Pangram</a></li>
+<li>[ ] <a href="./paasio/README.zh.html">Paasio</a></li>
+<li>[ ] <a href="./nucleotide-count/README.zh.html">Nucleotide Count</a></li>
+<li>[ ] <a href="./luhn/README.zh.html">Luhn</a></li>
+<li>[ ] <a href="./largest-series-product/README.zh.html">Largest Series Product</a></li>
+<li>[ ] <a href="./word-count/README.zh.html">Word Count</a></li>
+<li>[ ] <a href="./atbash-cipher/README.zh.html">Atbash Cipher</a></li>
+<li>[ ] <a href="./crypto-square/README.zh.html">Crypto Square</a></li>
+<li>[ ] <a href="./rotational-cipher/README.zh.html">Rotational Cipher</a></li>
+<li>[ ] <a href="./simple-cipher/README.zh.html">Simple Cipher</a></li>
+<li>[ ] <a href="./rail-fence-cipher/README.zh.html">Rail Fence Cipher</a></li>
+<li>[ ] <a href="./etl/README.zh.html">ETL</a></li>
+<li>[ ] <a href="./accumulate/README.zh.html">Accumulate</a></li>
+<li>[ ] <a href="./acronym/README.zh.html">Acronym</a></li>
+<li>[ ] <a href="./sieve/README.zh.html">Sieve</a></li>
+<li>[ ] <a href="./rna-transcription/README.zh.html">RNA Transcription</a></li>
+<li>[ ] <a href="./triangle/README.zh.html">Triangle</a></li>
+<li>[ ] <a href="./roman-numerals/README.zh.html">Roman Numerals</a></li>
+<li>[ ] <a href="./all-your-base/README.zh.html">All Your Base</a></li>
+<li>[ ] <a href="./grade-school/README.zh.html">Grade School</a></li>
+<li>[ ] <a href="./binary-search/README.zh.html">Binary Search</a></li>
+<li>[ ] <a href="./robot-simulator/README.zh.html">Robot Simulator</a></li>
+<li>[ ] <a href="./bracket-push/README.zh.html">Bracket Push</a></li>
+<li>[ ] <a href="./luhn-from/README.zh.html">Luhn From</a></li>
+<li>[ ] <a href="./queen-attack/README.zh.html">Queen Attack</a></li>
+<li>[ ] <a href="./bowling/README.zh.html">Bowling</a></li>
+<li>[ ] <a href="./sublist/README.zh.html">Sublist</a></li>
+<li>[ ] <a href="./space-age/README.zh.html">Space Age</a></li>
+<li>[ ] <a href="./luhn-trait/README.zh.html">Luhn Trait</a></li>
+<li>[ ] <a href="./macros/README.zh.html">Macros</a></li>
+<li>[ ] <a href="./allergies/README.zh.html">Allergies</a></li>
+<li>[ ] <a href="./variable-length-quantity/README.zh.html">Variable Length Quantity</a></li>
+<li>[ ] <a href="./phone-number/README.zh.html">Phone Number</a></li>
+<li>[ ] <a href="./wordy/README.zh.html">Wordy</a></li>
+<li>[ ] <a href="./tournament/README.zh.html">Tournament</a></li>
+<li>[ ] <a href="./custom-set/README.zh.html">Custom Set</a></li>
+<li>[ ] <a href="./alphametics/README.zh.html">Alphametics</a></li>
+<li>[ ] <a href="./two-bucket/README.zh.html">Two Bucket</a></li>
+<li>[ ] <a href="./pig-latin/README.zh.html">Pig Latin</a></li>
+<li>[ ] <a href="./diamond/README.zh.html">Diamond</a></li>
+<li>[ ] <a href="./spiral-matrix/README.zh.html">Spiral Matrix</a></li>
+<li>[ ] <a href="./palindrome-products/README.zh.html">Palindrome Products</a></li>
+<li>[ ] <a href="./poker/README.zh.html">Poker</a></li>
+<li>[ ] <a href="./grep/README.zh.html">Grep</a></li>
+<li>[ ] <a href="./scale-generator/README.zh.html">Scale Generator</a></li>
+<li>[ ] <a href="./decimal/README.zh.html">Decimal</a></li>
+<li>[ ] <a href="./anagram/README.zh.html">Anagram</a></li>
+<li>[ ] <a href="./protein-translation/README.zh.html">Protein Translation</a></li>
+<li>[ ] <a href="./robot-name/README.zh.html">Robot Name</a></li>
+<li>[ ] <a href="./book-store/README.zh.html">Book Store</a></li>
+</ul>
+<a class="header" href="#a难" id="a难"><h3>难</h3></a>
+<hr />
+<ul>
+<li>[ ] <a href="./ocr-numbers/README.zh.html">OCR Numbers</a></li>
+<li>[ ] <a href="./minesweeper/README.zh.html">Minesweeper</a></li>
+<li>[ ] <a href="./dominoes/README.zh.html">Dominoes</a></li>
+<li>[ ] <a href="./parallel-letter-frequency/README.zh.html">Parallel Letter Frequency</a></li>
+<li>[ ] <a href="./rectangles/README.zh.html">Rectangles</a></li>
+<li>[ ] <a href="./forth/README.zh.html">Forth</a></li>
+<li>[ ] <a href="./circular-buffer/README.zh.html">Circular Buffer</a></li>
+<li>[ ] <a href="./react/README.zh.html">React</a></li>
+</ul>
+<a class="header" href="#hello-world" id="hello-world"><h1>hello world</h1></a>
+<a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
+<a class="header" href="#a你好世界" id="a你好世界"><h1>你好世界</h1></a>
+<p>经典的介绍性练习.只要说”Hello, World!”.</p>
+<ul>
+<li>如有需要请看<a href="./GETTING_STARTED.zh.html">小小的入门</a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/%22Hello,_world!%22_program">“Hello, World!”</a>是在新的语言或环境中开始编程的第一个程序的传统.</p>
+<p>目标很简单:</p>
+<ul>
+<li>编写一个返回字符串”Hello,World!”的函数.</li>
+<li>运行测试套件，并确保测试成功.</li>
+<li>提交您的解决方案，并在网站上查看.</li>
+</ul>
+<p>如果一切顺利,你将准备好进行第一次真正的锻炼.</p>
+<a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
+<p>这是一个介绍<a href="http://en.wikipedia.org/wiki/%22Hello,_world!%22_program">http://en.wikipedia.org/wiki/%22Hello,_world!%22_program</a>使用者，使用Exercism进行练习.</p>
+<a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>
+<pre><pre class="playpen"><code class="language-rust editable">// The &amp;'static here means the return type has a static lifetime.
+// This is a Rust feature that you don't need to worry about now.
+pub fn hello() -&gt; &amp;'static str {
+    &quot;Goodbye, World!&quot;
+}
+</code></pre></pre>
+<a class="header" href="#a3-测试代码查看" id="a3-测试代码查看"><h2>3. 测试代码查看</h2></a>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+#[test]
+fn test_hello_world() {
+    assert_eq!(&quot;Hello, World!&quot;, hello());
+}
+
+#}</code></pre></pre>
+<a class="header" href="#a4-答案" id="a4-答案"><h2>4. 答案</h2></a>
+<p><details></p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+pub fn hello() -&gt; &amp;'static str {
+    &quot;Hello, World!&quot;
+}
+
+#}</code></pre></pre>
+<p></details></p>
+<hr />
+<hr />
+<a class="header" href="#a填充相关" id="a填充相关"><h2>填充/相关</h2></a>
+<a class="header" href="#a千兆秒-gigasecond" id="a千兆秒-gigasecond"><h1>千兆秒-Gigasecond</h1></a>
+<a class="header" href="#a闰年-leap" id="a闰年-leap"><h1>闰年-Leap</h1></a>
+<a class="header" href="#a雨滴声-raindrops" id="a雨滴声-raindrops"><h1>雨滴声-Raindrops</h1></a>
+<a class="header" href="#a反转字符串-reverse-string" id="a反转字符串-reverse-string"><h1>反转字符串-Reverse String</h1></a>
+<a class="header" href="#a第n个素数-nth-prime" id="a第n个素数-nth-prime"><h1>第n个素数-Nth Prime</h1></a>
+<a class="header" href="#a迟钝孩子-bob" id="a迟钝孩子-bob"><h1>迟钝孩子-Bob</h1></a>
+<a class="header" href="#a啤酒之歌-beer-song" id="a啤酒之歌-beer-song"><h1>啤酒之歌-Beer Song</h1></a>
+<a class="header" href="#a谚语串烧-proverb" id="a谚语串烧-proverb"><h1>谚语串烧-Proverb</h1></a>
+<a class="header" href="#a平方差-difference-of-squares" id="a平方差-difference-of-squares"><h1>平方差-Difference Of Squares</h1></a>
+<a class="header" href="#sum-of-multiples" id="sum-of-multiples"><h1>Sum Of Multiples</h1></a>
+<a class="header" href="#grains" id="grains"><h1>Grains</h1></a>
+<a class="header" href="#pythagorean-triplet" id="pythagorean-triplet"><h1>Pythagorean Triplet</h1></a>
+<a class="header" href="#prime-factors" id="prime-factors"><h1>Prime Factors</h1></a>
+<a class="header" href="#series" id="series"><h1>Series</h1></a>
+<a class="header" href="#armstrong-numbers" id="armstrong-numbers"><h1>Armstrong Numbers</h1></a>
+<a class="header" href="#collatz-conjecture" id="collatz-conjecture"><h1>Collatz Conjecture</h1></a>
+<a class="header" href="#diffie-hellman" id="diffie-hellman"><h1>Diffie Hellman</h1></a>
+<a class="header" href="#saddle-points" id="saddle-points"><h1>Saddle Points</h1></a>
+<a class="header" href="#isogram" id="isogram"><h1>Isogram</h1></a>
+<a class="header" href="#say" id="say"><h1>Say</h1></a>
+<a class="header" href="#run-length-encoding" id="run-length-encoding"><h1>Run Length Encoding</h1></a>
+<a class="header" href="#isbn-verifier" id="isbn-verifier"><h1>ISBN Verifier</h1></a>
+<a class="header" href="#perfect-numbers" id="perfect-numbers"><h1>Perfect Numbers</h1></a>
+<a class="header" href="#clock" id="clock"><h1>Clock</h1></a>
+<a class="header" href="#dot-dsl" id="dot-dsl"><h1>DOT DSL</h1></a>
+<a class="header" href="#hamming" id="hamming"><h1>Hamming</h1></a>
+<a class="header" href="#simple-linked-list" id="simple-linked-list"><h1>Simple Linked List</h1></a>
+<a class="header" href="#pascals-triangle" id="pascals-triangle"><h1>Pascal’s Triangle</h1></a>
+<a class="header" href="#scrabble-score" id="scrabble-score"><h1>Scrabble Score</h1></a>
+<a class="header" href="#pangram" id="pangram"><h1>Pangram</h1></a>
+<a class="header" href="#paasio" id="paasio"><h1>Paasio</h1></a>
+<a class="header" href="#nucleotide-count" id="nucleotide-count"><h1>Nucleotide Count</h1></a>
+<a class="header" href="#luhn" id="luhn"><h1>Luhn</h1></a>
+<a class="header" href="#largest-series-product" id="largest-series-product"><h1>Largest Series Product</h1></a>
+<a class="header" href="#word-count" id="word-count"><h1>Word Count</h1></a>
+<a class="header" href="#atbash-cipher" id="atbash-cipher"><h1>Atbash Cipher</h1></a>
+<a class="header" href="#crypto-square" id="crypto-square"><h1>Crypto Square</h1></a>
+<a class="header" href="#rotational-cipher" id="rotational-cipher"><h1>Rotational Cipher</h1></a>
+<a class="header" href="#simple-cipher" id="simple-cipher"><h1>Simple Cipher</h1></a>
+<a class="header" href="#rail-fence-cipher" id="rail-fence-cipher"><h1>Rail Fence Cipher</h1></a>
+<a class="header" href="#etl" id="etl"><h1>ETL</h1></a>
+<a class="header" href="#accumulate" id="accumulate"><h1>Accumulate</h1></a>
+<a class="header" href="#acronym" id="acronym"><h1>Acronym</h1></a>
+<a class="header" href="#sieve" id="sieve"><h1>Sieve</h1></a>
+<a class="header" href="#rna-transcription" id="rna-transcription"><h1>RNA Transcription</h1></a>
+<a class="header" href="#triangle" id="triangle"><h1>Triangle</h1></a>
+<a class="header" href="#roman-numerals" id="roman-numerals"><h1>Roman Numerals</h1></a>
+<a class="header" href="#all-your-base" id="all-your-base"><h1>All Your Base</h1></a>
+<a class="header" href="#grade-school" id="grade-school"><h1>Grade School</h1></a>
+<a class="header" href="#binary-search" id="binary-search"><h1>Binary Search</h1></a>
+<a class="header" href="#robot-simulator" id="robot-simulator"><h1>Robot Simulator</h1></a>
+<a class="header" href="#bracket-push" id="bracket-push"><h1>Bracket Push</h1></a>
+<a class="header" href="#luhn-from" id="luhn-from"><h1>Luhn From</h1></a>
+<a class="header" href="#queen-attack" id="queen-attack"><h1>Queen Attack</h1></a>
+<a class="header" href="#bowling" id="bowling"><h1>Bowling</h1></a>
+<a class="header" href="#sublist" id="sublist"><h1>Sublist</h1></a>
+<a class="header" href="#space-age" id="space-age"><h1>Space Age</h1></a>
+<a class="header" href="#luhn-trait" id="luhn-trait"><h1>Luhn Trait</h1></a>
+<a class="header" href="#macros" id="macros"><h1>Macros</h1></a>
+<a class="header" href="#allergies" id="allergies"><h1>Allergies</h1></a>
+<a class="header" href="#variable-length-quantity" id="variable-length-quantity"><h1>Variable Length Quantity</h1></a>
+<a class="header" href="#phone-number" id="phone-number"><h1>Phone Number</h1></a>
+<a class="header" href="#wordy" id="wordy"><h1>Wordy</h1></a>
+<a class="header" href="#tournament" id="tournament"><h1>Tournament</h1></a>
+<a class="header" href="#custom-set" id="custom-set"><h1>Custom Set</h1></a>
+<a class="header" href="#alphametics" id="alphametics"><h1>Alphametics</h1></a>
+<a class="header" href="#two-bucket" id="two-bucket"><h1>Two Bucket</h1></a>
+<a class="header" href="#pig-latin" id="pig-latin"><h1>Pig Latin</h1></a>
+<a class="header" href="#diamond" id="diamond"><h1>Diamond</h1></a>
+<a class="header" href="#spiral-matrix" id="spiral-matrix"><h1>Spiral Matrix</h1></a>
+<a class="header" href="#palindrome-products" id="palindrome-products"><h1>Palindrome Products</h1></a>
+<a class="header" href="#poker" id="poker"><h1>Poker</h1></a>
+<a class="header" href="#grep" id="grep"><h1>Grep</h1></a>
+<a class="header" href="#scale-generator" id="scale-generator"><h1>Scale Generator</h1></a>
+<a class="header" href="#decimal" id="decimal"><h1>Decimal</h1></a>
+<a class="header" href="#anagram" id="anagram"><h1>Anagram</h1></a>
+<a class="header" href="#protein-translation" id="protein-translation"><h1>Protein Translation</h1></a>
+<a class="header" href="#robot-name" id="robot-name"><h1>Robot Name</h1></a>
+<a class="header" href="#book-store" id="book-store"><h1>Book Store</h1></a>
+<a class="header" href="#ocr-numbers" id="ocr-numbers"><h1>OCR Numbers</h1></a>
+<a class="header" href="#minesweeper" id="minesweeper"><h1>Minesweeper</h1></a>
+<a class="header" href="#dominoes" id="dominoes"><h1>Dominoes</h1></a>
+<a class="header" href="#parallel-letter-frequency" id="parallel-letter-frequency"><h1>Parallel Letter Frequency</h1></a>
+<a class="header" href="#rectangles" id="rectangles"><h1>Rectangles</h1></a>
+<a class="header" href="#forth" id="forth"><h1>Forth</h1></a>
+<a class="header" href="#circular-buffer" id="circular-buffer"><h1>Circular Buffer</h1></a>
+<a class="header" href="#react" id="react"><h1>React</h1></a>
+<a class="header" href="#a改为使用cargo-test" id="a改为使用cargo-test"><h2>改为使用Cargo test</h2></a>
+<p>正如万千生成工具，总是具有<code>主题/css样式/模版</code>之类的概念</p>
+<p><a href="https://github.com/rust-lang-nursery/mdBook">mdBook</a> 也不例外</p>
+<p>我们为了，让这份练习可在网页上运行并知道结果，借用了mdBook工具，它本身就具有<code>Rust Code</code>html元素运行的功能</p>
+<p>可惜，也就相当于<code>Cargo run</code>,而我们要使用的是<code>Cargo test</code>。下面进入到我们的修改之旅</p>
+<a class="header" href="#a目录" id="a目录"><h2>目录</h2></a>
+<!-- START doctoc -->
+<!-- END doctoc -->
+<a class="header" href="#a基础给第一次使用者" id="a基础给第一次使用者"><h2>基础，给第一次使用者</h2></a>
+<blockquote>
+<p>安装就不讲了</p>
+</blockquote>
+<ul>
+<li>初始化mdBook项目是这样的</li>
+</ul>
+<pre><code class="language-bash">mdBook init --theme
+</code></pre>
+<ul>
+<li>它的主题之类，放在<code>src/theme</code>,结构是这样的</li>
+</ul>
+<pre><code class="language-bash">- theme
+    - book.js # 默认的js改造
+    - favicon.png
+    - highlight.css
+    - highlight.js
+    - index.hbs # 默认的模版，引擎是hbs
+    - css
+        - chrome.css
+        - general.css
+        - print.css
+        - variables.css
+</code></pre>
+<p>主要的，代码修改，落在了<code>book.js</code>中，它本身就是给<code>rust代码 元素</code>，(重点是)加上可与<a href="https://play.rust-lang.org/">rust游乐场</a>联系和运行代码，并返回结果的 <strong>播放按钮</strong>。</p>
+<a class="header" href="#a入主题使用过mdbook" id="a入主题使用过mdbook"><h2>入主题，使用过mdBook</h2></a>
+<a class="header" href="#bookjs" id="bookjs"><h3>book.js</h3></a>
+<blockquote>
+<p>这个代码文件本身有600多行，着重在使用<code>Cargo test</code>的部分</p>
+</blockquote>
+<a class="header" href="#a使用rust游乐场的cargo-test" id="a使用rust游乐场的cargo-test"><h4>使用Rust游乐场的Cargo test</h4></a>
+<ul>
+<li>原代码</li>
+</ul>
+<pre><code class="language-js">// ...
+        var params = {
+            version: &quot;stable&quot;,
+            optimize: &quot;0&quot;,
+            code: text
+        };
+
+        if (text.indexOf(&quot;#![feature&quot;) !== -1) {
+            params.version = &quot;nightly&quot;;
+        }
+
+        result_block.innerText = &quot;Running...&quot;;
+        // TODO cargo test
+        fetch_with_timeout(&quot;https://play.rust-lang.org/evaluate.json&quot;, {
+            headers: {
+                'Content-Type': &quot;application/json&quot;,
+            },
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify(params)
+        })
+</code></pre>
+<ul>
+<li>
+<p>修改</p>
+</li>
+</ul>
+<ol>
+<li>修改 POST的网址</li>
+<li>修改 POST的body</li>
+</ol>
+<pre><code class="language-js">        var params = {
+//           version: &quot;stable&quot;,
+//           optimize: &quot;0&quot;,
+            code: text,
+            channel: &quot;stable&quot;,
+            &quot;mode&quot;:&quot;debug&quot;,
+            &quot;backtrace&quot;:false,
+            tests: true,
+            crateType: &quot;lib&quot;
+        };
+
+        if (text.indexOf(&quot;#![feature&quot;) !== -1) {
+            params.version = &quot;nightly&quot;;
+        }
+
+        result_block.innerText = &quot;Running...&quot;;
+        // TODO cargo test
+//       fetch_with_timeout(&quot;https://play.rust-lang.org/evaluate.json&quot;, {
+        fetch_with_timeout(&quot;https://play.rust-lang.org/execute&quot;, {
+            headers: {
+                'Content-Type': &quot;application/json&quot;,
+            },
+            
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify(params)
+        })
+</code></pre>
+<blockquote>
+<p>这些是怎么知道，</p>
+</blockquote>
+<p>主要是通过游乐场，点击Test按钮后的调试器的流量检测。</p>
+<a class="header" href="#a合并用户答案代码与测试代码" id="a合并用户答案代码与测试代码"><h4>合并(用户/答案代码)与测试代码</h4></a>
+<ol>
+<li>mdBook会为哪些没有写入<code>fn main//...</code>的Rust代码，写上类似下面<code>+</code>加号的代码</li>
+</ol>
+<pre><code class="language-md">+ #![allow(unused_variables)] 
++ fn main() {
+#[test]
+fn test_hello_world() {
+    assert_eq!(&quot;Hello, World!&quot;, hello());
+}
+
++ }
+</code></pre>
+<p>那好，我们就在<code>book.js</code>中，搞个去掉默认的函数</p>
+<ul>
+<li>全局函数:移除默认的<code>main</code></li>
+</ul>
+<pre><code class="language-js">function remove_default_main(text){
+    var tArr = text.split(&quot;\n&quot;)
+    if(tArr.slice(0,3).some(t =&gt;t.trim() == &quot;#![allow(unused_variables)]&quot;)){
+        return tArr.slice(3,-1).join(&quot;\n&quot;)
+    }
+    return text
+
+}
+</code></pre>
+<ol start="2">
+<li>测试代码与其他(用户/答案代码),最大的不同就是<code>#[test]</code></li>
+</ol>
+<p>所有，我们为测试代码，找一个全局变量<code>document</code>下的安身之所</p>
+<blockquote>
+<p>为<code>document.mdBookTextCode</code>，book.js本身也为每个代码元素添加按钮，那正好用来检测哪个代码元素是测试代码</p>
+</blockquote>
+<pre><code class="language-js">    // Process playpen code blocks
+    Array.from(document.querySelectorAll(&quot;.playpen&quot;)).forEach(function (pre_block) {
+        // 添加测试代码，到全局变量document
+        var codewithtest = playpen_text(pre_block)
+
+        if(codewithtest.includes(&quot;#[test&quot;)){ // 测试代码，简单检验
+
+            document.mdBookTextCode =  document.mdBookTextCode || remove_default_main(codewithtest)
+        }
+</code></pre>
+<ol start="3">
+<li>当点击运行代码的播放按钮，我们要适时加上测试代码</li>
+</ol>
+<blockquote>
+<p>主要是(用户/答案代码)的播放按钮</p>
+</blockquote>
+<pre><code class="language-js">// 播放按钮的点击事件
+    function run_rust_code(code_block) {
+        var result_block = code_block.querySelector(&quot;.result&quot;);
+        if (!result_block) {
+            result_block = document.createElement('code');
+            result_block.className = 'result hljs language-bash';
+
+            code_block.append(result_block);
+        }
+
+        let text = playpen_text(code_block);
+        // 如 不相等和 不包括测试代码，添加测试代码上去
+        if(text != document.mdBookTextCode &amp;&amp; !text.includes(document.mdBookTextCode)){
+            text = text + '\n' + document.mdBookTextCode
+        }
+// 说来也巧，我们的第一个修改也在这个点击事件，拼在一起看看
+        var params = {
+            code: text,
+            channel: &quot;stable&quot;,
+            &quot;mode&quot;:&quot;debug&quot;,
+            &quot;backtrace&quot;:false,
+            tests: true,
+            crateType: &quot;lib&quot;
+        };
+
+        if (text.indexOf(&quot;#![feature&quot;) !== -1) {
+            params.version = &quot;nightly&quot;;
+        }
+
+        result_block.innerText = &quot;Running...&quot;;
+//       fetch_with_timeout(&quot;https://play.rust-lang.org/evaluate.json&quot;, {
+        fetch_with_timeout(&quot;https://play.rust-lang.org/execute&quot;, {
+            headers: {
+                'Content-Type': &quot;application/json&quot;,
+            },
+            
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify(params)
+        })
+</code></pre>
+<a class="header" href="#a至此完成谢谢浏览" id="a至此完成谢谢浏览"><h2>至此，完成。谢谢浏览！</h2></a>
+<a class="header" href="#a相关" id="a相关"><h3>相关</h3></a>
+<p><a href="https://github.com/chinanf-boy/exercism-rust-zh/blob/master/theme/book.js">Github库/book.js</a></p>
+
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    
+
+                    
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            
+
+            
+        </nav>
+
+    </div>
+
+    
+    <!-- Livereload script (if served using the cli tool) -->
+    <script type="text/javascript">
+        var socket = new WebSocket("ws://localhost:3001");
+        socket.onmessage = function (event) {
+            if (event.data === "reload") {
+                socket.close();
+                location.reload(true); // force reload from server (not from cache)
+            }
+        };
+
+        window.onbeforeunload = function () {
+            socket.close();
+        }
+    </script>
+    
+
+    
+    <!-- Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128555056-1"></script>
+    
+    <script type="text/javascript">
+        var localAddrs = ["localhost", "127.0.0.1", ""];
+        if (localAddrs.indexOf(document.location.hostname) === -1) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-128555056-1');
+        }
+    </script>
+    
+
+    
+    <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+    
+
+    
+    <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+    
+
+    <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Custom JS scripts -->
+    
+
+    
+    
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            window.setTimeout(window.print, 100);
+        });
+    </script>
+    
+    
+
+</body>
+
+</html>
