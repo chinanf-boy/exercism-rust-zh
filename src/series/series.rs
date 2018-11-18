@@ -1,5 +1,3 @@
-use series::*;
-
 #[test]
 fn test_with_zero_length() {
     let expected = vec!["".to_string(); 6];

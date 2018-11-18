@@ -1,6 +1,4 @@
-
-
 #[test]
 fn test_answer() {
-    assert_eq!(pythagorean_triplet::find(), Some(31875000));
+    assert_eq!(find(), Some(31875000));
 }

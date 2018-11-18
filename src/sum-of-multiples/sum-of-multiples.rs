@@ -1,5 +1,3 @@
-use sum_of_multiples::*;
-
 #[test]
 fn multiples_one() {
     assert_eq!(0, sum_of_multiples(1, &[3, 5]))

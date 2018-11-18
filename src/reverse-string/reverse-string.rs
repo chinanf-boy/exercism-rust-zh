@@ -5,8 +5,6 @@
 //! [script]: https://github.com/exercism/rust/blob/master/bin/init_exercise.py
 //! [canonical-data]: https://raw.githubusercontent.com/exercism/problem-specifications/master/exercises/reverse-string/canonical_data.json
 
-use reverse_string::*;
-
 /// Process a single test case for the property `reverse`
 fn process_reverse_case(input: &str, expected: &str) {
     assert_eq!(&reverse(input), expected)

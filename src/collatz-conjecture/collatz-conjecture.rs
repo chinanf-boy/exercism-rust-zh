@@ -1,5 +1,3 @@
-use collatz_conjecture::*;
-
 #[test]
 fn test_1() {
     assert_eq!(Some(0), collatz(1));

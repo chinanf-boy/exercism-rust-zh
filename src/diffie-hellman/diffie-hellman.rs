@@ -1,5 +1,3 @@
-use diffie_hellman::*;
-
 #[test]
 fn test_private_key_in_range_key() {
     let primes: Vec<u64> = vec![

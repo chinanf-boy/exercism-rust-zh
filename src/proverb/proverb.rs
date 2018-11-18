@@ -1,5 +1,3 @@
-use proverb::build_proverb;
-
 #[test]
 fn test_two_pieces() {
     let input = vec!["nail", "shoe"];
