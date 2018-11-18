@@ -1,5 +1,3 @@
-
-
 #[test]
 fn test_methionine() {
     let info = codons::parse(make_pairs());
@@ -7,14 +5,14 @@ fn test_methionine() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_cysteine_tgt() {
     let info = codons::parse(make_pairs());
     assert_eq!(info.name_for("TGT"), Ok("cysteine"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_cysteine_tgy() {
     // "compressed" name for TGT and TGC
     let info = codons::parse(make_pairs());
@@ -23,28 +21,28 @@ fn test_cysteine_tgy() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_stop() {
     let info = codons::parse(make_pairs());
     assert_eq!(info.name_for("TAA"), Ok("stop codon"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_valine() {
     let info = codons::parse(make_pairs());
     assert_eq!(info.name_for("GTN"), Ok("valine"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_isoleucine() {
     let info = codons::parse(make_pairs());
     assert_eq!(info.name_for("ATH"), Ok("isoleucine"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_arginine_name() {
     // In arginine CGA can be "compressed" both as CGN and as MGR
     let info = codons::parse(make_pairs());
@@ -54,28 +52,28 @@ fn test_arginine_name() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn empty_is_invalid() {
     let info = codons::parse(make_pairs());
     assert!(info.name_for("").is_err());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn x_is_not_shorthand_so_is_invalid() {
     let info = codons::parse(make_pairs());
     assert!(info.name_for("VWX").is_err());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn too_short_is_invalid() {
     let info = codons::parse(make_pairs());
     assert!(info.name_for("AT").is_err());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn too_long_is_invalid() {
     let info = codons::parse(make_pairs());
     assert!(info.name_for("ATTA").is_err());

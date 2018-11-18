@@ -6,13 +6,13 @@ fn test_a() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_b() {
     assert_eq!(get_diamond('B'), vec![" A ", "B B", " A "]);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_c() {
     assert_eq!(
         get_diamond('C'),
@@ -21,7 +21,7 @@ fn test_c() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_d() {
     assert_eq!(
         get_diamond('D'),
@@ -30,7 +30,7 @@ fn test_d() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_e() {
     assert_eq!(
         get_diamond('Z'),

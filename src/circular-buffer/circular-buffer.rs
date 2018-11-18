@@ -1,4 +1,3 @@
-
 use circular_buffer::{CircularBuffer, Error};
 
 #[test]
@@ -8,7 +7,7 @@ fn error_on_read_empty_buffer() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn write_and_read_back_item() {
     let mut buffer = CircularBuffer::new(1);
     assert!(buffer.write('1').is_ok());
@@ -17,7 +16,7 @@ fn write_and_read_back_item() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn write_and_read_back_multiple_items() {
     let mut buffer = CircularBuffer::new(2);
     assert!(buffer.write('1').is_ok());
@@ -28,7 +27,7 @@ fn write_and_read_back_multiple_items() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn alternate_write_and_read() {
     let mut buffer = CircularBuffer::new(2);
     assert!(buffer.write('1').is_ok());
@@ -38,7 +37,7 @@ fn alternate_write_and_read() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn clear_buffer() {
     let mut buffer = CircularBuffer::new(3);
     assert!(buffer.write('1').is_ok());
@@ -54,7 +53,7 @@ fn clear_buffer() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn full_buffer_error() {
     let mut buffer = CircularBuffer::new(2);
     assert!(buffer.write('1').is_ok());
@@ -63,7 +62,7 @@ fn full_buffer_error() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn overwrite_item_in_non_full_buffer() {
     let mut buffer = CircularBuffer::new(2);
     assert!(buffer.write('1').is_ok());
@@ -74,7 +73,7 @@ fn overwrite_item_in_non_full_buffer() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn overwrite_item_in_full_buffer() {
     let mut buffer = CircularBuffer::new(2);
     assert!(buffer.write('1').is_ok());
@@ -85,7 +84,7 @@ fn overwrite_item_in_full_buffer() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn integer_buffer() {
     let mut buffer = CircularBuffer::new(2);
     assert!(buffer.write(1).is_ok());
@@ -98,7 +97,7 @@ fn integer_buffer() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn string_buffer() {
     let mut buffer = CircularBuffer::new(2);
     buffer.write("".to_string()).unwrap();

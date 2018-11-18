@@ -1,6 +1,4 @@
 #[macro_use]
-
-
 use std::collections::HashMap;
 
 #[test]
@@ -11,7 +9,7 @@ fn test_empty() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_no_trailing_comma() {
     let mut expected = HashMap::new();
     expected.insert(1, "one");
@@ -20,7 +18,7 @@ fn test_no_trailing_comma() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_trailing_comma() {
     let mut expected = HashMap::new();
     expected.insert('h', 89);
@@ -39,7 +37,7 @@ fn test_trailing_comma() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_nested() {
     let mut expected = HashMap::new();
     expected.insert("non-empty", {
@@ -63,7 +61,7 @@ fn test_nested() {
 
 mod test {
     #[test]
-    #[ignore]
+    //#[ignore]
     fn type_not_in_scope() {
         let _expected: ::std::collections::HashMap<(), ()> = hashmap!();
     }

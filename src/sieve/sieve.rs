@@ -6,25 +6,25 @@ fn limit_lower_than_the_first_prime() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn limit_is_the_first_prime() {
     assert_eq!(sieve::primes_up_to(2), [2]);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn primes_up_to_10() {
     assert_eq!(sieve::primes_up_to(10), [2, 3, 5, 7]);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn limit_is_prime() {
     assert_eq!(sieve::primes_up_to(13), [2, 3, 5, 7, 11, 13]);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn limit_of_1000() {
     let expected = vec![
         2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89,

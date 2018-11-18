@@ -13,7 +13,7 @@ fn test_case_1() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_case_2() {
     assert_eq!(
         solve(3, 5, 1, &Bucket::Two),
@@ -26,7 +26,7 @@ fn test_case_2() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_case_3() {
     assert_eq!(
         solve(7, 11, 2, &Bucket::One),
@@ -39,7 +39,7 @@ fn test_case_3() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_case_4() {
     assert_eq!(
         solve(7, 11, 2, &Bucket::Two),
@@ -52,7 +52,7 @@ fn test_case_4() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_case_5() {
     assert_eq!(
         solve(1, 3, 3, &Bucket::Two),
@@ -65,7 +65,7 @@ fn test_case_5() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_case_6() {
     assert_eq!(
         solve(2, 3, 3, &Bucket::One),

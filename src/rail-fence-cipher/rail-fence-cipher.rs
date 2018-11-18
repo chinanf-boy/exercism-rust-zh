@@ -8,7 +8,6 @@
 //! The tests do not expect any normalization or cleaning.
 //! That trade is tested in enough other exercises.
 
-
 use rail_fence_cipher::*;
 
 /// Process a single test case for the property `encode`
@@ -38,14 +37,14 @@ fn test_encode_with_two_rails() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 /// encode with three rails
 fn test_encode_with_three_rails() {
     process_encode_case("WEAREDISCOVEREDFLEEATONCE", 3, "WECRLTEERDSOEEFEAOCAIVDEN");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 /// encode with ending in the middle
 fn test_encode_with_ending_in_the_middle() {
     process_encode_case("EXERCISES", 4, "ESXIEECSR");
@@ -54,21 +53,21 @@ fn test_encode_with_ending_in_the_middle() {
 // decode
 
 #[test]
-#[ignore]
+//#[ignore]
 /// decode with three rails
 fn test_decode_with_three_rails() {
     process_decode_case("TEITELHDVLSNHDTISEIIEA", 3, "THEDEVILISINTHEDETAILS");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 /// decode with five rails
 fn test_decode_with_five_rails() {
     process_decode_case("EIEXMSMESAORIWSCE", 5, "EXERCISMISAWESOME");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 /// decode with six rails
 fn test_decode_with_six_rails() {
     process_decode_case(
@@ -79,7 +78,7 @@ fn test_decode_with_six_rails() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 /// encode wide characters
 ///
 /// normally unicode is not part of exercism exercises, but in an exercise

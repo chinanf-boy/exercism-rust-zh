@@ -1,4 +1,3 @@
-
 use palindrome_products::*;
 
 #[test]
@@ -9,7 +8,7 @@ fn single_digits() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn double_digits() {
     let palindromes = get_palindrome_products(10, 99);
     assert_eq!(min(&palindromes), Some(121));
@@ -17,7 +16,7 @@ fn double_digits() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn triple_digits() {
     let palindromes = get_palindrome_products(100, 999);
     assert_eq!(min(&palindromes), Some(10201));
@@ -25,7 +24,7 @@ fn triple_digits() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn four_digits() {
     let palindromes = get_palindrome_products(1000, 9999);
     assert_eq!(min(&palindromes), Some(1002001));
@@ -33,25 +32,25 @@ fn four_digits() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn empty_result_for_smallest_palindrome() {
     assert_eq!(min(&get_palindrome_products(1002, 1003)), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn empty_result_for_largest_palindrome() {
     assert_eq!(max(&get_palindrome_products(15, 15)), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn error_smallest_palindrome_when_min_gt_max() {
     assert_eq!(min(&get_palindrome_products(1000, 1)), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn error_largest_palindrome_when_min_st_max() {
     assert_eq!(max(&get_palindrome_products(2, 1)), None);
 }

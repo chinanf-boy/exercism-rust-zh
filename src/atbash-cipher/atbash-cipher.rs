@@ -1,36 +1,34 @@
-
-
 #[test]
 fn test_encode_yes() {
     assert_eq!("bvh", cipher::encode("yes"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_no() {
     assert_eq!("ml", cipher::encode("no"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_omg() {
     assert_eq!("lnt", cipher::encode("OMG"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_spaces() {
     assert_eq!("lnt", cipher::encode("O M G"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_mindblowingly() {
     assert_eq!("nrmwy oldrm tob", cipher::encode("mindblowingly"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_numbers() {
     assert_eq!(
         "gvhgr mt123 gvhgr mt",
@@ -39,13 +37,13 @@ fn test_encode_numbers() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_deep_thought() {
     assert_eq!("gifgs rhurx grlm", cipher::encode("Truth is fiction."));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_all_the_letters() {
     assert_eq!(
         "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt",
@@ -54,19 +52,19 @@ fn test_encode_all_the_letters() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_encode_ignores_non_ascii() {
     assert_eq!("mlmzh xrrrt mlivw", cipher::encode("non ascii éignored"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_decode_exercism() {
     assert_eq!("exercism", cipher::decode("vcvix rhn"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_decode_a_sentence() {
     assert_eq!(
         "anobstacleisoftenasteppingstone",
@@ -75,13 +73,13 @@ fn test_decode_a_sentence() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_decode_numbers() {
     assert_eq!("testing123testing", cipher::decode("gvhgr mt123 gvhgr mt"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_decode_all_the_letters() {
     assert_eq!(
         "thequickbrownfoxjumpsoverthelazydog",

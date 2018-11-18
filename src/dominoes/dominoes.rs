@@ -87,77 +87,77 @@ fn empty_input_empty_output() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn singleton_input_singleton_output() {
     let input = &[(1, 1)];
     assert_correct(input);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn singleton_that_cant_be_chained() {
     let input = &[(1, 2)];
     assert_eq!(dominoes::chain(input), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn no_repeat_numbers() {
     let input = &[(1, 2), (3, 1), (2, 3)];
     assert_correct(input);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn can_reverse_dominoes() {
     let input = &[(1, 2), (1, 3), (2, 3)];
     assert_correct(input);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn no_chains() {
     let input = &[(1, 2), (4, 1), (2, 3)];
     assert_eq!(dominoes::chain(input), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn disconnected_simple() {
     let input = &[(1, 1), (2, 2)];
     assert_eq!(dominoes::chain(input), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn disconnected_double_loop() {
     let input = &[(1, 2), (2, 1), (3, 4), (4, 3)];
     assert_eq!(dominoes::chain(input), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn disconnected_single_isolated() {
     let input = &[(1, 2), (2, 3), (3, 1), (4, 4)];
     assert_eq!(dominoes::chain(input), None);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn need_backtrack() {
     let input = &[(1, 2), (2, 3), (3, 1), (2, 4), (2, 4)];
     assert_correct(input);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn separate_loops() {
     let input = &[(1, 2), (2, 3), (3, 1), (1, 1), (2, 2), (3, 3)];
     assert_correct(input);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn nine_elements() {
     let input = &[
         (1, 2),

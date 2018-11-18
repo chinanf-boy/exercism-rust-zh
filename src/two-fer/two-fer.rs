@@ -1,4 +1,3 @@
-
 use twofer::twofer;
 
 #[test]
@@ -7,13 +6,13 @@ fn empty_string() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn alice() {
     assert_eq!(twofer("Alice"), "One for Alice, one for me.");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn bob() {
     assert_eq!(twofer("Bob"), "One for Bob, one for me.");
 }
