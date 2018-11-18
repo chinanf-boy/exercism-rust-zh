@@ -1,1 +1,0 @@
-# Pascal's Triangle
