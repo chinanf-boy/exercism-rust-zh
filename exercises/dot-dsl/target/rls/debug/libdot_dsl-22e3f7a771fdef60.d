@@ -1,0 +1,1 @@
+/Users/lizhenyong/Desktop/t翻译项目/translate-本地翻译/rust/exercism-rust-zh/exercises/dot-dsl/target/rls/debug/libdot_dsl-22e3f7a771fdef60.rmeta: /Users/lizhenyong/Desktop/t翻译项目/translate-本地翻译/rust/exercism-rust-zh/exercises/dot-dsl/src/lib.rs /Users/lizhenyong/Desktop/t翻译项目/translate-本地翻译/rust/exercism-rust-zh/exercises/dot-dsl/tests/dot-dsl.rs
