@@ -13,6 +13,10 @@
 ---|
 未完成([工作进度](http://llever.com/exercism-rust-zh)), [mdBook源文件-src](./src) |
 
+<p align="center">
+<img src="./hello-world.gif" width="680px;">
+</p>
+
 #### (系统版)直接 clone
 
 ```
