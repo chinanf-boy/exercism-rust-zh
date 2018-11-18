@@ -11,7 +11,7 @@
 
 网页版 |
 ---|
-未完成([工作进度](https://llever.com/exercism-rust-zh)) |
+未完成([工作进度](http://llever.com/exercism-rust-zh)), [mdBook源文件-src](./src) |
 
 #### (系统版)直接 clone
 
@@ -43,9 +43,9 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
 <!-- doc-templite END generated -->
 
 - [ ] readme
+- [x] [如有需要，请看入门](./exercises/hello-world/GETTING_STARTED.zh.md)   
+- [x] [准备](./exercises/prepare.md) 每个练习都有一个帮你，准备的小节，(过于重复，我直接拿出来)
 - [ ] [./exercises](./exercises) 练习们
-    - [x] [如有需要，请看入门](./exercises/hello-world/GETTING_STARTED.zh.md)   
-    - [x] [准备](./exercises/prepare.md) 每个练习都有一个帮你，准备的小节，(过于重复，我直接拿出来)
     - [x] [hello world](./exercises/hello-world/README.zh.md)
     - [x] [千兆秒-Gigasecond](./exercises/gigasecond/README.zh.md)
     - [x] [闰年-Leap](./exercises/leap/README.zh.md)
