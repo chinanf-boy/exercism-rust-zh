@@ -15,6 +15,15 @@ function playpen_text(playpen) {
     }
 }
 
+function remove_default_main(text){
+    var tArr = text.split("\n")
+    if(tArr.slice(0,3).some(t =>t.trim() == "#![allow(unused_variables)]")){
+        return tArr.slice(3,-1).join("\n")
+    }
+    return text
+
+}
+
 (function codeSnippets() {
     // Hide Rust code lines prepended with a specific character
     var hiding_character = "#";
@@ -101,7 +110,11 @@ function playpen_text(playpen) {
         }
 
         let text = playpen_text(code_block);
-
+        // Check TODO: Add test Code with user Code
+        if(text != document.mdBookTextCode && !text.includes(document.mdBookTextCode)){
+            text = text + '\n' + document.mdBookTextCode
+        }
+        console.log(text)
         var params = {
             channel: "stable",
             code: text,
@@ -117,10 +130,9 @@ function playpen_text(playpen) {
 
         result_block.innerText = "Running...";
         // TODO cargo test
-        document.cookie = "_ga=GA1.2.1301991782.1521110599";
         fetch_with_timeout("https://play.rust-lang.org/execute", {
             headers: {
-                'Accept': "*/*",
+                // 'Accept': "*/*",
                 'Content-Type': "application/json",
             },
             
@@ -259,6 +271,14 @@ function playpen_text(playpen) {
 
     // Process playpen code blocks
     Array.from(document.querySelectorAll(".playpen")).forEach(function (pre_block) {
+        // Add global value with test code
+        var codewithtest = playpen_text(pre_block)
+
+        if(codewithtest.includes("#[test")){
+
+            document.mdBookTextCode =  document.mdBookTextCode || remove_default_main(codewithtest)
+        }
+
         // Add play button
         var buttons = pre_block.querySelector(".buttons");
         if (!buttons) {
