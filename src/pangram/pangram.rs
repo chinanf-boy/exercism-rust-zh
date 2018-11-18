@@ -1,7 +1,3 @@
-
-
-use pangram::*;
-
 #[test]
 fn empty_strings_are_not_pangrams() {
     let sentence = "";

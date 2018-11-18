@@ -1,5 +1,3 @@
-use twofer::twofer;
-
 #[test]
 fn empty_string() {
     assert_eq!(twofer(""), "One for you, one for me.");

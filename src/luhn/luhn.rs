@@ -1,5 +1,3 @@
-use luhn::*;
-
 #[test]
 fn single_digit_string_is_invalid() {
     assert!(!is_valid("1"));

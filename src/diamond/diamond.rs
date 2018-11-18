@@ -1,5 +1,3 @@
-use diamond::*;
-
 #[test]
 fn test_a() {
     assert_eq!(get_diamond('A'), vec!["A"]);

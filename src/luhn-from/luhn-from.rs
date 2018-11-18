@@ -1,5 +1,3 @@
-use luhn_from::*;
-
 #[test]
 fn you_can_validate_from_a_str() {
     let valid = Luhn::from("046 454 286");

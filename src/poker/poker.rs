@@ -1,4 +1,3 @@
-use poker::winning_hands;
 use std::collections::HashSet;
 
 fn hs_from<'a>(input: &[&'a str]) -> HashSet<&'a str> {

@@ -10,7 +10,7 @@ fn assert_name_matches_pattern(n: &str) {
     );
 }
 
-fn assert_name_is_persistent(r: &robot::Robot) {
+fn assert_name_is_persistent(r: &Robot) {
     // The type system already proves this, but why not.
     let n1 = r.name();
     let n2 = r.name();
@@ -21,28 +21,28 @@ fn assert_name_is_persistent(r: &robot::Robot) {
 
 #[test]
 fn test_name_should_match_expected_pattern() {
-    let r = robot::Robot::new();
+    let r = Robot::new();
     assert_name_matches_pattern(r.name());
 }
 
 #[test]
 //#[ignore]
 fn test_name_is_persistent() {
-    assert_name_is_persistent(&robot::Robot::new());
+    assert_name_is_persistent(&Robot::new());
 }
 
 #[test]
 //#[ignore]
 fn test_different_robots_have_different_names() {
-    let r1 = robot::Robot::new();
-    let r2 = robot::Robot::new();
+    let r1 = Robot::new();
+    let r2 = Robot::new();
     assert_ne!(r1.name(), r2.name(), "Robot names should be different");
 }
 
 #[test]
 //#[ignore]
 fn test_new_name_should_match_expected_pattern() {
-    let mut r = robot::Robot::new();
+    let mut r = Robot::new();
     assert_name_matches_pattern(r.name());
     r.reset_name();
     assert_name_matches_pattern(r.name());
@@ -51,7 +51,7 @@ fn test_new_name_should_match_expected_pattern() {
 #[test]
 //#[ignore]
 fn test_new_name_is_persistent() {
-    let mut r = robot::Robot::new();
+    let mut r = Robot::new();
     r.reset_name();
     assert_name_is_persistent(&r);
 }
@@ -59,7 +59,7 @@ fn test_new_name_is_persistent() {
 #[test]
 //#[ignore]
 fn test_new_name_is_different_from_old_name() {
-    let mut r = robot::Robot::new();
+    let mut r = Robot::new();
     let n1 = r.name().to_string();
     r.reset_name();
     let n2 = r.name().to_string();

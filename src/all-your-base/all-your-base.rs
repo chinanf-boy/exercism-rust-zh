@@ -5,7 +5,7 @@ fn single_bit_one_to_decimal() {
     let output_base = 10;
     let output_digits = vec![1];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -18,7 +18,7 @@ fn binary_to_single_decimal() {
     let output_base = 10;
     let output_digits = vec![5];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -31,7 +31,7 @@ fn single_decimal_to_binary() {
     let output_base = 2;
     let output_digits = vec![1, 0, 1];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -44,7 +44,7 @@ fn binary_to_multiple_decimal() {
     let output_base = 10;
     let output_digits = vec![4, 2];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -57,7 +57,7 @@ fn decimal_to_binary() {
     let output_base = 2;
     let output_digits = vec![1, 0, 1, 0, 1, 0];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -70,7 +70,7 @@ fn trinary_to_hexadecimal() {
     let output_base = 16;
     let output_digits = vec![2, 10];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -83,7 +83,7 @@ fn hexadecimal_to_trinary() {
     let output_base = 3;
     let output_digits = vec![1, 1, 2, 0];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -96,7 +96,7 @@ fn fifteen_bit_integer() {
     let output_base = 73;
     let output_digits = vec![6, 10, 45];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -109,7 +109,7 @@ fn empty_list() {
     let output_base = 10;
     let output_digits = vec![];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -122,7 +122,7 @@ fn single_zero() {
     let output_base = 2;
     let output_digits = vec![];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -135,7 +135,7 @@ fn multiple_zeros() {
     let output_base = 2;
     let output_digits = vec![];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -148,7 +148,7 @@ fn leading_zeros() {
     let output_base = 10;
     let output_digits = vec![4, 2];
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
+        convert(input_digits, input_base, output_base),
         Ok(output_digits)
     );
 }
@@ -160,8 +160,8 @@ fn invalid_positive_digit() {
     let input_digits = &[1, 2, 1, 0, 1, 0];
     let output_base = 10;
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
-        Err(ayb::Error::InvalidDigit(2))
+        convert(input_digits, input_base, output_base),
+        Err(Error::InvalidDigit(2))
     );
 }
 
@@ -172,8 +172,8 @@ fn input_base_is_one() {
     let input_digits = &[];
     let output_base = 10;
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
-        Err(ayb::Error::InvalidInputBase)
+        convert(input_digits, input_base, output_base),
+        Err(Error::InvalidInputBase)
     );
 }
 
@@ -184,8 +184,8 @@ fn output_base_is_one() {
     let input_digits = &[1, 0, 1, 0, 1, 0];
     let output_base = 1;
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
-        Err(ayb::Error::InvalidOutputBase)
+        convert(input_digits, input_base, output_base),
+        Err(Error::InvalidOutputBase)
     );
 }
 
@@ -196,8 +196,8 @@ fn input_base_is_zero() {
     let input_digits = &[];
     let output_base = 10;
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
-        Err(ayb::Error::InvalidInputBase)
+        convert(input_digits, input_base, output_base),
+        Err(Error::InvalidInputBase)
     );
 }
 
@@ -208,7 +208,7 @@ fn output_base_is_zero() {
     let input_digits = &[7];
     let output_base = 0;
     assert_eq!(
-        ayb::convert(input_digits, input_base, output_base),
-        Err(ayb::Error::InvalidOutputBase)
+        convert(input_digits, input_base, output_base),
+        Err(Error::InvalidOutputBase)
     );
 }

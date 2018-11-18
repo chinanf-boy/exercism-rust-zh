@@ -1,5 +1,3 @@
-use pascals_triangle::*;
-
 #[test]
 fn no_rows() {
     let pt = PascalsTriangle::new(0);

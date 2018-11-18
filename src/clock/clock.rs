@@ -1,7 +1,3 @@
-
-
-use clock::Clock;
-
 //
 // Clock Creation
 //

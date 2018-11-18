@@ -6,7 +6,7 @@ fn test_transform_one_value() {
 
     let expected = expected_from(&[('a', 1)]);
 
-    assert_eq!(expected, etl::transform(&input));
+    assert_eq!(expected, transform(&input));
 }
 
 #[test]
@@ -16,7 +16,7 @@ fn test_transform_more_values() {
 
     let expected = expected_from(&[('a', 1), ('e', 1), ('i', 1), ('o', 1), ('u', 1)]);
 
-    assert_eq!(expected, etl::transform(&input));
+    assert_eq!(expected, transform(&input));
 }
 
 #[test]
@@ -26,7 +26,7 @@ fn test_more_keys() {
 
     let expected = expected_from(&[('a', 1), ('e', 1), ('d', 2), ('g', 2)]);
 
-    assert_eq!(expected, etl::transform(&input));
+    assert_eq!(expected, transform(&input));
 }
 
 #[test]
@@ -71,7 +71,7 @@ fn test_full_dataset() {
         ('z', 10),
     ]);
 
-    assert_eq!(expected, etl::transform(&input));
+    assert_eq!(expected, transform(&input));
 }
 
 fn input_from(v: &[(i32, Vec<char>)]) -> BTreeMap<i32, Vec<char>> {

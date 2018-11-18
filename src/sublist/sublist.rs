@@ -1,4 +1,3 @@
-use sublist::{sublist, Comparison};
 
 #[test]
 fn empty_equals_empty() {

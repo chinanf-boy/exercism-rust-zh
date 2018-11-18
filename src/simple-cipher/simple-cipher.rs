@@ -1,5 +1,3 @@
-
-use simple_cipher::*;
 use std::collections::HashSet;
 
 const PLAIN_TEXT: &str = "thisismysecret";

@@ -1,7 +1,3 @@
-
-
-use robot_simulator::*;
-
 #[test]
 fn robots_are_created_with_position_and_direction() {
     let robot = Robot::new(0, 0, Direction::North);

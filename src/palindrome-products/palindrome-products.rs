@@ -1,5 +1,3 @@
-use palindrome_products::*;
-
 #[test]
 fn single_digits() {
     let palindromes = get_palindrome_products(1, 9);

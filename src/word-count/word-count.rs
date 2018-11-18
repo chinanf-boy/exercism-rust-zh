@@ -5,7 +5,7 @@ fn check_word_count(s: &str, pairs: &[(&str, u32)]) {
     // message for assert_eq! is as informative as possible. A simpler
     // solution would simply check the length of the map, and then
     // check for the presence and value of each key in the given pairs vector.
-    let mut m: HashMap<String, u32> = word_count::word_count(s);
+    let mut m: HashMap<String, u32> = word_count(s);
     for &(k, v) in pairs.iter() {
         assert_eq!((k, m.remove(&k.to_string()).unwrap_or(0)), (k, v));
     }

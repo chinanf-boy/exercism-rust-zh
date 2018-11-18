@@ -1,5 +1,3 @@
-use set::*;
-
 #[test]
 fn sets_with_no_elements_are_empty() {
     let set: CustomSet<()> = CustomSet::new(&[]);

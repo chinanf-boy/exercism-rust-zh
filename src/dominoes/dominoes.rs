@@ -1,7 +1,3 @@
-
-
-use CheckResult::*;
-
 type Domino = (u8, u8);
 
 #[derive(Debug)]

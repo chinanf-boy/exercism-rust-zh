@@ -2,7 +2,7 @@ use std::collections::HashSet;
 use std::iter::FromIterator;
 
 fn process_anagram_case(word: &str, inputs: &[&str], expected: &[&str]) {
-    let result = anagram::anagrams_for(word, inputs);
+    let result = anagrams_for(word, inputs);
 
     let expected: HashSet<&str> = HashSet::from_iter(expected.iter().cloned());
 

@@ -1,5 +1,3 @@
-use spiral_matrix::*;
-
 #[test]
 fn empty_spiral() {
     let expected: Vec<Vec<u32>> = Vec::new();

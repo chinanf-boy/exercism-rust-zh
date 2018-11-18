@@ -1,5 +1,3 @@
-use triangle::*;
-
 #[test]
 fn positive_length_sides_are_ok() {
     let sides = [2, 2, 2];

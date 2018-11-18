@@ -1,5 +1,3 @@
-use decimal::Decimal;
-
 /// Create a Decimal from a string literal
 ///
 /// Use only when you _know_ that your value is valid.

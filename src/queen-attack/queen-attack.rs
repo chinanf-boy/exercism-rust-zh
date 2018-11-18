@@ -1,5 +1,3 @@
-use queen_attack::*;
-
 #[test]
 fn chess_position_on_the_board_is_some() {
     assert!(ChessPosition::new(2, 4).is_some());

@@ -1,5 +1,3 @@
-use rectangles::count;
-
 #[test]
 fn test_zero_area_1() {
     let lines = &[];

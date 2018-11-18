@@ -1,7 +1,5 @@
 use std::collections::HashMap;
 
-
-
 // Poem by Friedrich Schiller. The corresponding music is the European Anthem.
 const ODE_AN_DIE_FREUDE: [&'static str; 8] = [
     "Freude schöner Götterfunken",
@@ -40,7 +38,7 @@ const STAR_SPANGLED_BANNER: [&'static str; 8] = [
 
 #[test]
 fn test_no_texts() {
-    assert_eq!(frequency::frequency(&[], 4), HashMap::new());
+    assert_eq!(frequency(&[], 4), HashMap::new());
 }
 
 #[test]
@@ -48,7 +46,7 @@ fn test_no_texts() {
 fn test_one_letter() {
     let mut hm = HashMap::new();
     hm.insert('a', 1);
-    assert_eq!(frequency::frequency(&["a"], 4), hm);
+    assert_eq!(frequency(&["a"], 4), hm);
 }
 
 #[test]
@@ -56,7 +54,7 @@ fn test_one_letter() {
 fn test_case_insensitivity() {
     let mut hm = HashMap::new();
     hm.insert('a', 2);
-    assert_eq!(frequency::frequency(&["aA"], 4), hm);
+    assert_eq!(frequency(&["aA"], 4), hm);
 }
 
 #[test]
@@ -66,7 +64,7 @@ fn test_many_empty_lines() {
     for _ in 0..1000 {
         v.push("");
     }
-    assert_eq!(frequency::frequency(&v[..], 4), HashMap::new());
+    assert_eq!(frequency(&v[..], 4), HashMap::new());
 }
 
 #[test]
@@ -80,19 +78,19 @@ fn test_many_times_same_text() {
     hm.insert('a', 1000);
     hm.insert('b', 1000);
     hm.insert('c', 1000);
-    assert_eq!(frequency::frequency(&v[..], 4), hm);
+    assert_eq!(frequency(&v[..], 4), hm);
 }
 
 #[test]
 //#[ignore]
 fn test_punctuation_doesnt_count() {
-    assert!(!frequency::frequency(&WILHELMUS, 4).contains_key(&','));
+    assert!(!frequency(&WILHELMUS, 4).contains_key(&','));
 }
 
 #[test]
 //#[ignore]
 fn test_numbers_dont_count() {
-    assert!(!frequency::frequency(&["Testing, 1, 2, 3"], 4).contains_key(&'1'));
+    assert!(!frequency(&["Testing, 1, 2, 3"], 4).contains_key(&'1'));
 }
 
 #[test]
@@ -104,7 +102,7 @@ fn test_all_three_anthems_1_worker() {
             v.push(*line);
         }
     }
-    let freqs = frequency::frequency(&v[..], 1);
+    let freqs = frequency(&v[..], 1);
     assert_eq!(freqs.get(&'a'), Some(&49));
     assert_eq!(freqs.get(&'t'), Some(&56));
     assert_eq!(freqs.get(&'ü'), Some(&2));
@@ -119,7 +117,7 @@ fn test_all_three_anthems_3_workers() {
             v.push(*line);
         }
     }
-    let freqs = frequency::frequency(&v[..], 3);
+    let freqs = frequency(&v[..], 3);
     assert_eq!(freqs.get(&'a'), Some(&49));
     assert_eq!(freqs.get(&'t'), Some(&56));
     assert_eq!(freqs.get(&'ü'), Some(&2));

@@ -1,5 +1,3 @@
-use react::*;
-
 #[test]
 fn input_cells_have_a_value() {
     let mut reactor = Reactor::new();

@@ -1,9 +1,9 @@
 #[macro_use]
 extern crate maplit;
 
-use dot_dsl::graph::graph_items::edge::Edge;
-use dot_dsl::graph::graph_items::node::Node;
-use dot_dsl::graph::Graph;
+use graph::graph_items::edge::Edge;
+use graph::graph_items::node::Node;
+use graph::Graph;
 
 #[test]
 fn test_empty_graph() {

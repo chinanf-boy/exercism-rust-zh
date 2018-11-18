@@ -1,5 +1,3 @@
-use isogram::check;
-
 #[test]
 fn empty_string() {
     assert_eq!(check(""), true, "An empty string should be an isogram.")

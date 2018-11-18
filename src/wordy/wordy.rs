@@ -1,5 +1,3 @@
-use wordy::answer;
-
 #[test]
 fn addition() {
     let command = "What is 1 plus 1?";

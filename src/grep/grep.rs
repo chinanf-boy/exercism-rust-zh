@@ -1,5 +1,3 @@
-use grep::{grep, Flags};
-
 use std::fs;
 
 static ILIAD_CONTENT: &'static str = "Achilles sing, O Goddess! Peleus' son;

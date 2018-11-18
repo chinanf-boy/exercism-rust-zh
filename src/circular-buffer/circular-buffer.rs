@@ -1,5 +1,3 @@
-use circular_buffer::{CircularBuffer, Error};
-
 #[test]
 fn error_on_read_empty_buffer() {
     let mut buffer = CircularBuffer::<char>::new(1);

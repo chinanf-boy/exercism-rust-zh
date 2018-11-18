@@ -3,7 +3,7 @@ fn just_the_header_if_no_input() {
     let input = "";
     let expected = "Team                           | MP |  W |  D |  L |  P";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -14,7 +14,7 @@ fn a_win_is_three_points_a_loss_is_zero_points() {
         + "Allegoric Alaskans             |  1 |  1 |  0 |  0 |  3\n"
         + "Blithering Badgers             |  1 |  0 |  0 |  1 |  0";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -25,7 +25,7 @@ fn a_win_can_also_be_expressed_as_a_loss() {
         + "Allegoric Alaskans             |  1 |  1 |  0 |  0 |  3\n"
         + "Blithering Badgers             |  1 |  0 |  0 |  1 |  0";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -36,7 +36,7 @@ fn a_different_team_can_win() {
         + "Blithering Badgers             |  1 |  1 |  0 |  0 |  3\n"
         + "Allegoric Alaskans             |  1 |  0 |  0 |  1 |  0";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -47,7 +47,7 @@ fn a_draw_is_one_point_each() {
         + "Allegoric Alaskans             |  1 |  0 |  1 |  0 |  1\n"
         + "Blithering Badgers             |  1 |  0 |  1 |  0 |  1";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -59,7 +59,7 @@ fn there_can_be_more_than_one_match() {
         + "Allegoric Alaskans             |  2 |  2 |  0 |  0 |  6\n"
         + "Blithering Badgers             |  2 |  0 |  0 |  2 |  0";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -71,7 +71,7 @@ fn there_can_be_more_than_one_winner() {
         + "Allegoric Alaskans             |  2 |  1 |  0 |  1 |  3\n"
         + "Blithering Badgers             |  2 |  1 |  0 |  1 |  3";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -85,7 +85,7 @@ fn there_can_be_more_than_two_teams() {
         + "Blithering Badgers             |  2 |  1 |  0 |  1 |  3\n"
         + "Courageous Californians        |  2 |  0 |  0 |  2 |  0";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -103,7 +103,7 @@ fn typical_input() {
         + "Blithering Badgers             |  3 |  1 |  0 |  2 |  3\n"
         + "Courageous Californians        |  3 |  0 |  1 |  2 |  1";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -119,7 +119,7 @@ fn incomplete_competition_not_all_pairs_have_played() {
         + "Courageous Californians        |  2 |  0 |  1 |  1 |  1\n"
         + "Devastating Donkeys            |  1 |  0 |  0 |  1 |  0";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }
 
 #[test]
@@ -137,5 +137,5 @@ fn ties_broken_alphabetically() {
         + "Blithering Badgers             |  3 |  0 |  1 |  2 |  1\n"
         + "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1";
 
-    assert_eq!(tournament::tally(&input), expected);
+    assert_eq!(tally(&input), expected);
 }

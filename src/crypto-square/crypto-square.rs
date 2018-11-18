@@ -1,5 +1,3 @@
-use crypto_square::encrypt;
-
 fn test(input: &str, output: &str) {
     assert_eq!(&encrypt(input), output);
 }
