@@ -29,7 +29,7 @@
 
 - [x] 为中文校对
 - `>` 为测试修正，
-- `no` 具有非内置crate，无法编译成功, 需要非内置的其他crate，这时，只能抱歉
+- `no` 具有[非内置crate](https://github.com/integer32llc/rust-playground/blob/master/compiler/base/Cargo.toml)，无法编译成功, 需要非内置的其他crate，这时，只能抱歉
 
 > [Issue me , if you want](https://github.com/chinanf-boy/exercism-rust-zh/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
 
