@@ -9,7 +9,7 @@
 
  ## 3. 测试代码查看
 
- {{ #playpen ./difference-of-squares.rs }}
+ {{ #playpen ./difference-of-square.rs }}
 
  ## 4. 答案
 

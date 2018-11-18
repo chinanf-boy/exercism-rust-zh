@@ -5,6 +5,8 @@
 
 [mdbook]: https://github.com/rust-lang-nursery/mdBook
 
+
+
 ## TODO
 
 - [ ] [测试改造]
@@ -35,9 +37,9 @@
 ---
 
 - [x] `>` [hello world](./hello-world/README.zh.md) 
-- [x] [千兆秒-Gigasecond](./gigasecond/README.zh.md)
-- [x] [闰年-Leap](./leap/README.zh.md)
-- [x] [雨滴声-Raindrops](./raindrops/README.zh.md)
+- [x] `>` [千兆秒-Gigasecond](./gigasecond/README.zh.md)
+- [x] 1 [闰年-Leap](./leap/README.zh.md)
+- [x] 1[雨滴声-Raindrops](./raindrops/README.zh.md)
 - [x] [反转字符串-Reverse String](./reverse-string/README.zh.md)
 - [x] [第n个素数-Nth Prime](./nth-prime/README.zh.md)
 - [x] [迟钝孩子-Bob](./bob/README.zh.md)

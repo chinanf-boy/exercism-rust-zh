@@ -9,7 +9,7 @@
 
  ## 3. 测试代码查看
 
- {{ #playpen ./nucleotide-codons.rs }}
+ {{ #playpen ./codons.rs }}
 
  ## 4. 答案
 

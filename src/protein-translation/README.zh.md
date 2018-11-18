@@ -9,7 +9,7 @@
 
  ## 3. 测试代码查看
 
- {{ #playpen ./protein-translation.rs }}
+ {{ #playpen ./proteins.rs }}
 
  ## 4. 答案
 
