@@ -9,15 +9,19 @@
 
 「 [exercism.io](exercism.io) 的 Rust 练习 」
 
-## 直接 clone
+网页版 |
+---|
+未完成([工作进度](https://llever.com/exercism-rust-zh)) |
+
+#### (系统版)直接 clone
 
 ```
 git clone https://github.com/chinanf-boy/exercism-rust-zh
 ```
 
-## `cd exercises`目录
+##### `cd exercises`目录
 
-就是88个练习啦
+就是练习啦
 
 [中文](./readme.md) | [english](https://github.com/exercism/rust)
 
@@ -39,7 +43,7 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
 <!-- doc-templite END generated -->
 
 - [ ] readme
-- [ ] [./exercises](./exercises) 共计 88个练习
+- [ ] [./exercises](./exercises) 练习们
     - [x] [如有需要，请看入门](./exercises/hello-world/GETTING_STARTED.zh.md)   
     - [x] [准备](./exercises/prepare.md) 每个练习都有一个帮你，准备的小节，(过于重复，我直接拿出来)
     - [x] [hello world](./exercises/hello-world/README.zh.md)
@@ -143,7 +147,8 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
 # exercism Rust 轨道
 
 [![Build Status](https://travis-ci.org/exercism/rust.svg?branch=master)](https://travis-ci.org/exercism/rust)
-[![Join the chat at https://gitter.im/exercism/rust](https://badges.gitter.im/exercism/rust.svg)](https://gitter.im/exercism/rust?utm_source=badge&utm_=badge&utm_campaign=pr-badge&utm_content=badg
+[![Join the chat at https://gitter.im/exercism/rust](https://badges.gitter.im/exercism/rust.svg)](https://gitter.im/exercism/rust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 exercism 的 Rust 练习
 
 ### 目录

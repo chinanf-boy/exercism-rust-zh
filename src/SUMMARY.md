@@ -1,6 +1,7 @@
 # Summary
 
 - [88道练习，任点](./index.md)
+- [易](./low.md)
     - [hello world](./hello-world/README.zh.md)
     - [千兆秒-Gigasecond](./gigasecond/README.zh.md)
     - [闰年-Leap](./leap/README.zh.md)
@@ -19,6 +20,7 @@
     - [Armstrong Numbers](./armstrong-numbers/README.zh.md)
     - [Collatz Conjecture](./collatz-conjecture/README.zh.md)
     - [Diffie Hellman](./diffie-hellman/README.zh.md)
+- [中等](./medium.md)
     - [Saddle Points](./saddle-points/README.zh.md)
     - [Isogram](./isogram/README.zh.md)
     - [Say](./say/README.zh.md)
@@ -29,7 +31,7 @@
     - [DOT DSL](./dot-dsl/README.zh.md)
     - [Hamming](./hamming/README.zh.md)
     - [Simple Linked List](./simple-linked-list/README.zh.md)
-    - [Pascal's Triangle](./pascal-s-triangle/README.zh.md)
+    - [Pascal's Triangle](./pascals-triangle/README.zh.md)
     - [Scrabble Score](./scrabble-score/README.zh.md)
     - [Pangram](./pangram/README.zh.md)
     - [Paasio](./paasio/README.zh.md)
@@ -80,6 +82,7 @@
     - [Anagram](./anagram/README.zh.md)
     - [Protein Translation](./protein-translation/README.zh.md)
     - [Robot Name](./robot-name/README.zh.md)
+- [难](./high.md)
     - [Book Store](./book-store/README.zh.md)
     - [OCR Numbers](./ocr-numbers/README.zh.md)
     - [Minesweeper](./minesweeper/README.zh.md)
@@ -89,7 +92,11 @@
     - [Forth](./forth/README.zh.md)
     - [Circular Buffer](./circular-buffer/README.zh.md)
     - [React](./react/README.zh.md)
-
+- [未标签](./untag.md)
+    - [hexadecimal](./hexadecimal/README.zh.md)
+    - [nucleotide-codons](./nucleotide-codons/README.zh.md)
+    - [pascals-triangle](./pascals-triangle/README.zh.md)
+    - [two-fer](./two-fer/README.zh.md)
 ---
 
 [修改mdBook主题](./add-test-code.md)

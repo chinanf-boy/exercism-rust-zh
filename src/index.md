@@ -25,10 +25,12 @@
 
 ### 以下为
 
-- [x] 为校对
+- [x] 为中文校对
 - `>` 为测试修正
 
-### 易
+> [Issue me , if you want](https://github.com/chinanf-boy/exercism-rust-zh/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+
+### [易](./low.md)
 
 ---
 
@@ -51,7 +53,7 @@
 - [ ] [Collatz Conjecture](./collatz-conjecture/README.zh.md)
 - [ ] [Diffie Hellman](./diffie-hellman/README.zh.md)
 
-### 中等
+### [中等](./medium.md)
 
 ---
 
@@ -118,7 +120,7 @@
 - [ ] [Robot Name](./robot-name/README.zh.md)
 - [ ] [Book Store](./book-store/README.zh.md)
 
-### 难
+### [难](./high.md)
 
 ---
 
@@ -130,3 +132,10 @@
 - [ ] [Forth](./forth/README.zh.md)
 - [ ] [Circular Buffer](./circular-buffer/README.zh.md)
 - [ ] [React](./react/README.zh.md)
+
+### [还没标签](./untag.md)
+
+- [ ] [hexadecimal](./hexadecimal/README.zh.md)
+- [ ] [nucleotide-codons](./nucleotide-codons/README.zh.md)
+- [ ] [pascals-triangle](./pascals-triangle/README.zh.md)
+- [ ] [two-fer](./two-fer/README.zh.md)
