@@ -124,7 +124,7 @@ function remove_default_main(text) {
       text != document.mdBookTextCode &&
       !text.includes(document.mdBookTextCode)
     ) {
-      text = text + '\n' + document.mdBookTextCode;
+      text = remove_default_main(text) + '\n' + document.mdBookTextCode;
     }
     console.log(text);
     var params = {
