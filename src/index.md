@@ -1,18 +1,16 @@
-
-> 本库由，对[exercism/rust的中文翻译](https://github.com/chinanf-boy/exercism-rust-zh)起头
+> 本库由，对[exercism/rust 的中文翻译](https://github.com/chinanf-boy/exercism-rust-zh)起头
 
 ### 但缺少网页练习功能，借助[mdBook]工具，完成
 
 [mdbook]: https://github.com/rust-lang-nursery/mdBook
 
-
-
 ## TODO
 
-- [ ] [测试改造]
+- [x] [测试改造] 虽然改了，但这么多个练习(还没有开始做)，不想手动测每份答案播放按钮是否成功,
+      稍后加个自动化测试，你就当成功吧。如有问题请 Issue 我
 - `theme/book.js` 改造
-    - [x] 使用`cargo test`
-    - [x] 合并用户输入与测试用例
+  - [x] 使用`cargo test`
+  - [x] 合并用户输入与测试用例
 
 修改默认主题的`book.js`
 
@@ -29,7 +27,7 @@
 
 - [x] 为中文校对
 - `>` 为测试修正，
-- `no` 具有[非内置crate](https://github.com/integer32llc/rust-playground/blob/master/compiler/base/Cargo.toml)，无法编译成功, 需要非内置的其他crate，这时，只能抱歉
+- `no` 具有[非内置 crate](https://github.com/integer32llc/rust-playground/blob/master/compiler/base/Cargo.toml)，无法编译成功, 需要非内置的其他 crate，这时，只能抱歉
 
 > [Issue me , if you want](https://github.com/chinanf-boy/exercism-rust-zh/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
 
@@ -37,24 +35,24 @@
 
 ---
 
-- [x] `>` [hello world](./hello-world/README.zh.md) 
+- [x] `>` [hello world](./hello-world/README.zh.md)
 - [x] `no` [千兆秒-Gigasecond](./gigasecond/README.zh.md)
 - [x] `>` [闰年-Leap](./leap/README.zh.md)
 - [x] `>` [雨滴声-Raindrops](./raindrops/README.zh.md)
 - [x] `>` [反转字符串-Reverse String](./reverse-string/README.zh.md)
-- [x] `>` [第n个素数-Nth Prime](./nth-prime/README.zh.md)
+- [x] `>` [第 n 个素数-Nth Prime](./nth-prime/README.zh.md)
 - [x] `>` [迟钝孩子-Bob](./bob/README.zh.md)
 - [x] `>` [啤酒之歌-Beer Song](./beer-song/README.zh.md)
 - [x] `>` [谚语串烧-Proverb](./proverb/README.zh.md)
 - [x] `>` [平方差-Difference Of Squares](./difference-of-squares/README.zh.md)
-- [ ] `>` [Sum Of Multiples](./sum-of-multiples/README.zh.md)
-- [ ] `>` [Grains](./grains/README.zh.md)
-- [ ] `>` [Pythagorean Triplet](./pythagorean-triplet/README.zh.md)
-- [ ] `>` [Prime Factors](./prime-factors/README.zh.md)
-- [ ] `>` [Series](./series/README.zh.md)
-- [ ] `>` [Armstrong Numbers](./armstrong-numbers/README.zh.md)
-- [ ] `>` [Collatz Conjecture](./collatz-conjecture/README.zh.md)
-- [ ] `>` [Diffie Hellman](./diffie-hellman/README.zh.md)
+- [x] `>` [Sum Of Multiples](./sum-of-multiples/README.zh.md)
+- [x] `>` [Grains](./grains/README.zh.md)
+- [x] `>` [Pythagorean Triplet](./pythagorean-triplet/README.zh.md)
+- [x] `>` [Prime Factors](./prime-factors/README.zh.md)
+- [x] `>` [Series](./series/README.zh.md)
+- [x] `>` [Armstrong Numbers](./armstrong-numbers/README.zh.md)
+- [x] `>` [Collatz Conjecture](./collatz-conjecture/README.zh.md)
+- [x] `>` [Diffie Hellman](./diffie-hellman/README.zh.md)
 
 ### [中等](./medium.md)
 

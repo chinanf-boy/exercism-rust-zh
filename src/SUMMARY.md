@@ -1,6 +1,6 @@
 # Summary
 
-- [88道练习，任点](./index.md)
+- [超过88道练习，任点](./index.md)
 - [易](./low.md)
     - [hello world](./hello-world/README.zh.md)
     - [千兆秒-Gigasecond](./gigasecond/README.zh.md)

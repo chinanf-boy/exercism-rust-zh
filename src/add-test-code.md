@@ -10,8 +10,19 @@
 
 ## 目录
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [基础，给第一次使用者](#%E5%9F%BA%E7%A1%80%E7%BB%99%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8%E8%80%85)
+- [入主题，使用过mdBook](#%E5%85%A5%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E8%BF%87mdbook)
+  - [book.js](#bookjs)
+    - [使用Rust游乐场的Cargo test](#%E4%BD%BF%E7%94%A8rust%E6%B8%B8%E4%B9%90%E5%9C%BA%E7%9A%84cargo-test)
+    - [合并(用户/答案代码)与测试代码](#%E5%90%88%E5%B9%B6%E7%94%A8%E6%88%B7%E7%AD%94%E6%A1%88%E4%BB%A3%E7%A0%81%E4%B8%8E%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81)
+- [至此，完成。谢谢浏览！](#%E8%87%B3%E6%AD%A4%E5%AE%8C%E6%88%90%E8%B0%A2%E8%B0%A2%E6%B5%8F%E8%A7%88)
+  - [相关](#%E7%9B%B8%E5%85%B3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 基础，给第一次使用者
 

@@ -1,6 +1,6 @@
-# 毕达哥拉斯三胞胎
+# 勾股数
 
-毕达哥拉斯三胞胎是一组三个自然数,{a,b,c},
+勾股数是一组,三个自然数,{a,b,c}, 如
 
 ```text
 a**2 + b**2 = c**2
@@ -18,9 +18,9 @@ a < b < c
 3**2 + 4**2 = 9 + 16 = 25 = 5**2.
 ```
 
-恰好有一个毕达哥拉斯三重态,其中 a+b+c=1000.
+问: 请找出 **a，b，c**，恰好符合勾股定理, 而其中 a+b+c=1000.
 
-找到产品 A*乙* c.
+返回， `a * b * c` 值.
 
 [help-page]: https://exercism.io/tracks/rust/learning
 [modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
@@ -29,4 +29,4 @@ a < b < c
 
 ## 资源
 
-项目欧拉问题 9<http://projecteuler.net/problem=9>
+欧拉项目,问题 9<http://projecteuler.net/problem=9>
