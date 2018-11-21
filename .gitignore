@@ -3,5 +3,5 @@ node_modules/
 fork
 source
 exam
-*.sh
 dev
+*t.sh
