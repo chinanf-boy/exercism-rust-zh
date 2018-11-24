@@ -29,7 +29,3 @@ Cipher: zyxwvutsrqponmlkjihgfedcba
 ## 资源
 
 维基百科<http://en.wikipedia.org/wiki/Atbash>
-
-```
-
-```

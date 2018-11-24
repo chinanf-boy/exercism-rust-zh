@@ -6,8 +6,7 @@
 
 ## TODO
 
-- [x] [测试改造] 虽然改了，但这么多个练习(还没有开始做)，不想手动测每份答案播放按钮是否成功,
-      稍后加个自动化测试，你就当成功吧。如有问题请 Issue 我
+- [x] [测试改造] , 如果如果有需要，[请看自动化测试](https://github.com/chinanf-boy/exercism-rust-zh-webdriver)
 - `theme/book.js` 改造
   - [x] 使用`cargo test`
   - [x] 合并用户输入与测试用例
@@ -36,7 +35,7 @@
 ---
 
 - [x] `>` [hello world](./hello-world/README.zh.md)
-- [x] `no` [千兆秒-Gigasecond](./gigasecond/README.zh.md)
+- [x] `>` [千兆秒-Gigasecond](./gigasecond/README.zh.md)
 - [x] `>` [闰年-Leap](./leap/README.zh.md)
 - [x] `>` [雨滴声-Raindrops](./raindrops/README.zh.md)
 - [x] `>` [反转字符串-Reverse String](./reverse-string/README.zh.md)
@@ -106,7 +105,7 @@
 - [ ] `>` [Wordy](./wordy/README.zh.md)
 - [ ] `>` [Tournament](./tournament/README.zh.md)
 - [ ] `>` [Custom Set](./custom-set/README.zh.md)
-- [ ] `>` [Alphametics](./alphametics/README.zh.md)
+- [ ] `no` [Alphametics](./alphametics/README.zh.md)
 - [ ] `>` [Two Bucket](./two-bucket/README.zh.md)
 - [ ] `>` [Pig Latin](./pig-latin/README.zh.md)
 - [ ] `>` [Diamond](./diamond/README.zh.md)

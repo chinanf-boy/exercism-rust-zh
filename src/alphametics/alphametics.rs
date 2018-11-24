@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 fn assert_alphametic_solution_eq(puzzle: &str, solution: &[(char, u8)]) {
     let answer = solve(puzzle);

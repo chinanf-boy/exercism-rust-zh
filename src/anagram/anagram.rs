@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+// use std::collections::HashSet;
 use std::iter::FromIterator;
 
 fn process_anagram_case(word: &str, inputs: &[&str], expected: &[&str]) {
