@@ -7,6 +7,9 @@
 ## TODO
 
 - [x] [测试改造] , 如果如果有需要，[请看自动化测试](https://github.com/chinanf-boy/exercism-rust-zh-webdriver)
+
+> 游乐场可能会有超时返回`Playground Communication: timeout`，多次不行，请看合并代码与测试代码给官方游乐场使用`Cargo test`
+
 - `theme/book.js` 改造
   - [x] 使用`cargo test`
   - [x] 合并用户输入与测试用例
@@ -70,7 +73,7 @@
 - [ ] `>` [Pascal's Triangle](./pascals-triangle/README.zh.md)
 - [ ] `>` [Scrabble Score](./scrabble-score/README.zh.md)
 - [ ] `>` [Pangram](./pangram/README.zh.md)
-- [ ] `>` [Paasio](./paasio/README.zh.md)
+- [ ] `no` [Paasio](./paasio/README.zh.md)
 - [ ] `>` [Nucleotide Count](./nucleotide-count/README.zh.md)
 - [ ] `>` [Luhn](./luhn/README.zh.md)
 - [ ] `>` [Largest Series Product](./largest-series-product/README.zh.md)
@@ -111,9 +114,9 @@
 - [ ] `>` [Diamond](./diamond/README.zh.md)
 - [ ] `>` [Spiral Matrix](./spiral-matrix/README.zh.md)
 - [ ] `>` [Palindrome Products](./palindrome-products/README.zh.md)
-- [ ] `>` [Poker](./poker/README.zh.md)
+- [ ] `no` [Poker](./poker/README.zh.md)
 - [ ] `>` [Grep](./grep/README.zh.md)
-- [ ] `>` [Scale Generator](./scale-generator/README.zh.md)
+- [ ] `no` [Scale Generator](./scale-generator/README.zh.md)
 - [ ] `no` [Decimal](./decimal/README.zh.md)
 - [ ] `>` [Anagram](./anagram/README.zh.md)
 - [ ] `>` [Protein Translation](./protein-translation/README.zh.md)

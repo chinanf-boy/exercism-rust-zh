@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 fn check_word_count(s: &str, pairs: &[(&str, u32)]) {
     // The reason for the awkward code in here is to ensure that the failure

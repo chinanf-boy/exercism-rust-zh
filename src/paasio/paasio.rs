@@ -3,7 +3,7 @@ macro_rules! test_read {
     ($(#[$attr:meta])* $modname:ident ($input:expr, $len:expr)) => {
         mod $modname {
             use std::io::{Read, BufReader};
-            use paasio::*;
+
 
             const CHUNK_SIZE: usize = 2;
 
@@ -77,7 +77,7 @@ macro_rules! test_write {
     ($(#[$attr:meta])* $modname:ident ($input:expr, $len:expr)) => {
         mod $modname {
             use std::io::{self, Write, BufWriter};
-            use paasio::*;
+
 
             const CHUNK_SIZE: usize = 2;
             $(#[$attr])*
@@ -154,8 +154,8 @@ macro_rules! test_write {
 #[test]
 fn test_create_stats() {
     let mut data: Vec<u8> = Vec::new();
-    let _ = paasio::ReadStats::new(data.as_slice());
-    let _ = paasio::WriteStats::new(data.as_mut_slice());
+    let _ = ReadStats::new(data.as_slice());
+    let _ = WriteStats::new(data.as_mut_slice());
 }
 
 test_read!( read_string (
@@ -183,7 +183,7 @@ test_read!(read_file(
 
 #[test]
 fn read_stats_by_ref_returns_wrapped_reader() {
-    use paasio::ReadStats;
+    use ReadStats;
 
     let input =
         "Why, sometimes I've believed as many as six impossible things before breakfast".as_bytes();

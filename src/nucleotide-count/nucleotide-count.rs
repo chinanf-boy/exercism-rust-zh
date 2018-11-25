@@ -1,11 +1,11 @@
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 fn check_dna(s: &str, pairs: &[(char, usize)]) {
     // The reason for the awkward code in here is to ensure that the failure
     // message for assert_eq! is as informative as possible. A simpler
     // solution would simply check the length of the map, and then
     // check for the presence and value of each key in the given pairs vector.
-    let mut m: HashMap<char, usize> = dna::nucleotide_counts(s).unwrap();
+    let mut m: HashMap<char, usize> = nucleotide_counts(s).unwrap();
     for &(k, v) in pairs.iter() {
         assert_eq!((k, m.remove(&k)), (k, Some(v)));
     }
@@ -15,43 +15,43 @@ fn check_dna(s: &str, pairs: &[(char, usize)]) {
 
 #[test]
 fn count_returns_result() {
-    assert!(dna::count('A', "").is_ok());
+    assert!(count('A', "").is_ok());
 }
 
 #[test]
 //#[ignore]
 fn test_count_empty() {
-    assert_eq!(dna::count('A', ""), Ok(0));
+    assert_eq!(count('A', ""), Ok(0));
 }
 
 #[test]
 //#[ignore]
 fn count_invalid_nucleotide() {
-    assert_eq!(dna::count('X', "A"), Err('X'));
+    assert_eq!(count('X', "A"), Err('X'));
 }
 
 #[test]
 //#[ignore]
 fn count_invalid_dna() {
-    assert_eq!(dna::count('A', "AX"), Err('X'));
+    assert_eq!(count('A', "AX"), Err('X'));
 }
 
 #[test]
 //#[ignore]
 fn test_count_repetitive_cytosine() {
-    assert_eq!(dna::count('C', "CCCCC"), Ok(5));
+    assert_eq!(count('C', "CCCCC"), Ok(5));
 }
 
 #[test]
 //#[ignore]
 fn test_count_only_thymine() {
-    assert_eq!(dna::count('T', "GGGGGTAACCCGG"), Ok(1));
+    assert_eq!(count('T', "GGGGGTAACCCGG"), Ok(1));
 }
 
 #[test]
 //#[ignore]
 fn counts_returns_result() {
-    assert!(dna::nucleotide_counts("ACGT").is_ok());
+    assert!(nucleotide_counts("ACGT").is_ok());
 }
 
 #[test]
@@ -79,5 +79,5 @@ fn test_nucleotide_count_counts_all() {
 #[test]
 //#[ignore]
 fn counts_invalid_nucleotide_results_in_err() {
-    assert_eq!(dna::nucleotide_counts("GGXXX"), Err('X'));
+    assert_eq!(nucleotide_counts("GGXXX"), Err('X'));
 }

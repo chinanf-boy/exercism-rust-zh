@@ -18,7 +18,7 @@
 
 例如,您的库的用户可能会编写`hashmap!('a' => 3, 'b' => 11, 'z' => 32)`. 这应该扩展到以下代码:
 
-```rust
+```rust,no_run
 {
    let mut hm = HashMap::new();
    hm.insert('a', 3);
