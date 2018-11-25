@@ -1,6 +1,6 @@
 extern crate rand;
+use rand::{thread_rng, Rng};
 
-use rand::distributions::{IndependentSample, Range};
 
 /// Right-to-left modular exponentiation implementation
 /// For more information see https://en.wikipedia.org/wiki/Modular_exponentiation
@@ -25,7 +25,8 @@ fn modular_exponentiation(base: u64, exponent: u64, modulus: u64) -> u64 {
 }
 
 pub fn private_key(p: u64) -> u64 {
-    Range::new(2, p).ind_sample(&mut rand::thread_rng())
+    let mut rng = thread_rng();
+    rng.gen_range(2, p)
 }
 
 pub fn public_key(p: u64, g: u64, a: u64) -> u64 {

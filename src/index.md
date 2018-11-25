@@ -114,7 +114,7 @@
 - [ ] `>` [Poker](./poker/README.zh.md)
 - [ ] `>` [Grep](./grep/README.zh.md)
 - [ ] `>` [Scale Generator](./scale-generator/README.zh.md)
-- [ ] `>` [Decimal](./decimal/README.zh.md)
+- [ ] `no` [Decimal](./decimal/README.zh.md)
 - [ ] `>` [Anagram](./anagram/README.zh.md)
 - [ ] `>` [Protein Translation](./protein-translation/README.zh.md)
 - [ ] `>` [Robot Name](./robot-name/README.zh.md)
