@@ -1,5 +1,5 @@
-extern crate chrono;
-use chrono::{TimeZone, Utc};
+// extern crate chrono;
+use chrono::TimeZone;
 
 #[test]
 fn test_date() {

@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 // Poem by Friedrich Schiller. The corresponding music is the European Anthem.
 const ODE_AN_DIE_FREUDE: [&'static str; 8] = [

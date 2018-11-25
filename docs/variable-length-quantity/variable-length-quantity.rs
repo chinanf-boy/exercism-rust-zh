@@ -54,7 +54,7 @@ fn to_quintuple_byte() {
 
 #[test]
 //#[ignore]
-fn from_bytes() {
+fn from_bytes_test() {
     assert_eq!(Ok(vec![0x7f]), from_bytes(&[0x7f]));
     assert_eq!(Ok(vec![0x2000]), from_bytes(&[0xc0, 0x00]));
     assert_eq!(Ok(vec![0x1f_ffff]), from_bytes(&[0xff, 0xff, 0x7f]));
