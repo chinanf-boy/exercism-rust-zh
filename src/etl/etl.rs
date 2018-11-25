@@ -1,5 +1,3 @@
-use std::collections::BTreeMap;
-
 #[test]
 fn test_transform_one_value() {
     let input = input_from(&[(1, vec!['A'])]);
