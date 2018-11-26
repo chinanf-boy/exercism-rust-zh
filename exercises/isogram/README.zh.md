@@ -1,17 +1,17 @@
-# 等值线图
+# 等值线
 
-确定是否一词或短语是等值线图.
+确定是否一词,或短语是等值线(`isograms`).
 
-在等值线图(又称为"无定形的 Word 是一个字或短语")无重复的字母和字符的空间,这是允许出现多次.
+在等值线(又称为"无定形的 Word 是一个字或短语")没有重复字母的单词或短语的逻辑术语，但允许连字符和空格出现多次。
 
-等值线图的例子:
+等值线的例子:
 
 - lumberjacks
-- 背景
-- 下游
-- 六岁
+- background
+- downstream
+- six-year-old
 
-Word*等值线图*然而,在等值线图是不需要的,因为重复序列.
+检测 **isograms** 单词，但它不是等值线,因为`s`重复了.
 
 [help-page]: https://exercism.io/tracks/rust/learning
 [modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
