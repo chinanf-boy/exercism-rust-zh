@@ -11,7 +11,7 @@
 
 网页版 |
 ---|
-未完成([工作进度](http://llever.com/exercism-rust-zh)), [mdBook源文件-src](./src) |
+答案测试已完成([工作进度](http://llever.com/exercism-rust-zh)), [mdBook源文件-src](./src) |
 
 <p align="center">
 <img src="./hello-world.gif" width="680px;">
