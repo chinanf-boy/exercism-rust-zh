@@ -1,10 +1,10 @@
-# 全景图
+# 全字母句（pangram）
 
-判断句子是否是泛音.pangram(希腊语:παγρμμα,pan 语法,"每个字母")是一个使用字母表中的每个字母至少一次的句子.最著名的英语字幕是:
+判断句子是否是全字母句。全字母句(希腊语:παγρμμα,pan 语法,"每个字母")是一个使用字母表中每个字母，至少一次的句子。最著名的英语是 全字母句:
 
-> 那只敏捷的棕色狐狸跳过了那只懒狗.
+> The quick brown fox jumps over the lazy dog.
 
-字母表由 ASCII 字母组成.`a`到`z`,包含,并且不区分大小写.输入将不包含非 ASCII 符号.
+字母表由 ASCII 字母`a`到`z`的全部组成，并且不区分大小写。输入不能包含非 ASCII 符号.
 
 [help-page]: https://exercism.io/tracks/rust/learning
 [modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html

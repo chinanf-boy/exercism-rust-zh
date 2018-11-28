@@ -1,8 +1,8 @@
-# 帕斯卡三角
+# 杨辉三角形
 
-计算 Pascal 的三角形直到给定的行数.
+计算给定的行数的 杨辉三角形。
 
-在 Pascal 三角形中,通过将数字添加到前一行中当前位置的左右来计算每个数字.
+在 杨辉 三角形中, 可以看到，一个数由它头顶左右两个数相加得到的。
 
 ```text
     1
@@ -20,4 +20,6 @@
 
 ## 资源
 
-Pascal 在数学世界的三角形<http://mathworld.wolfram.com/PascalsTriangle.html>
+在数学世界的杨辉三角形<http://mathworld.wolfram.com/PascalsTriangle.html>
+
+维基百科<https://zh.wikipedia.org/wiki/杨辉三角形>
