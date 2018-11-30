@@ -161,21 +161,27 @@
                 <main>
                     <a class="header" href="#luhn" id="luhn"><h1>Luhn</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
-<a class="header" href="#a卢恩" id="a卢恩"><h1>卢恩</h1></a>
-<p>给定一个数,判定它是否是 LuHn 公式有效的.</p>
-<p>这个<a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a>是一个简单的校验和公式,用于验证各种身份号码,如信用卡号码和加拿大社会保险号码.</p>
+<a class="header" href="#luhn-1" id="luhn-1"><h1>Luhn</h1></a>
+<p>给定一个数,判定它是否有效 Luhn 公式.</p>
+<blockquote>
+<p>Luhn 算法，也称为“模 10”算法</p>
+</blockquote>
+<p>这个<a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn 算法</a>是一个简单的校验和公式,用于验证各种身份号码,如信用卡号码和加拿大社会保险号码.</p>
 <p>任务是检查给定字符串是否有效.</p>
 <a class="header" href="#a验证一个数" id="a验证一个数"><h2>验证一个数</h2></a>
-<p>长度为 1 或更小的字符串无效.在输入中允许使用空格,但在检查前应清除空格.所有其他非数字字符都是不允许的.</p>
+<p>长度为 1 或更小的字符串无效。在输入中允许使用空格，但在检查前，应清除空格。所有其他非数字字符都是不允许的.</p>
 <a class="header" href="#a例子-1有效信用卡号码" id="a例子-1有效信用卡号码"><h2>例子 1:有效信用卡号码</h2></a>
 <pre><code class="language-text">4539 1488 0343 6467
 </code></pre>
-<p>LuHN 算法的第一步是从右边开始每一个第二个数字的加倍.我们将加倍</p>
+<p>LuHN 算法的第一步是，从<strong>右边</strong>开始每第二个数字加倍。我们要加倍的位</p>
 <pre><code class="language-text">4_3_ 1_8_ 0_4_ 6_6_
 </code></pre>
-<p>如果加倍的数字导致大于 9 的数字,则从产品减去 9.我们加倍的结果:</p>
+<p>如果加倍的数字值导致大于 9 的数字,则将此值减去 9。我们加倍的结果:</p>
 <pre><code class="language-text">8569 2478 0383 3437
 </code></pre>
+<blockquote>
+<p><code>1_8_ =&gt; 2_7_</code> , <code>8*2 - 9 = 7</code></p>
+</blockquote>
 <p>然后把所有数字加起来:</p>
 <pre><code class="language-text">8+5+6+9+2+4+7+8+0+3+8+3+3+4+3+7 = 80
 </code></pre>
@@ -183,7 +189,7 @@
 <a class="header" href="#a例子-2信用卡号码无效" id="a例子-2信用卡号码无效"><h2>例子 2:信用卡号码无效</h2></a>
 <pre><code class="language-text">8273 1232 7352 0569
 </code></pre>
-<p>把第二个数字加倍,从右边开始</p>
+<p>把每第二个数字加倍,从右边开始</p>
 <pre><code class="language-text">7253 2262 5312 0539
 </code></pre>
 <p>合计数字</p>

@@ -161,19 +161,16 @@
                 <main>
                     <a class="header" href="#hamming" id="hamming"><h1>Hamming</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
-<a class="header" href="#a海明" id="a海明"><h1>海明</h1></a>
-<p>计算两条 DNA 链之间的汉明差异.</p>
-<p>突变只是在核酸的创建或复制过程中发生的错误,特别是 DNA.因为核酸对细胞功能至关重要,突变倾向于在整个细胞中产生涟漪效应.虽然突变在技术上是错误的,但非常罕见的突变可能为细胞提供有益的属性.事实上,进化的宏观效应归因于许多代有益微观突变的累积结果.</p>
-<p>最简单和最常见的核酸突变类型是点突变,它在单个核苷酸处用一个碱基替换另一个碱基.</p>
-<p>通过计算从具有共同祖先的不同基因组中获取的两个同源 DNA 链之间的差异数量,我们得到在两条链之间的进化路径上可能发生的最小点突变数量的度量.</p>
-<p>这就是所谓的”海明距离”.</p>
+<a class="header" href="#a汉明hamming" id="a汉明hamming"><h1>汉明（Hamming）</h1></a>
+<p>给 2 个长度为 n 的 DNA 序列，求汉明距离差异为多少。</p>
 <p>通过比较两条 DNA 链,并计算其中有多少核苷酸与其他序列中的同等核苷酸不同.</p>
-<p>GAGCCTACTAACGGGAT
+<pre><code>GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
-^ ^ ^ ^ ^ ^^</p>
-<p>这两条 DNA 链之间的汉明距离为 7.</p>
-<a class="header" href="#a实施说明" id="a实施说明"><h1>实施说明</h1></a>
-<p>Hamming 距离仅定义为等长的序列,因此尝试计算不同长度的序列之间的 Hamming 距离不应该起作用.这种情况的一般处理(例如,引发异常与返回特殊值)可能在语言之间有所不同.</p>
+^ ^ ^ ^ ^ ^^
+</code></pre>
+<p>这两条 DNA 链之间的 汉明距离为 7.</p>
+<a class="header" href="#a实现说明" id="a实现说明"><h1>实现说明</h1></a>
+<p>汉明长度仅定义为等长的序列，因此尝试计算不同长度的序列之间的汉明 距离不应该起作用。这种情况的一般处理(例如,引发异常与返回特殊值)可能在语言之间有所不同.</p>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
 <p>罗瑟琳的计算点突变问题<a href="http://rosalind.info/problems/hamm/">http://rosalind.info/problems/hamm/</a></p>
 <a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>

@@ -162,19 +162,24 @@
                     <a class="header" href="#atbash-cipher" id="atbash-cipher"><h1>Atbash Cipher</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#atbash-cipher-1" id="atbash-cipher-1"><h1>Atbash Cipher</h1></a>
-<p>创建 atbash 密码的实现,这是在中东创建的古老加密系统.</p>
-<p>Atbash 密码是一种简单的替换密码,它依赖于转置字母表中的所有字母,使得生成的字母表向后.第一个字母替换为最后一个字母,第二个字母替换为倒数第二个字母,依此类推.</p>
+<p>创建 Atbash 密码的实现,这是在中东创建的古老加密系统.</p>
+<p>Atbash 密码是一种简单的替换密码,它依赖于转置字母表中的所有字母,使得生成的字母表向后。</p>
+<ul>
+<li>第一个字母替换为最后一个字母,</li>
+<li>第二个字母替换为倒数第二个字母,</li>
+<li>依此类推.</li>
+</ul>
 <p>拉丁字母的 Atbash 密码如下:</p>
-<pre><code class="language-text">Plain:  abcdefghijklmnopqrstuvwxyz
-Cipher: zyxwvutsrqponmlkjihgfedcba
+<pre><code class="language-text">明文:  abcdefghijklmnopqrstuvwxyz
+加密:  zyxwvutsrqponmlkjihgfedcba
 </code></pre>
-<p>它是一个非常弱的密码,因为它只有一个可能的密钥,它是一个简单的单字母替换密码.但是,这可能不是密码时代的问题.</p>
-<p>密文以固定长度的组写出,传统的组大小为 5 个字母,并且不包括标点符号.这是为了使基于单词边界的东西更难猜测.</p>
+<p>它是一个非常弱的加密方式，因为它只有一个加密可能性，且为一个简单的单字母替换密码。但是,这并不是现在’加密游戏-练习时间’的问题.</p>
+<p>密文以固定长度的组写出，传统的组大小为 5 个字母，并且不包括标点符号。这是为了使单词边界，更难猜测。</p>
 <a class="header" href="#a例子" id="a例子"><h2>例子</h2></a>
 <ul>
-<li>编码<code>test</code>给<code>gvhg</code></li>
-<li>解码<code>gvhg</code>给<code>test</code></li>
-<li>解码<code>gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt</code>给<code>thequickbrownfoxjumpsoverthelazydog</code></li>
+<li><code>test</code>，编码为<code>gvhg</code></li>
+<li><code>gvhg</code>，解码为<code>test</code></li>
+<li><code>gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt</code>解码为<code>thequickbrownfoxjumpsoverthelazydog</code></li>
 </ul>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
 <p>维基百科<a href="http://en.wikipedia.org/wiki/Atbash">http://en.wikipedia.org/wiki/Atbash</a></p>

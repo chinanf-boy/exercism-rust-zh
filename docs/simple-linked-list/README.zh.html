@@ -162,33 +162,42 @@
                     <a class="header" href="#simple-linked-list" id="simple-linked-list"><h1>Simple Linked List</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#a简单链表" id="a简单链表"><h1>简单链表</h1></a>
-<p>编写一个使用元素和列表的简单链表实现.</p>
-<p>链表是计算机科学中的一种基本数据结构,常用于其他数据结构的实现.它们在函数式编程语言(如 Clojure、Erlang 或 Haskell)中很普遍,但是在命令式语言(如 Ruby 或 Python)中很少见.</p>
-<p>最简单的链表是单链表.列表中的每个元素包含数据和指向元素列表中的下一个元素的”下一个”字段.</p>
-<p>链接列表的这种变体通常用于表示序列或下推堆栈(也称为 LIFO 堆栈;.In, .Out).</p>
-<p>作为第一步,让我们创建一个包含范围(1..10)的单一链接列表,并提供函数来反转链接列表并转换为数组或从数组转换为数组.</p>
+<p>编写一个使用元素(<code>Elements</code>)和列表(<code>List</code>)的简单链表实现.</p>
+<p>链表是计算机科学中的一种基本数据结构，常用于其他数据结构的实现。它们在函数式编程语言(如 Clojure、Erlang 或 Haskell)中很普遍，但是在命令式语言(如 Ruby 或 Python)中很少见。</p>
+<p>最简单的链表是单链表。列表中的每个元素，包含数据和一个”next”字段，指向元素列表中的下一个元素。</p>
+<p>链接列表的这种变体通常用于表示序列，或推/取堆栈(也称为 LIFO 堆栈;后进先出)。</p>
+<p>作为第一步,让我们创建一个包含范围(1..10)的单一链接列表,并提供反转链接列表，和转换为数组，或从数组转换的函数.</p>
 <p>在使用内置链表的语言实现这一点时,实现自己的抽象数据类型.</p>
 <a class="header" href="#a实现提示" id="a实现提示"><h2>实现提示</h2></a>
-<p>不要实现结构<code>SimpleLinkedList</code>作为一个包装<code>Vec</code>. 相反,在堆上分配节点.<br />
+<p>不要实现结构<code>SimpleLinkedList</code>作为一个<code>Vec</code>包装。 你应该,在堆上分配节点。
 这可以实现为:</p>
-<p>pub struct SimpleLinkedList<T> {
-head: Option&lt;Box&lt;Node<T>&gt;&gt;,
-}</p>
-<p>这个<code>head</code>字段指向该链表的第一个元素(节点).<br />
-这个实现也需要一个结构<code>Node</code>具有以下字段:</p>
-<p>struct Node<T> {
-data: T,
-next: Option&lt;Box&lt;Node<T>&gt;&gt;,
-}</p>
-<p><code>data</code>包含存储的数据,以及<code>next</code>指向以下节点(如果可用)或无.</p>
-<a class="header" href="#a为什么optionboxnodet而不仅仅是optionnodet" id="a为什么optionboxnodet而不仅仅是optionnodet"><h3>为什么?<code>Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code>而不仅仅是<code>Option&lt;Node&lt;T&gt;&gt;</code>?</h3></a>
+<pre><pre class="playpen"><code class="language-rust no_run">
+# #![allow(unused_variables)]
+#fn main() {
+pub struct SimpleLinkedList&lt;T&gt; {
+    head: Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;,
+}
+#}</code></pre></pre>
+<p>这个<code>head</code>字段指向该链表的第一个元素(节点)。
+这个实现也需要一个<code>Node</code>结构，其具有以下字段:</p>
+<pre><pre class="playpen"><code class="language-rust no_run">
+# #![allow(unused_variables)]
+#fn main() {
+struct Node&lt;T&gt; {
+    data: T,
+    next: Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;,
+}
+#}</code></pre></pre>
+<p><code>data</code>包含存储的数据,以及<code>next</code>指向下节点(如果可用)或无.</p>
+<a class="header" href="#a为什么使用optionboxnodet而不仅用optionnodet" id="a为什么使用optionboxnodet而不仅用optionnodet"><h3>为什么使用<code>Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code>?而不仅用<code>Option&lt;Node&lt;T&gt;&gt;</code>?</h3></a>
 <p>自己试试.您将得到以下错误.</p>
-<p>| struct Node<T>
+<pre><code>| struct Node&lt;T&gt;
 | ^^^^^^^^^^^^^^ recursive type has infinite size
 ...
-| next: Option&lt;Node<T>&gt;,
-| --------------------- recursive without indirection</p>
-<p>问题是,在编译时,必须知道下一个的大小.自从<code>next</code>是递归的(”一个节点有一个节点有一个节点…”),编译器不知道要分配多少内存.相反,<a href="https://doc.rust-lang.org/std/boxed/">Box</a>是一个具有定义大小的堆指针.</p>
+| next: Option&lt;Node&lt;T&gt;&gt;,
+| --------------------- recursive without indirection
+</code></pre>
+<p>这个错误在于,编译时,rust 必须知道下一个节点的大小。因<code>next</code>会是递归的(”一个节点，有一个节点-有一个节点…”)，编译器不知道要分配多少内存。相反,<a href="https://doc.rust-lang.org/std/boxed/">Box</a>是一个具有定义大小的堆指针.</p>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
 <p>受”Ruby”中面向对象设计模式的数据结构和算法的启发,即单链表.<a href="http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000">http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000</a></p>
 <a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>

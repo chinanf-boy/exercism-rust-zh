@@ -162,48 +162,48 @@
                     <a class="header" href="#say" id="say"><h1>Say</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#a说" id="a说"><h1>说</h1></a>
-<p>鉴于 0 到 999,999,999,999 之间的数字,用英语拼出这个数字.</p>
+<p>提供一个 0 到 999,999,999,999 之间的数字,用英语拼出这个数字.</p>
 <a class="header" href="#a步骤-1" id="a步骤-1"><h2>步骤 1</h2></a>
 <p>处理 0 到 99 的基本情况.</p>
 <p>如果程序的输入是<code>22</code>,那么输出应该是<code>'twenty-two'</code>.</p>
-<p>如果给出超出祝福范围的数字,您的程序应该大声抱怨.</p>
+<p>如果给出超出规定范围的数字,您的程序应该大声抱怨。</p>
 <p>这个程序的一些好的测试用例是:</p>
 <ul>
-<li>0</li>
-<li>14</li>
-<li>50</li>
-<li>98</li>
-<li>-1</li>
-<li>100</li>
+<li><code>0</code></li>
+<li><code>14</code></li>
+<li><code>50</code></li>
+<li><code>98</code></li>
+<li><code>-1</code></li>
+<li><code>100</code></li>
 </ul>
-<a class="header" href="#a延期" id="a延期"><h3>延期</h3></a>
-<p>如果您使用的是 Mac,那就是 Mac OS X 的外壳<code>say</code>程序大声说出来.如果您使用的是 Linux 或 Windows,则可以使用该命令使用 eSpeakNG<code>espeak</code>.</p>
-<a class="header" href="#a第-2-步" id="a第-2-步"><h2>第 2 步</h2></a>
-<p>实施将数量分成几千块.</p>
-<p>所以<code>1234567890</code>应该产生如 1,234,567 和 890 的列表,而更简单<code>1000</code>应该只产生 1 和 0.</p>
-<p>该程序还必须报告超出范围的任何值.</p>
-<a class="header" href="#a第-3-步" id="a第-3-步"><h2>第 3 步</h2></a>
-<p>现在处理在这些块之间插入适当的缩放词.</p>
-<p>所以<code>1234567890</code>应该屈服<code>'1 billion 234 million 567 thousand 890'</code></p>
-<p>该程序还必须报告超出范围的任何值.停在”兆”处可以.</p>
-<a class="header" href="#a第-4-步" id="a第-4-步"><h2>第 4 步</h2></a>
-<p>把它们放在一起除了简单的英语之外什么都没有.</p>
-<p><code>12345</code>应该给<code>twelve thousand three hundred forty-five</code>.</p>
-<p>该程序还必须报告超出范围的任何值.</p>
 <a class="header" href="#a扩展" id="a扩展"><h3>扩展</h3></a>
-<p>使用<em>和</em>(正确地)用英语拼出数字时:</p>
+<p>如果您使用的是 Mac,那就是 Mac OS X 的 shell 可以用<code>say</code>程序大声说出来。如果您使用的是 Linux 或 Windows,则可以使用<code>espeak</code>命令使用 eSpeakNG.</p>
+<a class="header" href="#a第-2-步" id="a第-2-步"><h2>第 2 步</h2></a>
+<p>实现将数子分成块.</p>
+<p>像<code>1234567890</code>，应该产生如 1,234,567 和 890 的列表,而更简单<code>1000</code>应该只产生 1 和 0.</p>
+<p>该程序还必须报告超出范围的值。</p>
+<a class="header" href="#a第-3-步" id="a第-3-步"><h2>第 3 步</h2></a>
+<p>现在处理在这些块之间，插入适当的缩放词.</p>
+<p>所以<code>1234567890</code>应该输出<code>'1 billion 234 million 567 thousand 890'</code></p>
+<p>该程序还必须报告超出范围的值。上限为”兆（trillion）”处就可以.</p>
+<a class="header" href="#a第-4-步" id="a第-4-步"><h2>第 4 步</h2></a>
+<p>把它们放在一起，除了简单的英语之外什么都没有.</p>
+<p><code>12345</code>应该给出<code>twelve thousand three hundred forty-five</code>.</p>
+<p>该程序还必须报告超出范围的值.</p>
+<a class="header" href="#a扩展-1" id="a扩展-1"><h3>扩展</h3></a>
+<p>(正确地)使用英语<em>and</em>合并数字:</p>
 <ul>
-<li>14 变成”十四”.</li>
-<li>100 变成”一百”.</li>
-<li>120 变成”一百二十”.</li>
-<li>1002 变成”一千零二”.</li>
-<li>1323 年成为”一千三百二十三”.</li>
+<li><code>14</code> =&gt; “fourteen”.</li>
+<li><code>100</code> =&gt; “one hundred”.</li>
+<li><code>120</code> =&gt; “one hundred and twenty”.</li>
+<li><code>1002</code> =&gt; “one thousand and two”.</li>
+<li><code>1323</code> =&gt; “one thousand three hundred and twenty-three”.</li>
 </ul>
-<a class="header" href="#a特定的铁锈练习笔记" id="a特定的铁锈练习笔记"><h2>特定的铁锈练习笔记</h2></a>
-<p>与本练习的其他语言版本相比,Rust 版本略有改变.我们使用 Rust 的强类型系统来限制输入,而不是要求您返回超出范围的错误.使函数处理所有有效输入要容易得多,而不是要求模块的用户处理错误.</p>
-<p>有一个-1 版本的测试用例,但它被注释掉了.如果您的函数正确实现,则不应编译-1 测试用例.</p>
-<p>在测试用例中尚未实现将”和”添加到数字文本中.</p>
-<a class="header" href="#a延期-1" id="a延期-1"><h3>延期</h3></a>
+<a class="header" href="#a特定的-rust-练习笔记" id="a特定的-rust-练习笔记"><h2>特定的 Rust 练习笔记</h2></a>
+<p>与本练习的其他语言版本相比,Rust 版本略有改变。我们使用 Rust 的强类型系统来限制输入,而不是要求您返回超出范围的错误。让函数处理所有有效输入要容易得多,而不是要求，使用模块的用户处理错误。</p>
+<p>有一个 -1 版本的测试用例,但它被注释掉了。如果您的函数正确实现,则不应编译 -1 测试用例.</p>
+<p>在测试用例中尚未实现，将”and”添加到数字文本中.</p>
+<a class="header" href="#a扩展-2" id="a扩展-2"><h3>扩展</h3></a>
 <p>添加转换为 u64 的最大值的功能:9,223,372,036,854,775,807.</p>
 <p>有关输出的提示,请查看最后一个测试用例.</p>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>

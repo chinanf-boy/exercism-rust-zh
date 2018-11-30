@@ -161,16 +161,16 @@
                 <main>
                     <a class="header" href="#run-length-encoding" id="run-length-encoding"><h1>Run Length Encoding</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
-<a class="header" href="#a运行长度编码" id="a运行长度编码"><h1>运行长度编码</h1></a>
-<p>实现行程编码和解码.</p>
-<p>行程编码(RLE)是一种简单的数据压缩形式,其中运行(连续数据元素)仅由一个数据值和计数代替.</p>
-<p>例如,我们可以只用 13 代表原始的 53 个字符.</p>
+<a class="header" href="#a运行游程编码" id="a运行游程编码"><h1>运行游程编码</h1></a>
+<p>实现编码和解码.</p>
+<p>游程编码(RLE)是一种简单的数据压缩形式，其中运行的(连续数据元素)仅由一个数据值和计数代替。</p>
+<p>例如,我们可以只用 13 字节，就可以 代表原始的 53 个字符.</p>
 <pre><code class="language-text">&quot;WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB&quot;  -&gt;  &quot;12WB12W3B24WB&quot;
 </code></pre>
-<p>RLE 允许从压缩数据中完美地重建原始数据,这使其成为无损数据压缩.</p>
+<p>RLE 允许从压缩数据中，完美地重建原始数据,这使其成为无损数据压缩.</p>
 <pre><code class="language-text">&quot;AABCCCDEEEE&quot;  -&gt;  &quot;2AB3CD4E&quot;  -&gt;  &quot;AABCCCDEEEE&quot;
 </code></pre>
-<p>为简单起见,您可以假设未编码的字符串仅包含字母 A 到 Z(小写或大写)和空格.这样,要编码的数据将永远不会包含任何数字,并且要解码的数据内的数字始终表示后续字符的计数.</p>
+<p>为简单起见,您可以假设未编码的字符串，仅包含字母 A 到 Z(小写或大写)和空格。这样,要编码的数据将永远 <strong>不包含</strong> 任何数字,并且要解码的数据内的数字始终表示后续字符的计数。</p>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
 <p>维基百科<a href="https://en.wikipedia.org/wiki/Run-length_encoding">https://en.wikipedia.org/wiki/Run-length_encoding</a></p>
 <a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>

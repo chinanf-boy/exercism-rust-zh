@@ -161,19 +161,19 @@
                 <main>
                     <a class="header" href="#largest-series-product" id="largest-series-product"><h1>Largest Series Product</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
-<a class="header" href="#a最大系列产品" id="a最大系列产品"><h1>最大系列产品</h1></a>
+<a class="header" href="#a最大系列乘积" id="a最大系列乘积"><h1>最大系列乘积</h1></a>
 <p>给定一个数字串,计算长度为 n 的连续子串的最大乘积.</p>
-<p>例如,对于输入<code>'1027839564'</code>一系列 3 位数的最大产品是 270(9).<em>五</em>6),一系列 5 位数字的最大乘积为 7560(7).<em>八</em>三<em>九</em>5).</p>
-<p>注意这些系列只需要占用.<em>相邻位置</em>在输入中,数字不需要<em>数值连续的</em>.</p>
-<p>对于输入<code>'73167176531330624919225119674426574742355349194934'</code>一系列 6 位数的最大产品是 23520.</p>
-<a class="header" href="#a锈蚀最大系列产品" id="a锈蚀最大系列产品"><h1>锈蚀最大系列产品</h1></a>
+<p>例如,对于输入<code>'1027839564'</code> ， 3 位数系列的最大乘积是 270 (<code>9 * 5 * 6</code>), 5 位数系列的最大乘积为 7560 (<code>7 * 8 * 3 * 9 * 5</code>).</p>
+<p>注意这些系列数字字符，在输入中，只要求<em>相邻位置</em>，不需要<em>连续数值(123456..)</em>.</p>
+<p>对于输入<code>'73167176531330624919225119674426574742355349194934'</code>一系列 6 位数的最大乘积是 23520.</p>
+<a class="header" href="#rust-的最大系列乘积" id="rust-的最大系列乘积"><h1>Rust 的最大系列乘积</h1></a>
 <p>这些迭代器可能是有用的,取决于您的方法.</p>
 <ul>
 <li><a href="https://doc.rust-lang.org/std/primitive.slice.html#method.windows">Windows</a></li>
 <li><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.product">Product</a></li>
 </ul>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
-<p>工程欧拉问题 8 的一个变化<a href="http://projecteuler.net/problem=8">http://projecteuler.net/problem=8</a></p>
+<p>欧拉工程的问题 8 的一个变种<a href="http://projecteuler.net/problem=8">http://projecteuler.net/problem=8</a></p>
 <a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">#[derive(Debug, PartialEq)]
 pub enum Error {

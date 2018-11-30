@@ -162,31 +162,31 @@
                     <a class="header" href="#perfect-numbers" id="perfect-numbers"><h1>Perfect Numbers</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#a完全数" id="a完全数"><h1>完全数</h1></a>
-<p>根据 Nicomachus’(60-120CE)的自然数分类方案确定一个数是完美的、丰富的还是有缺陷的.</p>
-<p>希腊数学家<a href="https://en.wikipedia.org/wiki/Nicomachus">Nicomachus</a>设计了一种自然数的分类方案,将每一个识别为唯一属于类别的类别.<strong>很完美</strong>,<strong>大量的</strong>或<strong>缺乏的</strong>基于其<a href="https://en.wikipedia.org/wiki/Aliquot_sum">aliquot sum</a>. 等值和定义为不包括数字本身的数的和的总和.例如,15 的等值和是(1+3+5)=9.</p>
+<p>根据 Nicomachus’(60-120CE)的自然数分类方案，确定一个数是- <strong>Perfect(完全)</strong>, <strong>Abundant(过剩数)</strong>, <strong>Deficient(亏数)</strong></p>
+<p>希腊数学家<a href="https://en.wikipedia.org/wiki/Nicomachus">Nicomachus</a>设计了一种自然数的分类方案,将每一个数识别归类为 <strong>perfect</strong>, <strong>abundant</strong>, or <strong>deficient</strong> ，方案基于<a href="https://en.wikipedia.org/wiki/Aliquot_sum">aliquot sum（等值和）</a>。 等值和定义为不包括数字本身的约数(可除出整数)的总和。例如,15 的等值和是(1+3+5)=9.</p>
 <ul>
-<li><strong>珀费克特</strong>等值和数
+<li><strong>Perfect(完全)</strong>: aliquot sum = number
 <ul>
-<li>6 是一个完全数,因为(1+2+3)=6.</li>
-<li>28 是一个完全数,因为(1+2+4+7+14)=28.</li>
+<li>6 ，因为 (1 + 2 + 3) = 6</li>
+<li>28 ，因为 (1 + 2 + 4 + 7 + 14) = 28</li>
 </ul>
 </li>
-<li><strong>丰富的</strong>等号和数
+<li><strong>Abundant(过剩数)</strong>: aliquot sum &gt; number
 <ul>
-<li>12 是一个丰富的数字,因为(1+2+3+4+6)=16.</li>
-<li>24 是一个丰富的数字,因为(1+2+3+4+6+8+12)=36.</li>
+<li>12 , 因为 (1 + 2 + 3 + 4 + 6) = 16</li>
+<li>24 , 因为 (1 + 2 + 3 + 4 + 6 + 8 + 12) = 36</li>
 </ul>
 </li>
-<li><strong>缺乏的</strong>等号和数
+<li><strong>Deficient(亏数)</strong>: aliquot sum &lt; number
 <ul>
-<li>8 是亏数,因为(1+2+4)=7.</li>
-<li>素数不足</li>
+<li>8 ， 因为 (1 + 2 + 4) = 7</li>
+<li>素数 都是 deficient</li>
 </ul>
 </li>
 </ul>
-<p>实现一种方法来确定给定的数字是否为<strong>很完美</strong>. 根据您的语言轨迹,您还可能需要实现一种方法来确定给定的数字是否为<strong>大量的</strong>或<strong>缺乏的</strong>.</p>
+<p>实现一种方法来确定给定的数字是否为<strong>Perfect</strong>。 根据您的语言轨迹,您还可能需要实现一种方法来确定给定的数字是否为<strong>Abundant</strong>或<strong>Deficient</strong>.</p>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
-<p>取自 Neal Ford 的功能思维第 2 章.<a href="http://shop.oreilly.com/product/0636920029687.do">http://shop.oreilly.com/product/0636920029687.do</a></p>
+<p>取自 Neal Ford 的函数思维第 2 章.<a href="http://shop.oreilly.com/product/0636920029687.do">http://shop.oreilly.com/product/0636920029687.do</a></p>
 <a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">#[derive(Debug, PartialEq, Eq)]
 pub enum Classification {

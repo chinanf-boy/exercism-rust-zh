@@ -162,18 +162,24 @@
                     <a class="header" href="#crypto-square" id="crypto-square"><h1>Crypto Square</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#a加密广场" id="a加密广场"><h1>加密广场</h1></a>
-<p>实现用于组成称为方形代码的秘密消息的经典方法.</p>
-<p>给定英文文本,输出该文本的编码版本.</p>
-<p>首先,输入被规范化:从英文文本中删除空格和标点符号,并且消息是向下的.</p>
-<p>然后,规范化字符被分成行.当使用插入的换行符打印时,这些行可被视为形成矩形.</p>
+<p>实现，用于组成称为方形代码的加密信息的经典方法.</p>
+<p>给定英文文本,输出该文本的加密编码版本。</p>
+<p>首先,输入被规范化:</p>
+<ul>
+<li>从英文文本中删除空格和标点符号,并且消息是朝下的.</li>
+</ul>
+<p>然后,</p>
+<ul>
+<li>规范化字符被分成行。当使用插入的换行符打印时,这些行自自然然形成类似矩形的样子。</li>
+</ul>
 <p>例如,句子</p>
 <pre><code class="language-text">&quot;If man was meant to stay on the ground, god would have given us roots.&quot;
 </code></pre>
 <p>规范化为:</p>
 <pre><code class="language-text">&quot;ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots&quot;
 </code></pre>
-<p>明文应该组织成一个矩形.矩形的大小(<code>r x c</code>)应该根据消息的长度来决定<code>c &gt;= r</code>和<code>c - r &lt;= 1</code>,哪里<code>c</code>是列数和<code>r</code>是行数.</p>
-<p>我们的标准化文本长度为 54 个字符,用矩形指示矩形<code>c = 8</code>和<code>r = 7</code>:</p>
+<p>明文应该组织成一个矩形。矩形的大小(<code>r x c</code>)应该根据消息的长度来决定<code>c &gt;= r</code>和<code>c - r &lt;= 1</code>,这里的<code>c</code>是列数和<code>r</code>是行数.</p>
+<p>我们的标准化文本长度为 54 个字符，用<code>c = 8</code>和<code>r = 7</code>指示矩形:</p>
 <pre><code class="language-text">&quot;ifmanwas&quot;
 &quot;meanttos&quot;
 &quot;tayonthe&quot;
@@ -182,14 +188,15 @@
 &quot;vegivenu&quot;
 &quot;sroots  &quot;
 </code></pre>
-<p>通过向下读取从左到右的列来获得编码消息.</p>
+<p>通过向下(第一行第一个,拼接第二行第一个)，读取从左到右的列来获得编码消息.</p>
 <p>上面的消息编码为:</p>
 <pre><code class="language-text">&quot;imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau&quot;
 </code></pre>
-<p>以填充完美矩形的块输出编码文本<code>(r X c)</code>,与<code>c</code>大块的<code>r</code>长度,以空格分隔.对于那些短语<code>n</code>字符短于完美的矩形,每个填充最后一个<code>n</code>有一个尾随空间的块.</p>
+<p>根据输出的，矩形块编码文本的大小<code>(r X c)</code>，表明有<code>c</code>块<code>r</code>长度的编码字串，以空格分隔。对于那些<code>n</code>位字符，但少于规定的长度的，每个尾添一个空格。</p>
 <pre><code class="language-text">&quot;imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau &quot;
 </code></pre>
-<p>请注意,如果我们要堆叠这些,我们可以直观地将密文解码回原始消息:</p>
+<p>请注意,如果我们要堆叠这些,我们可以直观地，将密文解码回原始消息:
+(第一行第一个，拼接第二行第一个...)</p>
 <pre><code class="language-text">&quot;imtgdvs&quot;
 &quot;fearwer&quot;
 &quot;mayoogo&quot;

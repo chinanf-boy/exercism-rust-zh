@@ -162,20 +162,21 @@
                     <a class="header" href="#dot-dsl" id="dot-dsl"><h1>DOT DSL</h1></a>
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#dot-dsl-1" id="dot-dsl-1"><h1>DOT DSL</h1></a>
-<p>编写类似于 Graphviz 点语言的领域特定语言.</p>
+<p>编写类似于 Graphviz 点语言的特定领域语言.</p>
 <p>一个<a href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Language
 (DSL)</a>是针对特定域优化的小语言.</p>
-<p>比如说<a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT language</a>允许您编写图形的文本描述,然后通过其中一个图形转换为图像<a href="http://graphviz.org/">Graphviz</a>工具(如<code>dot</code>).一个简单的图形如下所示:</p>
-<p>graph {
-graph [bgcolor=”yellow”]
-a [color=”red”]
-b [color=”blue”]
-a -- b [color=”green”]
-}</p>
-<p>把它放在一个文件中<code>example.dot</code>并运行<code>dot example.dot -T png -o example.png</code>创建一个图像<code>example.png</code>与黄色背景上的绿线连接的红色和蓝色圆圈.</p>
+<p>比如说<a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT 语言</a>允许您编写图形的文本描述，然后通过<a href="http://graphviz.org/">Graphviz</a>中其中一个图形工具(如<code>dot</code>)转换为图像，一个简单的图形如下所示:</p>
+<pre><code>    graph {
+        graph [bgcolor=&quot;yellow&quot;]
+        a [color=&quot;red&quot;]
+        b [color=&quot;blue&quot;]
+        a -- b [color=&quot;green&quot;]
+    }
+</code></pre>
+<p>把它放在一个<code>example.dot</code>文件中，并运行<code>dot example.dot -T png -o example.png</code>，就会创建一个图像<code>example.png</code>，其中黄色背景上的绿线连接的红色和蓝色圆圈。</p>
 <p>创建类似于点语言的 DSL.</p>
-<a class="header" href="#a生成器模式" id="a生成器模式"><h2>生成器模式</h2></a>
-<p>本练习希望您使用构建多个结构<code>builder pattern</code>.简而言之,此模式允许您将包含大量参数的结构的构造函数拆分为多个单独的函数.这种方法为您提供了实现紧凑但高度灵活的结构构造和配置的方法.你可以在上面阅读更多相关信息<a href="https://doc.rust-lang.org/1.0.0/style/ownership/builders.html">following page</a>.</p>
+<a class="header" href="#a生成器模式builder-pattern" id="a生成器模式builder-pattern"><h2>生成器模式(Builder pattern)</h2></a>
+<p>本练习希望您通过使用<code>builder pattern</code>模式，构建多个结构。简而言之,此模式允许您将包含大量参数的结构的构造函数，拆分为多个单独的函数。这种方法为您提供了实现紧凑，但高度灵活的结构构造和配置的方法。你可以在<a href="https://doc.rust-lang.org/1.0.0/style/ownership/builders.html">该页面</a>上面阅读更多相关信息。</p>
 <a class="header" href="#a2-开始你的表演" id="a2-开始你的表演"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">pub mod graph {
    pub struct Graph;

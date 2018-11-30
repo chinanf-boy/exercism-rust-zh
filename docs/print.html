@@ -2761,7 +2761,7 @@ pub fn secret(p: u64, b_pub: u64, a: u64) -&gt; u64 {
 <a class="header" href="#saddle-points" id="saddle-points"><h1>Saddle Points</h1></a>
 <a class="header" href="#a1-readme-18" id="a1-readme-18"><h2>1. Readme</h2></a>
 <a class="header" href="#a鞍点" id="a鞍点"><h1>鞍点</h1></a>
-<p>检测矩阵中的鞍点.</p>
+<p>检测矩阵中的鞍点(saddle point).</p>
 <p>所以说你有一个像这样的矩阵:</p>
 <pre><code class="language-text">    0  1  2
   |---------
@@ -2770,10 +2770,10 @@ pub fn secret(p: u64, b_pub: u64, a: u64) -&gt; u64 {
 2 | 6  6  7
 </code></pre>
 <p>它在(1,0)处有一个鞍点.</p>
-<p>它被称为”鞍点”,因为它大于或等于其行中的每个元素,并且小于或等于其列中的每个元素.</p>
+<p>它被称为”鞍点”,因为它是该 <strong>行</strong> 最大数,也是该 <strong>列</strong> 的最小数。</p>
 <p>矩阵可以具有零个或多个鞍点.</p>
-<p>您的代码应该能够为任何给定矩阵提供所有鞍点的(可能为空)列表.</p>
-<p>矩阵可以具有不同数量的行和列(非正方形).</p>
+<p>您的代码应该能够为任何给定矩阵提供所有鞍点的(可能为空)列表。</p>
+<p>矩阵可以具有不同数量的行和列(非正方形)。</p>
 <p>请注意,您可能会在线找到矩阵鞍点的其他定义,但本练习的测试遵循上述明确的定义.</p>
 <a class="header" href="#a资源-9" id="a资源-9"><h2>资源</h2></a>
 <p>J Dalbey 的编程实践问题<a href="http://users.csc.calpoly.edu/%7Ejdalbey/103/Projects/ProgrammingPractice.html">http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html</a></p>
@@ -2912,17 +2912,17 @@ pub fn find_saddle_points(input: &amp;[Vec&lt;u64&gt;]) -&gt; Vec&lt;(usize, usi
 <a class="header" href="#a填充相关-18" id="a填充相关-18"><h2>填充/相关</h2></a>
 <a class="header" href="#isogram" id="isogram"><h1>Isogram</h1></a>
 <a class="header" href="#a1-readme-19" id="a1-readme-19"><h2>1. Readme</h2></a>
-<a class="header" href="#a等值线图" id="a等值线图"><h1>等值线图</h1></a>
-<p>确定是否一词或短语是等值线图.</p>
-<p>在等值线图(又称为”无定形的 Word 是一个字或短语”)无重复的字母和字符的空间,这是允许出现多次.</p>
-<p>等值线图的例子:</p>
+<a class="header" href="#a等值线" id="a等值线"><h1>等值线</h1></a>
+<p>确定是否一词,或短语是等值线(<code>isograms</code>).</p>
+<p>在等值线(又称为”无定形的 Word 是一个字或短语”)没有重复字母的单词或短语的逻辑术语，但允许连字符和空格出现多次。</p>
+<p>等值线的例子:</p>
 <ul>
 <li>lumberjacks</li>
-<li>背景</li>
-<li>下游</li>
-<li>六岁</li>
+<li>background</li>
+<li>downstream</li>
+<li>six-year-old</li>
 </ul>
-<p>Word<em>等值线图</em>然而,在等值线图是不需要的,因为重复序列.</p>
+<p>检测 <strong>isograms</strong> 单词，但它不是等值线,因为<code>s</code>重复了.</p>
 <a class="header" href="#a资源-10" id="a资源-10"><h2>资源</h2></a>
 <p>维基百科<a href="https://en.wikipedia.org/wiki/Isogram">https://en.wikipedia.org/wiki/Isogram</a></p>
 <a class="header" href="#a2-开始你的表演-19" id="a2-开始你的表演-19"><h2>2. 开始你的表演</h2></a>
@@ -3049,48 +3049,48 @@ pub fn check(word: &amp;str) -&gt; bool {
 <a class="header" href="#say" id="say"><h1>Say</h1></a>
 <a class="header" href="#a1-readme-20" id="a1-readme-20"><h2>1. Readme</h2></a>
 <a class="header" href="#a说" id="a说"><h1>说</h1></a>
-<p>鉴于 0 到 999,999,999,999 之间的数字,用英语拼出这个数字.</p>
+<p>提供一个 0 到 999,999,999,999 之间的数字,用英语拼出这个数字.</p>
 <a class="header" href="#a步骤-1-1" id="a步骤-1-1"><h2>步骤 1</h2></a>
 <p>处理 0 到 99 的基本情况.</p>
 <p>如果程序的输入是<code>22</code>,那么输出应该是<code>'twenty-two'</code>.</p>
-<p>如果给出超出祝福范围的数字,您的程序应该大声抱怨.</p>
+<p>如果给出超出规定范围的数字,您的程序应该大声抱怨。</p>
 <p>这个程序的一些好的测试用例是:</p>
 <ul>
-<li>0</li>
-<li>14</li>
-<li>50</li>
-<li>98</li>
-<li>-1</li>
-<li>100</li>
+<li><code>0</code></li>
+<li><code>14</code></li>
+<li><code>50</code></li>
+<li><code>98</code></li>
+<li><code>-1</code></li>
+<li><code>100</code></li>
 </ul>
-<a class="header" href="#a延期" id="a延期"><h3>延期</h3></a>
-<p>如果您使用的是 Mac,那就是 Mac OS X 的外壳<code>say</code>程序大声说出来.如果您使用的是 Linux 或 Windows,则可以使用该命令使用 eSpeakNG<code>espeak</code>.</p>
-<a class="header" href="#a第-2-步-1" id="a第-2-步-1"><h2>第 2 步</h2></a>
-<p>实施将数量分成几千块.</p>
-<p>所以<code>1234567890</code>应该产生如 1,234,567 和 890 的列表,而更简单<code>1000</code>应该只产生 1 和 0.</p>
-<p>该程序还必须报告超出范围的任何值.</p>
-<a class="header" href="#a第-3-步-1" id="a第-3-步-1"><h2>第 3 步</h2></a>
-<p>现在处理在这些块之间插入适当的缩放词.</p>
-<p>所以<code>1234567890</code>应该屈服<code>'1 billion 234 million 567 thousand 890'</code></p>
-<p>该程序还必须报告超出范围的任何值.停在”兆”处可以.</p>
-<a class="header" href="#a第-4-步" id="a第-4-步"><h2>第 4 步</h2></a>
-<p>把它们放在一起除了简单的英语之外什么都没有.</p>
-<p><code>12345</code>应该给<code>twelve thousand three hundred forty-five</code>.</p>
-<p>该程序还必须报告超出范围的任何值.</p>
 <a class="header" href="#a扩展" id="a扩展"><h3>扩展</h3></a>
-<p>使用<em>和</em>(正确地)用英语拼出数字时:</p>
+<p>如果您使用的是 Mac,那就是 Mac OS X 的 shell 可以用<code>say</code>程序大声说出来。如果您使用的是 Linux 或 Windows,则可以使用<code>espeak</code>命令使用 eSpeakNG.</p>
+<a class="header" href="#a第-2-步-1" id="a第-2-步-1"><h2>第 2 步</h2></a>
+<p>实现将数子分成块.</p>
+<p>像<code>1234567890</code>，应该产生如 1,234,567 和 890 的列表,而更简单<code>1000</code>应该只产生 1 和 0.</p>
+<p>该程序还必须报告超出范围的值。</p>
+<a class="header" href="#a第-3-步-1" id="a第-3-步-1"><h2>第 3 步</h2></a>
+<p>现在处理在这些块之间，插入适当的缩放词.</p>
+<p>所以<code>1234567890</code>应该输出<code>'1 billion 234 million 567 thousand 890'</code></p>
+<p>该程序还必须报告超出范围的值。上限为”兆（trillion）”处就可以.</p>
+<a class="header" href="#a第-4-步" id="a第-4-步"><h2>第 4 步</h2></a>
+<p>把它们放在一起，除了简单的英语之外什么都没有.</p>
+<p><code>12345</code>应该给出<code>twelve thousand three hundred forty-five</code>.</p>
+<p>该程序还必须报告超出范围的值.</p>
+<a class="header" href="#a扩展-1" id="a扩展-1"><h3>扩展</h3></a>
+<p>(正确地)使用英语<em>and</em>合并数字:</p>
 <ul>
-<li>14 变成”十四”.</li>
-<li>100 变成”一百”.</li>
-<li>120 变成”一百二十”.</li>
-<li>1002 变成”一千零二”.</li>
-<li>1323 年成为”一千三百二十三”.</li>
+<li><code>14</code> =&gt; “fourteen”.</li>
+<li><code>100</code> =&gt; “one hundred”.</li>
+<li><code>120</code> =&gt; “one hundred and twenty”.</li>
+<li><code>1002</code> =&gt; “one thousand and two”.</li>
+<li><code>1323</code> =&gt; “one thousand three hundred and twenty-three”.</li>
 </ul>
-<a class="header" href="#a特定的铁锈练习笔记" id="a特定的铁锈练习笔记"><h2>特定的铁锈练习笔记</h2></a>
-<p>与本练习的其他语言版本相比,Rust 版本略有改变.我们使用 Rust 的强类型系统来限制输入,而不是要求您返回超出范围的错误.使函数处理所有有效输入要容易得多,而不是要求模块的用户处理错误.</p>
-<p>有一个-1 版本的测试用例,但它被注释掉了.如果您的函数正确实现,则不应编译-1 测试用例.</p>
-<p>在测试用例中尚未实现将”和”添加到数字文本中.</p>
-<a class="header" href="#a延期-1" id="a延期-1"><h3>延期</h3></a>
+<a class="header" href="#a特定的-rust-练习笔记" id="a特定的-rust-练习笔记"><h2>特定的 Rust 练习笔记</h2></a>
+<p>与本练习的其他语言版本相比,Rust 版本略有改变。我们使用 Rust 的强类型系统来限制输入,而不是要求您返回超出范围的错误。让函数处理所有有效输入要容易得多,而不是要求，使用模块的用户处理错误。</p>
+<p>有一个 -1 版本的测试用例,但它被注释掉了。如果您的函数正确实现,则不应编译 -1 测试用例.</p>
+<p>在测试用例中尚未实现，将”and”添加到数字文本中.</p>
+<a class="header" href="#a扩展-2" id="a扩展-2"><h3>扩展</h3></a>
 <p>添加转换为 u64 的最大值的功能:9,223,372,036,854,775,807.</p>
 <p>有关输出的提示,请查看最后一个测试用例.</p>
 <a class="header" href="#a资源-11" id="a资源-11"><h2>资源</h2></a>
@@ -3359,16 +3359,16 @@ pub fn encode(n: u64) -&gt; String {
 <a class="header" href="#a填充相关-20" id="a填充相关-20"><h2>填充/相关</h2></a>
 <a class="header" href="#run-length-encoding" id="run-length-encoding"><h1>Run Length Encoding</h1></a>
 <a class="header" href="#a1-readme-21" id="a1-readme-21"><h2>1. Readme</h2></a>
-<a class="header" href="#a运行长度编码" id="a运行长度编码"><h1>运行长度编码</h1></a>
-<p>实现行程编码和解码.</p>
-<p>行程编码(RLE)是一种简单的数据压缩形式,其中运行(连续数据元素)仅由一个数据值和计数代替.</p>
-<p>例如,我们可以只用 13 代表原始的 53 个字符.</p>
+<a class="header" href="#a运行游程编码" id="a运行游程编码"><h1>运行游程编码</h1></a>
+<p>实现编码和解码.</p>
+<p>游程编码(RLE)是一种简单的数据压缩形式，其中运行的(连续数据元素)仅由一个数据值和计数代替。</p>
+<p>例如,我们可以只用 13 字节，就可以 代表原始的 53 个字符.</p>
 <pre><code class="language-text">&quot;WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB&quot;  -&gt;  &quot;12WB12W3B24WB&quot;
 </code></pre>
-<p>RLE 允许从压缩数据中完美地重建原始数据,这使其成为无损数据压缩.</p>
+<p>RLE 允许从压缩数据中，完美地重建原始数据,这使其成为无损数据压缩.</p>
 <pre><code class="language-text">&quot;AABCCCDEEEE&quot;  -&gt;  &quot;2AB3CD4E&quot;  -&gt;  &quot;AABCCCDEEEE&quot;
 </code></pre>
-<p>为简单起见,您可以假设未编码的字符串仅包含字母 A 到 Z(小写或大写)和空格.这样,要编码的数据将永远不会包含任何数字,并且要解码的数据内的数字始终表示后续字符的计数.</p>
+<p>为简单起见,您可以假设未编码的字符串，仅包含字母 A 到 Z(小写或大写)和空格。这样,要编码的数据将永远 <strong>不包含</strong> 任何数字,并且要解码的数据内的数字始终表示后续字符的计数。</p>
 <a class="header" href="#a资源-12" id="a资源-12"><h2>资源</h2></a>
 <p>维基百科<a href="https://en.wikipedia.org/wiki/Run-length_encoding">https://en.wikipedia.org/wiki/Run-length_encoding</a></p>
 <a class="header" href="#a2-开始你的表演-21" id="a2-开始你的表演-21"><h2>2. 开始你的表演</h2></a>
@@ -3539,31 +3539,33 @@ pub fn decode(input: &amp;str) -&gt; String {
 <a class="header" href="#isbn-verifier" id="isbn-verifier"><h1>ISBN Verifier</h1></a>
 <a class="header" href="#a1-readme-22" id="a1-readme-22"><h2>1. Readme</h2></a>
 <a class="header" href="#isbn-检验器" id="isbn-检验器"><h1>ISBN 检验器</h1></a>
-<p>这个<a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number">ISBN-10 verification process</a>用于验证图书识别号.这些通常包含破折号,看起来像:<code>3-598-21508-8</code></p>
+<p>这个<a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number">ISBN-10 检测进程</a>用于验证图书识别号。通常包含破折号,看起来像:<code>3-598-21508-8</code></p>
 <a class="header" href="#a国际标准书号" id="a国际标准书号"><h2>国际标准书号</h2></a>
-<p>ISBN-10 格式是 9 位数字(0 到 9)加上一个校验字符(一个数字或一个 X).在校验字符为 x 的情况下,这表示值”10”.这些可以与有或没有连字符通信,并且可以通过以下公式检查它们的有效性:</p>
-<p>(x1 _ 10 + x2 _ 9 + x3 _ 8 + x4 _ 7 + x5 _ 6 + x6 _ 5 + x7 _ 4 + x8 _ 3 + x9 _ 2 + x10 _ 1) mod 11 == 0</p>
+<p>ISBN-10 格式是 9 位数字(0 到 9)加上一个校验字符(一个数字或一个 X)。在校验字符为 X 的情况下,这表示值”10”。这些可以与连字符(不管有没有)通信,并且可以通过以下公式检查它们的有效性:</p>
+<pre><code>(x1 * 10 + x2 * 9 + x3 * 8 + x4 * 7 + x5 * 6 + x6 * 5 + x7 * 4 + x8 * 3 + x9 * 2 + x10 * 1) mod 11 == 0
+</code></pre>
 <p>如果结果是 0,那么它是一个有效的 ISBN-10,否则它是无效的.</p>
 <a class="header" href="#a例子-2" id="a例子-2"><h2>例子</h2></a>
 <p>让我们用 ISBN-10<code>3-598-21508-8</code>. 我们把它插入到公式中,得到:</p>
-<p>(3 _ 10 + 5 _ 9 + 9 _ 8 + 8 _ 7 + 2 _ 6 + 1 _ 5 + 5 _ 4 + 0 _ 3 + 8 _ 2 + 8 _ 1) mod 11 == 0</p>
+<pre><code>(3 * 10 + 5 * 9 + 9 * 8 + 8 * 7 + 2 * 6 + 1 * 5 + 5 * 4 + 0 * 3 + 8 * 2 + 8 * 1) mod 11 == 0
+</code></pre>
 <p>由于结果是 0,这证明我们的 ISBN 是有效的.</p>
 <a class="header" href="#a任务" id="a任务"><h2>任务</h2></a>
-<p>给定一个字符串,程序应该检查所提供的字符串是否是有效的 ISBN-10.实现这一点需要在计算 ISBN 的校验位数之前考虑字符串的预处理/解析.</p>
-<p>该程序应该能够验证 ISBN-10 既有,也不分离破折号.</p>
+<p>给定一个字符串,程序应该检查所提供的字符串是否是有效的 ISBN-10。为了实现这一点，需要在计算 ISBN 的校验位数之前，考虑字符串的预处理/解析.</p>
+<p>该程序应该能够验证 ISBN-10 的破折号(不管有没有).</p>
 <a class="header" href="#a告诫" id="a告诫"><h2>告诫</h2></a>
-<p>在某些语言中,从字符串转换为数字可能是棘手的.现在,甚至更棘手的是,ISBN-10 的校验位可能是”X”(表示”10”).例如<code>3-598-21507-X</code>是一个有效的 ISBN-10.</p>
+<p>在某些语言中,从字符串转换为数字可能是棘手的。现在,甚至更棘手的是,ISBN-10 的校验位可能是”X”(表示”10”).例如<code>3-598-21507-X</code>是一个有效的 ISBN-10.</p>
 <a class="header" href="#a奖金任务" id="a奖金任务"><h2>奖金任务</h2></a>
 <ul>
 <li>
-<p>从输入 ISBN-10 生成有效的 ISBN-13(并且可能用派生验证器再次验证它).</p>
+<p>从输入 ISBN-10 生成有效的 ISBN-13(并且可能用类似验证器再次验证它).</p>
 </li>
 <li>
 <p>生成有效的 ISBN,甚至可能从给定的起始 ISBN 中生成.</p>
 </li>
 </ul>
 <a class="header" href="#a资源-13" id="a资源-13"><h2>资源</h2></a>
-<p>将一个字符串转换成一个数字和一些基本的处理,利用一个可靠的真实世界的例子.<a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digit_calculation">https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digit_calculation</a></p>
+<p>将一个字符串，转换成一个数字和一些基本的处理,利用一个可靠的真实世界的例子.<a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digit_calculation">https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digit_calculation</a></p>
 <a class="header" href="#a2-开始你的表演-22" id="a2-开始你的表演-22"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">/// Determines whether the supplied string is a valid ISBN number
 pub fn is_valid_isbn(isbn: &amp;str) -&gt; bool {
@@ -3725,31 +3727,31 @@ pub fn is_valid_isbn(isbn: &amp;str) -&gt; bool {
 <a class="header" href="#perfect-numbers" id="perfect-numbers"><h1>Perfect Numbers</h1></a>
 <a class="header" href="#a1-readme-23" id="a1-readme-23"><h2>1. Readme</h2></a>
 <a class="header" href="#a完全数" id="a完全数"><h1>完全数</h1></a>
-<p>根据 Nicomachus’(60-120CE)的自然数分类方案确定一个数是完美的、丰富的还是有缺陷的.</p>
-<p>希腊数学家<a href="https://en.wikipedia.org/wiki/Nicomachus">Nicomachus</a>设计了一种自然数的分类方案,将每一个识别为唯一属于类别的类别.<strong>很完美</strong>,<strong>大量的</strong>或<strong>缺乏的</strong>基于其<a href="https://en.wikipedia.org/wiki/Aliquot_sum">aliquot sum</a>. 等值和定义为不包括数字本身的数的和的总和.例如,15 的等值和是(1+3+5)=9.</p>
+<p>根据 Nicomachus’(60-120CE)的自然数分类方案，确定一个数是- <strong>Perfect(完全)</strong>, <strong>Abundant(过剩数)</strong>, <strong>Deficient(亏数)</strong></p>
+<p>希腊数学家<a href="https://en.wikipedia.org/wiki/Nicomachus">Nicomachus</a>设计了一种自然数的分类方案,将每一个数识别归类为 <strong>perfect</strong>, <strong>abundant</strong>, or <strong>deficient</strong> ，方案基于<a href="https://en.wikipedia.org/wiki/Aliquot_sum">aliquot sum（等值和）</a>。 等值和定义为不包括数字本身的约数(可除出整数)的总和。例如,15 的等值和是(1+3+5)=9.</p>
 <ul>
-<li><strong>珀费克特</strong>等值和数
+<li><strong>Perfect(完全)</strong>: aliquot sum = number
 <ul>
-<li>6 是一个完全数,因为(1+2+3)=6.</li>
-<li>28 是一个完全数,因为(1+2+4+7+14)=28.</li>
+<li>6 ，因为 (1 + 2 + 3) = 6</li>
+<li>28 ，因为 (1 + 2 + 4 + 7 + 14) = 28</li>
 </ul>
 </li>
-<li><strong>丰富的</strong>等号和数
+<li><strong>Abundant(过剩数)</strong>: aliquot sum &gt; number
 <ul>
-<li>12 是一个丰富的数字,因为(1+2+3+4+6)=16.</li>
-<li>24 是一个丰富的数字,因为(1+2+3+4+6+8+12)=36.</li>
+<li>12 , 因为 (1 + 2 + 3 + 4 + 6) = 16</li>
+<li>24 , 因为 (1 + 2 + 3 + 4 + 6 + 8 + 12) = 36</li>
 </ul>
 </li>
-<li><strong>缺乏的</strong>等号和数
+<li><strong>Deficient(亏数)</strong>: aliquot sum &lt; number
 <ul>
-<li>8 是亏数,因为(1+2+4)=7.</li>
-<li>素数不足</li>
+<li>8 ， 因为 (1 + 2 + 4) = 7</li>
+<li>素数 都是 deficient</li>
 </ul>
 </li>
 </ul>
-<p>实现一种方法来确定给定的数字是否为<strong>很完美</strong>. 根据您的语言轨迹,您还可能需要实现一种方法来确定给定的数字是否为<strong>大量的</strong>或<strong>缺乏的</strong>.</p>
+<p>实现一种方法来确定给定的数字是否为<strong>Perfect</strong>。 根据您的语言轨迹,您还可能需要实现一种方法来确定给定的数字是否为<strong>Abundant</strong>或<strong>Deficient</strong>.</p>
 <a class="header" href="#a资源-14" id="a资源-14"><h2>资源</h2></a>
-<p>取自 Neal Ford 的功能思维第 2 章.<a href="http://shop.oreilly.com/product/0636920029687.do">http://shop.oreilly.com/product/0636920029687.do</a></p>
+<p>取自 Neal Ford 的函数思维第 2 章.<a href="http://shop.oreilly.com/product/0636920029687.do">http://shop.oreilly.com/product/0636920029687.do</a></p>
 <a class="header" href="#a2-开始你的表演-23" id="a2-开始你的表演-23"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">#[derive(Debug, PartialEq, Eq)]
 pub enum Classification {
@@ -3840,15 +3842,15 @@ pub enum Classification {
 <a class="header" href="#a填充相关-23" id="a填充相关-23"><h2>填充/相关</h2></a>
 <a class="header" href="#clock" id="clock"><h1>Clock</h1></a>
 <a class="header" href="#a1-readme-24" id="a1-readme-24"><h2>1. Readme</h2></a>
-<a class="header" href="#a时钟" id="a时钟"><h1>时钟</h1></a>
-<p>实现一个处理没有日期的时间的时钟.</p>
-<p>您应该可以添加和减去分钟数.</p>
+<a class="header" href="#a时钟clock" id="a时钟clock"><h1>时钟(Clock)</h1></a>
+<p>实现一个处理没有日期的时间的 clock.</p>
+<p>您应该可以添加和减去,分钟数.</p>
 <p>代表相同时间的两个时钟应该彼此相等.</p>
-<a class="header" href="#to_string的-rust-特征" id="to_string的-rust-特征"><h2>.to_string()的 Rust 特征</h2></a>
-<p>你为 Clock 结构实现了.to_string()吗?</p>
-<p>如果是这样,请尝试实施<a href="https://doc.rust-lang.org/std/fmt/trait.Display.html">Display trait</a>代替时钟.</p>
-<p>特征允许实现各种类型的功能的通用方法.</p>
-<p>对于其他学习,如何为 Clock 类型实现 String :: from?</p>
+<a class="header" href="#a具有to_string的-rust-traits" id="a具有to_string的-rust-traits"><h2>具有<code>.to_string()</code>的 Rust Traits</h2></a>
+<p>你为 Clock 结构实现了<code>.to_string()</code>吗?</p>
+<p>如果是这样,请尝试为 Clock 实现<a href="https://doc.rust-lang.org/std/fmt/trait.Display.html">Display trait(特征)</a></p>
+<p>特征为各种类型的功能实现，提供了通用方法.</p>
+<p>对于其他学习, 可以试试为 Clock 类型实现 <code>String::from</code>?</p>
 <a class="header" href="#a资源-15" id="a资源-15"><h2>资源</h2></a>
 <p>与 Erin Drummond 的配对会议<a href="https://twitter.com/ebdrummond">https://twitter.com/ebdrummond</a></p>
 <a class="header" href="#a2-开始你的表演-24" id="a2-开始你的表演-24"><h2>2. 开始你的表演</h2></a>
@@ -4255,20 +4257,21 @@ impl Clock {
 <a class="header" href="#dot-dsl" id="dot-dsl"><h1>DOT DSL</h1></a>
 <a class="header" href="#a1-readme-25" id="a1-readme-25"><h2>1. Readme</h2></a>
 <a class="header" href="#dot-dsl-1" id="dot-dsl-1"><h1>DOT DSL</h1></a>
-<p>编写类似于 Graphviz 点语言的领域特定语言.</p>
+<p>编写类似于 Graphviz 点语言的特定领域语言.</p>
 <p>一个<a href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Language
 (DSL)</a>是针对特定域优化的小语言.</p>
-<p>比如说<a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT language</a>允许您编写图形的文本描述,然后通过其中一个图形转换为图像<a href="http://graphviz.org/">Graphviz</a>工具(如<code>dot</code>).一个简单的图形如下所示:</p>
-<p>graph {
-graph [bgcolor=”yellow”]
-a [color=”red”]
-b [color=”blue”]
-a -- b [color=”green”]
-}</p>
-<p>把它放在一个文件中<code>example.dot</code>并运行<code>dot example.dot -T png -o example.png</code>创建一个图像<code>example.png</code>与黄色背景上的绿线连接的红色和蓝色圆圈.</p>
+<p>比如说<a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT 语言</a>允许您编写图形的文本描述，然后通过<a href="http://graphviz.org/">Graphviz</a>中其中一个图形工具(如<code>dot</code>)转换为图像，一个简单的图形如下所示:</p>
+<pre><code>    graph {
+        graph [bgcolor=&quot;yellow&quot;]
+        a [color=&quot;red&quot;]
+        b [color=&quot;blue&quot;]
+        a -- b [color=&quot;green&quot;]
+    }
+</code></pre>
+<p>把它放在一个<code>example.dot</code>文件中，并运行<code>dot example.dot -T png -o example.png</code>，就会创建一个图像<code>example.png</code>，其中黄色背景上的绿线连接的红色和蓝色圆圈。</p>
 <p>创建类似于点语言的 DSL.</p>
-<a class="header" href="#a生成器模式" id="a生成器模式"><h2>生成器模式</h2></a>
-<p>本练习希望您使用构建多个结构<code>builder pattern</code>.简而言之,此模式允许您将包含大量参数的结构的构造函数拆分为多个单独的函数.这种方法为您提供了实现紧凑但高度灵活的结构构造和配置的方法.你可以在上面阅读更多相关信息<a href="https://doc.rust-lang.org/1.0.0/style/ownership/builders.html">following page</a>.</p>
+<a class="header" href="#a生成器模式builder-pattern" id="a生成器模式builder-pattern"><h2>生成器模式(Builder pattern)</h2></a>
+<p>本练习希望您通过使用<code>builder pattern</code>模式，构建多个结构。简而言之,此模式允许您将包含大量参数的结构的构造函数，拆分为多个单独的函数。这种方法为您提供了实现紧凑，但高度灵活的结构构造和配置的方法。你可以在<a href="https://doc.rust-lang.org/1.0.0/style/ownership/builders.html">该页面</a>上面阅读更多相关信息。</p>
 <a class="header" href="#a2-开始你的表演-25" id="a2-开始你的表演-25"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">pub mod graph {
    pub struct Graph;
@@ -4556,19 +4559,16 @@ pub mod graph {
 <a class="header" href="#a填充相关-25" id="a填充相关-25"><h2>填充/相关</h2></a>
 <a class="header" href="#hamming" id="hamming"><h1>Hamming</h1></a>
 <a class="header" href="#a1-readme-26" id="a1-readme-26"><h2>1. Readme</h2></a>
-<a class="header" href="#a海明" id="a海明"><h1>海明</h1></a>
-<p>计算两条 DNA 链之间的汉明差异.</p>
-<p>突变只是在核酸的创建或复制过程中发生的错误,特别是 DNA.因为核酸对细胞功能至关重要,突变倾向于在整个细胞中产生涟漪效应.虽然突变在技术上是错误的,但非常罕见的突变可能为细胞提供有益的属性.事实上,进化的宏观效应归因于许多代有益微观突变的累积结果.</p>
-<p>最简单和最常见的核酸突变类型是点突变,它在单个核苷酸处用一个碱基替换另一个碱基.</p>
-<p>通过计算从具有共同祖先的不同基因组中获取的两个同源 DNA 链之间的差异数量,我们得到在两条链之间的进化路径上可能发生的最小点突变数量的度量.</p>
-<p>这就是所谓的”海明距离”.</p>
+<a class="header" href="#a汉明hamming" id="a汉明hamming"><h1>汉明（Hamming）</h1></a>
+<p>给 2 个长度为 n 的 DNA 序列，求汉明距离差异为多少。</p>
 <p>通过比较两条 DNA 链,并计算其中有多少核苷酸与其他序列中的同等核苷酸不同.</p>
-<p>GAGCCTACTAACGGGAT
+<pre><code>GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
-^ ^ ^ ^ ^ ^^</p>
-<p>这两条 DNA 链之间的汉明距离为 7.</p>
-<a class="header" href="#a实施说明" id="a实施说明"><h1>实施说明</h1></a>
-<p>Hamming 距离仅定义为等长的序列,因此尝试计算不同长度的序列之间的 Hamming 距离不应该起作用.这种情况的一般处理(例如,引发异常与返回特殊值)可能在语言之间有所不同.</p>
+^ ^ ^ ^ ^ ^^
+</code></pre>
+<p>这两条 DNA 链之间的 汉明距离为 7.</p>
+<a class="header" href="#a实现说明" id="a实现说明"><h1>实现说明</h1></a>
+<p>汉明长度仅定义为等长的序列，因此尝试计算不同长度的序列之间的汉明 距离不应该起作用。这种情况的一般处理(例如,引发异常与返回特殊值)可能在语言之间有所不同.</p>
 <a class="header" href="#a资源-16" id="a资源-16"><h2>资源</h2></a>
 <p>罗瑟琳的计算点突变问题<a href="http://rosalind.info/problems/hamm/">http://rosalind.info/problems/hamm/</a></p>
 <a class="header" href="#a2-开始你的表演-26" id="a2-开始你的表演-26"><h2>2. 开始你的表演</h2></a>
@@ -4646,33 +4646,42 @@ pub fn hamming_distance(a: &amp;str, b: &amp;str) -&gt; Option&lt;usize&gt; {
 <a class="header" href="#simple-linked-list" id="simple-linked-list"><h1>Simple Linked List</h1></a>
 <a class="header" href="#a1-readme-27" id="a1-readme-27"><h2>1. Readme</h2></a>
 <a class="header" href="#a简单链表" id="a简单链表"><h1>简单链表</h1></a>
-<p>编写一个使用元素和列表的简单链表实现.</p>
-<p>链表是计算机科学中的一种基本数据结构,常用于其他数据结构的实现.它们在函数式编程语言(如 Clojure、Erlang 或 Haskell)中很普遍,但是在命令式语言(如 Ruby 或 Python)中很少见.</p>
-<p>最简单的链表是单链表.列表中的每个元素包含数据和指向元素列表中的下一个元素的”下一个”字段.</p>
-<p>链接列表的这种变体通常用于表示序列或下推堆栈(也称为 LIFO 堆栈;.In, .Out).</p>
-<p>作为第一步,让我们创建一个包含范围(1..10)的单一链接列表,并提供函数来反转链接列表并转换为数组或从数组转换为数组.</p>
+<p>编写一个使用元素(<code>Elements</code>)和列表(<code>List</code>)的简单链表实现.</p>
+<p>链表是计算机科学中的一种基本数据结构，常用于其他数据结构的实现。它们在函数式编程语言(如 Clojure、Erlang 或 Haskell)中很普遍，但是在命令式语言(如 Ruby 或 Python)中很少见。</p>
+<p>最简单的链表是单链表。列表中的每个元素，包含数据和一个”next”字段，指向元素列表中的下一个元素。</p>
+<p>链接列表的这种变体通常用于表示序列，或推/取堆栈(也称为 LIFO 堆栈;后进先出)。</p>
+<p>作为第一步,让我们创建一个包含范围(1..10)的单一链接列表,并提供反转链接列表，和转换为数组，或从数组转换的函数.</p>
 <p>在使用内置链表的语言实现这一点时,实现自己的抽象数据类型.</p>
 <a class="header" href="#a实现提示" id="a实现提示"><h2>实现提示</h2></a>
-<p>不要实现结构<code>SimpleLinkedList</code>作为一个包装<code>Vec</code>. 相反,在堆上分配节点.<br />
+<p>不要实现结构<code>SimpleLinkedList</code>作为一个<code>Vec</code>包装。 你应该,在堆上分配节点。
 这可以实现为:</p>
-<p>pub struct SimpleLinkedList<T> {
-head: Option&lt;Box&lt;Node<T>&gt;&gt;,
-}</p>
-<p>这个<code>head</code>字段指向该链表的第一个元素(节点).<br />
-这个实现也需要一个结构<code>Node</code>具有以下字段:</p>
-<p>struct Node<T> {
-data: T,
-next: Option&lt;Box&lt;Node<T>&gt;&gt;,
-}</p>
-<p><code>data</code>包含存储的数据,以及<code>next</code>指向以下节点(如果可用)或无.</p>
-<a class="header" href="#a为什么optionboxnodet而不仅仅是optionnodet" id="a为什么optionboxnodet而不仅仅是optionnodet"><h3>为什么?<code>Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code>而不仅仅是<code>Option&lt;Node&lt;T&gt;&gt;</code>?</h3></a>
+<pre><pre class="playpen"><code class="language-rust no_run">
+# #![allow(unused_variables)]
+#fn main() {
+pub struct SimpleLinkedList&lt;T&gt; {
+    head: Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;,
+}
+#}</code></pre></pre>
+<p>这个<code>head</code>字段指向该链表的第一个元素(节点)。
+这个实现也需要一个<code>Node</code>结构，其具有以下字段:</p>
+<pre><pre class="playpen"><code class="language-rust no_run">
+# #![allow(unused_variables)]
+#fn main() {
+struct Node&lt;T&gt; {
+    data: T,
+    next: Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;,
+}
+#}</code></pre></pre>
+<p><code>data</code>包含存储的数据,以及<code>next</code>指向下节点(如果可用)或无.</p>
+<a class="header" href="#a为什么使用optionboxnodet而不仅用optionnodet" id="a为什么使用optionboxnodet而不仅用optionnodet"><h3>为什么使用<code>Option&lt;Box&lt;Node&lt;T&gt;&gt;&gt;</code>?而不仅用<code>Option&lt;Node&lt;T&gt;&gt;</code>?</h3></a>
 <p>自己试试.您将得到以下错误.</p>
-<p>| struct Node<T>
+<pre><code>| struct Node&lt;T&gt;
 | ^^^^^^^^^^^^^^ recursive type has infinite size
 ...
-| next: Option&lt;Node<T>&gt;,
-| --------------------- recursive without indirection</p>
-<p>问题是,在编译时,必须知道下一个的大小.自从<code>next</code>是递归的(”一个节点有一个节点有一个节点…”),编译器不知道要分配多少内存.相反,<a href="https://doc.rust-lang.org/std/boxed/">Box</a>是一个具有定义大小的堆指针.</p>
+| next: Option&lt;Node&lt;T&gt;&gt;,
+| --------------------- recursive without indirection
+</code></pre>
+<p>这个错误在于,编译时,rust 必须知道下一个节点的大小。因<code>next</code>会是递归的(”一个节点，有一个节点-有一个节点…”)，编译器不知道要分配多少内存。相反,<a href="https://doc.rust-lang.org/std/boxed/">Box</a>是一个具有定义大小的堆指针.</p>
 <a class="header" href="#a资源-17" id="a资源-17"><h2>资源</h2></a>
 <p>受”Ruby”中面向对象设计模式的数据结构和算法的启发,即单链表.<a href="http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000">http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000</a></p>
 <a class="header" href="#a2-开始你的表演-27" id="a2-开始你的表演-27"><h2>2. 开始你的表演</h2></a>
@@ -4913,9 +4922,9 @@ impl&lt;T&gt; Node&lt;T&gt; {
 <a class="header" href="#a填充相关-27" id="a填充相关-27"><h2>填充/相关</h2></a>
 <a class="header" href="#pascals-triangle" id="pascals-triangle"><h1>pascals-triangle</h1></a>
 <a class="header" href="#a1-readme-28" id="a1-readme-28"><h2>1. Readme</h2></a>
-<a class="header" href="#a帕斯卡三角" id="a帕斯卡三角"><h1>帕斯卡三角</h1></a>
-<p>计算 Pascal 的三角形直到给定的行数.</p>
-<p>在 Pascal 三角形中,通过将数字添加到前一行中当前位置的左右来计算每个数字.</p>
+<a class="header" href="#a杨辉三角形" id="a杨辉三角形"><h1>杨辉三角形</h1></a>
+<p>计算给定的行数的 杨辉三角形。</p>
+<p>在 杨辉 三角形中, 可以看到，一个数由它头顶左右两个数相加得到的。</p>
 <pre><code class="language-text">    1
    1 1
   1 2 1
@@ -4924,7 +4933,8 @@ impl&lt;T&gt; Node&lt;T&gt; {
 # ... etc
 </code></pre>
 <a class="header" href="#a资源-18" id="a资源-18"><h2>资源</h2></a>
-<p>Pascal 在数学世界的三角形<a href="http://mathworld.wolfram.com/PascalsTriangle.html">http://mathworld.wolfram.com/PascalsTriangle.html</a></p>
+<p>在数学世界的杨辉三角形<a href="http://mathworld.wolfram.com/PascalsTriangle.html">http://mathworld.wolfram.com/PascalsTriangle.html</a></p>
+<p>维基百科<a href="https://zh.wikipedia.org/wiki/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2">https://zh.wikipedia.org/wiki/杨辉三角形</a></p>
 <a class="header" href="#a2-开始你的表演-28" id="a2-开始你的表演-28"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">pub struct PascalsTriangle;
 
@@ -5088,11 +5098,11 @@ impl PascalsTriangle {
 <a class="header" href="#a填充相关-28" id="a填充相关-28"><h2>填充/相关</h2></a>
 <a class="header" href="#scrabble-score" id="scrabble-score"><h1>Scrabble Score</h1></a>
 <a class="header" href="#a1-readme-29" id="a1-readme-29"><h2>1. Readme</h2></a>
-<a class="header" href="#a拼字游戏分数" id="a拼字游戏分数"><h1>拼字游戏分数</h1></a>
-<p>给出一个单词,计算该单词的拼字游戏分数.</p>
+<a class="header" href="#a拼字母的分数" id="a拼字母的分数"><h1>拼字母的分数</h1></a>
+<p>给出一个单词,计算该单词的字母的分数.</p>
 <a class="header" href="#a字母价值" id="a字母价值"><h2>字母价值</h2></a>
 <p>你需要这些:</p>
-<pre><code class="language-text">Letter                           Value
+<pre><code class="language-text">26个英文字母                           对应有多少分
 A, E, I, O, U, L, N, R, S, T       1
 D, G                               2
 B, C, M, P                         3
@@ -5102,13 +5112,13 @@ J, X                               8
 Q, Z                               10
 </code></pre>
 <a class="header" href="#a例子-3" id="a例子-3"><h2>例子</h2></a>
-<p>“白菜”的得分值应为 14 分:</p>
+<p>“cabbage”的得分值应为 14 分:</p>
 <ul>
-<li>C 得 3 分</li>
-<li>1 分为 A,两次</li>
-<li>B 为 3 分,两次</li>
-<li>G 得 2 分</li>
-<li>E 点 1 分</li>
+<li>C , 就得 3 分</li>
+<li>A , 就得 1 分,两次</li>
+<li>B , 就得 3 分,两次</li>
+<li>G , 就得 2 分</li>
+<li>E , 就得 1 分</li>
 </ul>
 <p>总计:</p>
 <ul>
@@ -5117,10 +5127,10 @@ Q, Z                               10
 <li>= <code>5 + 9</code></li>
 <li>= 14</li>
 </ul>
-<a class="header" href="#a扩展-1" id="a扩展-1"><h2>扩展</h2></a>
+<a class="header" href="#a扩展-3" id="a扩展-3"><h2>扩展</h2></a>
 <ul>
-<li>您可以播放双重或三重字母.</li>
-<li>你可以演奏一个双重或三个单词.</li>
+<li>您可以玩，双重或三重字母.</li>
+<li>你可以玩，一个双重或三个单词.</li>
 </ul>
 <a class="header" href="#a资源-19" id="a资源-19"><h2>资源</h2></a>
 <p>受到 Extreme Startup 游戏的启发<a href="https://github.com/rchatley/extreme_startup">https://github.com/rchatley/extreme_startup</a></p>
@@ -5262,12 +5272,12 @@ fn dictionary() -&gt; HashMap&lt;char, u16&gt; {
 <a class="header" href="#a填充相关-29" id="a填充相关-29"><h2>填充/相关</h2></a>
 <a class="header" href="#pangram" id="pangram"><h1>Pangram</h1></a>
 <a class="header" href="#a1-readme-30" id="a1-readme-30"><h2>1. Readme</h2></a>
-<a class="header" href="#a全景图" id="a全景图"><h1>全景图</h1></a>
-<p>判断句子是否是泛音.pangram(希腊语:παγρμμα,pan 语法,”每个字母”)是一个使用字母表中的每个字母至少一次的句子.最著名的英语字幕是:</p>
+<a class="header" href="#a全字母句pangram" id="a全字母句pangram"><h1>全字母句（pangram）</h1></a>
+<p>判断句子是否是全字母句。全字母句(希腊语:παγρμμα,pan 语法,”每个字母”)是一个使用字母表中每个字母，至少一次的句子。最著名的英语是 全字母句:</p>
 <blockquote>
-<p>那只敏捷的棕色狐狸跳过了那只懒狗.</p>
+<p>The quick brown fox jumps over the lazy dog.</p>
 </blockquote>
-<p>字母表由 ASCII 字母组成.<code>a</code>到<code>z</code>,包含,并且不区分大小写.输入将不包含非 ASCII 符号.</p>
+<p>字母表由 ASCII 字母<code>a</code>到<code>z</code>的全部组成，并且不区分大小写。输入不能包含非 ASCII 符号.</p>
 <a class="header" href="#a资源-20" id="a资源-20"><h2>资源</h2></a>
 <p>维基百科<a href="https://en.wikipedia.org/wiki/Pangram">https://en.wikipedia.org/wiki/Pangram</a></p>
 <a class="header" href="#a2-开始你的表演-30" id="a2-开始你的表演-30"><h2>2. 开始你的表演</h2></a>
@@ -5381,16 +5391,16 @@ const ENGLISH_ALPHABET: &amp;'static str = &quot;abcdefghijklmnopqrstuvwxyz&quot
 <a class="header" href="#a填充相关-30" id="a填充相关-30"><h2>填充/相关</h2></a>
 <a class="header" href="#paasio" id="paasio"><h1>Paasio</h1></a>
 <a class="header" href="#a1-readme-31" id="a1-readme-31"><h2>1. Readme</h2></a>
-<a class="header" href="#a帕西奥" id="a帕西奥"><h1>帕西奥</h1></a>
+<a class="header" href="#paasio-1" id="paasio-1"><h1>Paasio</h1></a>
 <p>报告网络 IO 统计.</p>
-<p>你正在写[帕亚斯][]你需要一种基于网络和文件系统使用的帐单.</p>
-<p>为可报告 IO 统计信息的网络连接和文件创建包装器.包装必须报告:</p>
+<p>你正在写一个<a href="http://en.wikipedia.org/wiki/Platform_as_a_service">PaaS</a>，你需要一种给网络和文件系统使用的帐单.</p>
+<p>为报告 IO 统计信息的网络连接和文件，创建包装器。包装器必须报告:</p>
 <ul>
 <li>读取/写入的字节总数.</li>
 <li>读取/写入操作的总数.</li>
 </ul>
 <a class="header" href="#a网络和文件的抽象" id="a网络和文件的抽象"><h2>网络和文件的抽象</h2></a>
-<p>网络和文件操作是以<a href="https://doc.rust-lang.org/std/io/trait.Read.html"><code>io::Read</code></a>和<a href="https://doc.rust-lang.org/std/io/trait.Write.html"><code>io::Write</code></a>特点.因此,有必要为您的类型实现这些特性.</p>
+<p>网络和文件操作，是实现了<a href="https://doc.rust-lang.org/std/io/trait.Read.html"><code>io::Read</code></a>和<a href="https://doc.rust-lang.org/std/io/trait.Write.html"><code>io::Write</code></a> <code>traits</code> 的。因此,有必要为您的类型实现这些特性.</p>
 <a class="header" href="#a资源-21" id="a资源-21"><h2>资源</h2></a>
 <p>布瑞恩松岛<a href="https://github.com/bmatsuo">https://github.com/bmatsuo</a></p>
 <a class="header" href="#a2-开始你的表演-31" id="a2-开始你的表演-31"><h2>2. 开始你的表演</h2></a>
@@ -5749,15 +5759,13 @@ impl&lt;R: Read&gt; Read for ReadStats&lt;R&gt; {
 <a class="header" href="#a填充相关-31" id="a填充相关-31"><h2>填充/相关</h2></a>
 <a class="header" href="#nucleotide-count" id="nucleotide-count"><h1>Nucleotide Count</h1></a>
 <a class="header" href="#a1-readme-32" id="a1-readme-32"><h2>1. Readme</h2></a>
-<a class="header" href="#a核苷酸计数" id="a核苷酸计数"><h1>核苷酸计数</h1></a>
-<p>给定一条单链 DNA 串,计算每个核苷酸在字符串中出现的次数.</p>
-<p>地球上每一生物的遗传语言都是 DNA.DNA 是一种大分子,它是由一系列叫做核苷酸的单个元素组成的.DNA 中存在 4 种类型,它们仅略有不同,并且可以表示为以下符号:’A’表示腺嘌呤,’C’表示胞嘧啶,’G’表示鸟嘌呤,’T’表示胸腺嘧啶.</p>
+<a class="header" href="#a核苷酸nucleotide计数" id="a核苷酸nucleotide计数"><h1>核苷酸(Nucleotide)计数</h1></a>
+<p>给定一条单 DNA 链 ,计算每个核苷酸在字符串中出现的次数.</p>
+<p>地球上每一生物的遗传语言都是 DNA.DNA 是一种大分子,它是由一系列叫做核苷酸的单个元素组成。DNA 中存在 4 种类型,它们仅略有不同,并且可用以下符号表示:’A’表示腺嘌呤,’C’表示胞嘧啶,’G’表示鸟嘌呤,’T’表示胸腺嘧啶.</p>
 <p>下面是一个类比:</p>
 <ul>
-<li>树枝是鸟的巢</li>
-<li>核苷酸与 DNA 一样.</li>
-<li>LeGOS 是乐高的房子</li>
-<li>单词是句子…</li>
+<li>树枝组成鸟的巢</li>
+<li>核苷酸组成 DNA 链</li>
 </ul>
 <a class="header" href="#a资源-22" id="a资源-22"><h2>资源</h2></a>
 <p>罗瑟琳 DNA 核苷酸问题的计算<a href="http://rosalind.info/problems/dna/">http://rosalind.info/problems/dna/</a></p>
@@ -5916,21 +5924,27 @@ pub fn nucleotide_counts(input: &amp;str) -&gt; Result&lt;HashMap&lt;char, usize
 <a class="header" href="#a填充相关-32" id="a填充相关-32"><h2>填充/相关</h2></a>
 <a class="header" href="#luhn" id="luhn"><h1>Luhn</h1></a>
 <a class="header" href="#a1-readme-33" id="a1-readme-33"><h2>1. Readme</h2></a>
-<a class="header" href="#a卢恩" id="a卢恩"><h1>卢恩</h1></a>
-<p>给定一个数,判定它是否是 LuHn 公式有效的.</p>
-<p>这个<a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a>是一个简单的校验和公式,用于验证各种身份号码,如信用卡号码和加拿大社会保险号码.</p>
+<a class="header" href="#luhn-1" id="luhn-1"><h1>Luhn</h1></a>
+<p>给定一个数,判定它是否有效 Luhn 公式.</p>
+<blockquote>
+<p>Luhn 算法，也称为“模 10”算法</p>
+</blockquote>
+<p>这个<a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn 算法</a>是一个简单的校验和公式,用于验证各种身份号码,如信用卡号码和加拿大社会保险号码.</p>
 <p>任务是检查给定字符串是否有效.</p>
 <a class="header" href="#a验证一个数" id="a验证一个数"><h2>验证一个数</h2></a>
-<p>长度为 1 或更小的字符串无效.在输入中允许使用空格,但在检查前应清除空格.所有其他非数字字符都是不允许的.</p>
+<p>长度为 1 或更小的字符串无效。在输入中允许使用空格，但在检查前，应清除空格。所有其他非数字字符都是不允许的.</p>
 <a class="header" href="#a例子-1有效信用卡号码" id="a例子-1有效信用卡号码"><h2>例子 1:有效信用卡号码</h2></a>
 <pre><code class="language-text">4539 1488 0343 6467
 </code></pre>
-<p>LuHN 算法的第一步是从右边开始每一个第二个数字的加倍.我们将加倍</p>
+<p>LuHN 算法的第一步是，从<strong>右边</strong>开始每第二个数字加倍。我们要加倍的位</p>
 <pre><code class="language-text">4_3_ 1_8_ 0_4_ 6_6_
 </code></pre>
-<p>如果加倍的数字导致大于 9 的数字,则从产品减去 9.我们加倍的结果:</p>
+<p>如果加倍的数字值导致大于 9 的数字,则将此值减去 9。我们加倍的结果:</p>
 <pre><code class="language-text">8569 2478 0383 3437
 </code></pre>
+<blockquote>
+<p><code>1_8_ =&gt; 2_7_</code> , <code>8*2 - 9 = 7</code></p>
+</blockquote>
 <p>然后把所有数字加起来:</p>
 <pre><code class="language-text">8+5+6+9+2+4+7+8+0+3+8+3+3+4+3+7 = 80
 </code></pre>
@@ -5938,7 +5952,7 @@ pub fn nucleotide_counts(input: &amp;str) -&gt; Result&lt;HashMap&lt;char, usize
 <a class="header" href="#a例子-2信用卡号码无效" id="a例子-2信用卡号码无效"><h2>例子 2:信用卡号码无效</h2></a>
 <pre><code class="language-text">8273 1232 7352 0569
 </code></pre>
-<p>把第二个数字加倍,从右边开始</p>
+<p>把每第二个数字加倍,从右边开始</p>
 <pre><code class="language-text">7253 2262 5312 0539
 </code></pre>
 <p>合计数字</p>
@@ -6065,19 +6079,19 @@ pub fn is_valid(candidate: &amp;str) -&gt; bool {
 <a class="header" href="#a填充相关-33" id="a填充相关-33"><h2>填充/相关</h2></a>
 <a class="header" href="#largest-series-product" id="largest-series-product"><h1>Largest Series Product</h1></a>
 <a class="header" href="#a1-readme-34" id="a1-readme-34"><h2>1. Readme</h2></a>
-<a class="header" href="#a最大系列产品" id="a最大系列产品"><h1>最大系列产品</h1></a>
+<a class="header" href="#a最大系列乘积" id="a最大系列乘积"><h1>最大系列乘积</h1></a>
 <p>给定一个数字串,计算长度为 n 的连续子串的最大乘积.</p>
-<p>例如,对于输入<code>'1027839564'</code>一系列 3 位数的最大产品是 270(9).<em>五</em>6),一系列 5 位数字的最大乘积为 7560(7).<em>八</em>三<em>九</em>5).</p>
-<p>注意这些系列只需要占用.<em>相邻位置</em>在输入中,数字不需要<em>数值连续的</em>.</p>
-<p>对于输入<code>'73167176531330624919225119674426574742355349194934'</code>一系列 6 位数的最大产品是 23520.</p>
-<a class="header" href="#a锈蚀最大系列产品" id="a锈蚀最大系列产品"><h1>锈蚀最大系列产品</h1></a>
+<p>例如,对于输入<code>'1027839564'</code> ， 3 位数系列的最大乘积是 270 (<code>9 * 5 * 6</code>), 5 位数系列的最大乘积为 7560 (<code>7 * 8 * 3 * 9 * 5</code>).</p>
+<p>注意这些系列数字字符，在输入中，只要求<em>相邻位置</em>，不需要<em>连续数值(123456..)</em>.</p>
+<p>对于输入<code>'73167176531330624919225119674426574742355349194934'</code>一系列 6 位数的最大乘积是 23520.</p>
+<a class="header" href="#rust-的最大系列乘积" id="rust-的最大系列乘积"><h1>Rust 的最大系列乘积</h1></a>
 <p>这些迭代器可能是有用的,取决于您的方法.</p>
 <ul>
 <li><a href="https://doc.rust-lang.org/std/primitive.slice.html#method.windows">Windows</a></li>
 <li><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.product">Product</a></li>
 </ul>
 <a class="header" href="#a资源-24" id="a资源-24"><h2>资源</h2></a>
-<p>工程欧拉问题 8 的一个变化<a href="http://projecteuler.net/problem=8">http://projecteuler.net/problem=8</a></p>
+<p>欧拉工程的问题 8 的一个变种<a href="http://projecteuler.net/problem=8">http://projecteuler.net/problem=8</a></p>
 <a class="header" href="#a2-开始你的表演-34" id="a2-开始你的表演-34"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">#[derive(Debug, PartialEq)]
 pub enum Error {
@@ -6246,7 +6260,7 @@ pub fn lsp(string_digits: &amp;str, span: usize) -&gt; Result&lt;u64, Error&gt; 
 <a class="header" href="#word-count" id="word-count"><h1>Word Count</h1></a>
 <a class="header" href="#a1-readme-35" id="a1-readme-35"><h2>1. Readme</h2></a>
 <a class="header" href="#a字数" id="a字数"><h1>字数</h1></a>
-<p>给定一个短语,计算该短语中每个单词的出现次数.</p>
+<p>给定一个短语,计算该短语中，每个单词的出现次数.</p>
 <p>例如输入<code>&quot;olly olly in come free&quot;</code></p>
 <pre><code class="language-text">olly: 2
 in: 1
@@ -6254,7 +6268,7 @@ come: 1
 free: 1
 </code></pre>
 <a class="header" href="#a资源-25" id="a资源-25"><h2>资源</h2></a>
-<p>这是一个经典的玩具问题,但我们通过在 Go Tour 中看到它来提醒它.</p>
+<p>这是一个经典的玩具问题,但我们通过在 Go Tour 中，看到它，才想起提醒.</p>
 <a class="header" href="#a2-开始你的表演-35" id="a2-开始你的表演-35"><h2>2. 开始你的表演</h2></a>
 <pre><pre class="playpen"><code class="language-rust editable">use std::collections::HashMap;
 
@@ -6362,19 +6376,24 @@ pub fn word_count(input: &amp;str) -&gt; HashMap&lt;String, u32&gt; {
 <a class="header" href="#atbash-cipher" id="atbash-cipher"><h1>Atbash Cipher</h1></a>
 <a class="header" href="#a1-readme-36" id="a1-readme-36"><h2>1. Readme</h2></a>
 <a class="header" href="#atbash-cipher-1" id="atbash-cipher-1"><h1>Atbash Cipher</h1></a>
-<p>创建 atbash 密码的实现,这是在中东创建的古老加密系统.</p>
-<p>Atbash 密码是一种简单的替换密码,它依赖于转置字母表中的所有字母,使得生成的字母表向后.第一个字母替换为最后一个字母,第二个字母替换为倒数第二个字母,依此类推.</p>
+<p>创建 Atbash 密码的实现,这是在中东创建的古老加密系统.</p>
+<p>Atbash 密码是一种简单的替换密码,它依赖于转置字母表中的所有字母,使得生成的字母表向后。</p>
+<ul>
+<li>第一个字母替换为最后一个字母,</li>
+<li>第二个字母替换为倒数第二个字母,</li>
+<li>依此类推.</li>
+</ul>
 <p>拉丁字母的 Atbash 密码如下:</p>
-<pre><code class="language-text">Plain:  abcdefghijklmnopqrstuvwxyz
-Cipher: zyxwvutsrqponmlkjihgfedcba
+<pre><code class="language-text">明文:  abcdefghijklmnopqrstuvwxyz
+加密:  zyxwvutsrqponmlkjihgfedcba
 </code></pre>
-<p>它是一个非常弱的密码,因为它只有一个可能的密钥,它是一个简单的单字母替换密码.但是,这可能不是密码时代的问题.</p>
-<p>密文以固定长度的组写出,传统的组大小为 5 个字母,并且不包括标点符号.这是为了使基于单词边界的东西更难猜测.</p>
+<p>它是一个非常弱的加密方式，因为它只有一个加密可能性，且为一个简单的单字母替换密码。但是,这并不是现在’加密游戏-练习时间’的问题.</p>
+<p>密文以固定长度的组写出，传统的组大小为 5 个字母，并且不包括标点符号。这是为了使单词边界，更难猜测。</p>
 <a class="header" href="#a例子-4" id="a例子-4"><h2>例子</h2></a>
 <ul>
-<li>编码<code>test</code>给<code>gvhg</code></li>
-<li>解码<code>gvhg</code>给<code>test</code></li>
-<li>解码<code>gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt</code>给<code>thequickbrownfoxjumpsoverthelazydog</code></li>
+<li><code>test</code>，编码为<code>gvhg</code></li>
+<li><code>gvhg</code>，解码为<code>test</code></li>
+<li><code>gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt</code>解码为<code>thequickbrownfoxjumpsoverthelazydog</code></li>
 </ul>
 <a class="header" href="#a资源-26" id="a资源-26"><h2>资源</h2></a>
 <p>维基百科<a href="http://en.wikipedia.org/wiki/Atbash">http://en.wikipedia.org/wiki/Atbash</a></p>
@@ -6529,18 +6548,24 @@ pub fn decode(ciphertext: &amp;str) -&gt; String {
 <a class="header" href="#crypto-square" id="crypto-square"><h1>Crypto Square</h1></a>
 <a class="header" href="#a1-readme-37" id="a1-readme-37"><h2>1. Readme</h2></a>
 <a class="header" href="#a加密广场" id="a加密广场"><h1>加密广场</h1></a>
-<p>实现用于组成称为方形代码的秘密消息的经典方法.</p>
-<p>给定英文文本,输出该文本的编码版本.</p>
-<p>首先,输入被规范化:从英文文本中删除空格和标点符号,并且消息是向下的.</p>
-<p>然后,规范化字符被分成行.当使用插入的换行符打印时,这些行可被视为形成矩形.</p>
+<p>实现，用于组成称为方形代码的加密信息的经典方法.</p>
+<p>给定英文文本,输出该文本的加密编码版本。</p>
+<p>首先,输入被规范化:</p>
+<ul>
+<li>从英文文本中删除空格和标点符号,并且消息是朝下的.</li>
+</ul>
+<p>然后,</p>
+<ul>
+<li>规范化字符被分成行。当使用插入的换行符打印时,这些行自自然然形成类似矩形的样子。</li>
+</ul>
 <p>例如,句子</p>
 <pre><code class="language-text">&quot;If man was meant to stay on the ground, god would have given us roots.&quot;
 </code></pre>
 <p>规范化为:</p>
 <pre><code class="language-text">&quot;ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots&quot;
 </code></pre>
-<p>明文应该组织成一个矩形.矩形的大小(<code>r x c</code>)应该根据消息的长度来决定<code>c &gt;= r</code>和<code>c - r &lt;= 1</code>,哪里<code>c</code>是列数和<code>r</code>是行数.</p>
-<p>我们的标准化文本长度为 54 个字符,用矩形指示矩形<code>c = 8</code>和<code>r = 7</code>:</p>
+<p>明文应该组织成一个矩形。矩形的大小(<code>r x c</code>)应该根据消息的长度来决定<code>c &gt;= r</code>和<code>c - r &lt;= 1</code>,这里的<code>c</code>是列数和<code>r</code>是行数.</p>
+<p>我们的标准化文本长度为 54 个字符，用<code>c = 8</code>和<code>r = 7</code>指示矩形:</p>
 <pre><code class="language-text">&quot;ifmanwas&quot;
 &quot;meanttos&quot;
 &quot;tayonthe&quot;
@@ -6549,14 +6574,15 @@ pub fn decode(ciphertext: &amp;str) -&gt; String {
 &quot;vegivenu&quot;
 &quot;sroots  &quot;
 </code></pre>
-<p>通过向下读取从左到右的列来获得编码消息.</p>
+<p>通过向下(第一行第一个,拼接第二行第一个)，读取从左到右的列来获得编码消息.</p>
 <p>上面的消息编码为:</p>
 <pre><code class="language-text">&quot;imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau&quot;
 </code></pre>
-<p>以填充完美矩形的块输出编码文本<code>(r X c)</code>,与<code>c</code>大块的<code>r</code>长度,以空格分隔.对于那些短语<code>n</code>字符短于完美的矩形,每个填充最后一个<code>n</code>有一个尾随空间的块.</p>
+<p>根据输出的，矩形块编码文本的大小<code>(r X c)</code>，表明有<code>c</code>块<code>r</code>长度的编码字串，以空格分隔。对于那些<code>n</code>位字符，但少于规定的长度的，每个尾添一个空格。</p>
 <pre><code class="language-text">&quot;imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau &quot;
 </code></pre>
-<p>请注意,如果我们要堆叠这些,我们可以直观地将密文解码回原始消息:</p>
+<p>请注意,如果我们要堆叠这些,我们可以直观地，将密文解码回原始消息:
+(第一行第一个，拼接第二行第一个...)</p>
 <pre><code class="language-text">&quot;imtgdvs&quot;
 &quot;fearwer&quot;
 &quot;mayoogo&quot;
@@ -6792,21 +6818,21 @@ impl Iterator for SquareIndexer {
 <a class="header" href="#a1-readme-38" id="a1-readme-38"><h2>1. Readme</h2></a>
 <a class="header" href="#a旋转密码" id="a旋转密码"><h1>旋转密码</h1></a>
 <p>创建旋转密码的实现,有时也称为 Caesar 密码.</p>
-<p>Caesar 密码是一个简单的移位密码,它依赖于使用整数键在字母表中转置所有字母<code>0</code>和<code>26</code>.使用密钥<code>0</code>要么<code>26</code>由于模运算,总是会产生相同的输出.将字母移动为与键值一样多的值.</p>
-<p>旋转密码的一般表示法是<code>ROT + &lt;key&gt;</code>.最常用的旋转密码是<code>ROT13</code>.</p>
-<p>一个<code>ROT13</code>拉丁字母表如下:</p>
-<pre><code class="language-text">Plain:  abcdefghijklmnopqrstuvwxyz
-Cipher: nopqrstuvwxyzabcdefghijklm
+<p>Caesar 密码是一个简单的移位密码，它依赖于使用<code>0</code>到<code>26</code>整数(key)，在字母表中转置所有字母。由于模运算，使用<code>0</code>要么<code>26</code>，总是会产生相同的输出。将字母移动为与 key 值一样多的值。</p>
+<p>旋转密码的一般表示法是<code>ROT + &lt;key&gt;</code>。最常用的旋转密码是<code>ROT13</code>.</p>
+<p>一个拉丁字母表的<code>ROT13</code>加密如下:</p>
+<pre><code class="language-text">原文:  abcdefghijklmnopqrstuvwxyz
+密文:  nopqrstuvwxyzabcdefghijklm
 </code></pre>
-<p>它比 Atbash 密码更强大,因为它有 27 个可能的密钥和 25 个可用的密钥.</p>
-<p>密文以与输入相同的格式写出,包括空格和标点符号.</p>
+<p>它比 Atbash 密码更强大,因为它有 27 个可能性 key，和 25 个可用的密文.</p>
+<p>密文会与输入相同的格式写出,包括空格和标点符号.</p>
 <a class="header" href="#a例子-5" id="a例子-5"><h2>例子</h2></a>
 <ul>
-<li>ROT5<code>omg</code>给<code>trl</code></li>
-<li>ROT0<code>c</code>给<code>c</code></li>
-<li>ROT26<code>Cool</code>给<code>Cool</code></li>
-<li>ROT13<code>The quick brown fox jumps over the lazy dog.</code>给<code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code></li>
-<li>ROT13<code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code>给<code>The quick brown fox jumps over the lazy dog.</code></li>
+<li>ROT5 <code>omg</code>给<code>trl</code></li>
+<li>ROT0 <code>c</code>给<code>c</code></li>
+<li>ROT26 <code>Cool</code>给<code>Cool</code></li>
+<li>ROT13 <code>The quick brown fox jumps over the lazy dog.</code>给<code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code></li>
+<li>ROT13 <code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code>给<code>The quick brown fox jumps over the lazy dog.</code></li>
 </ul>
 <a class="header" href="#a资源-28" id="a资源-28"><h2>资源</h2></a>
 <p>维基百科<a href="https://en.wikipedia.org/wiki/Caesar_cipher">https://en.wikipedia.org/wiki/Caesar_cipher</a></p>
@@ -6913,29 +6939,30 @@ pub fn rotate(text: &amp;str, shift_key: u8) -&gt; String {
 <a class="header" href="#simple-cipher" id="simple-cipher"><h1>Simple Cipher</h1></a>
 <a class="header" href="#a1-readme-39" id="a1-readme-39"><h2>1. Readme</h2></a>
 <a class="header" href="#a简单密码" id="a简单密码"><h1>简单密码</h1></a>
-<p>实现一个简单的移位密码,像凯撒和一个更安全的替换密码.</p>
+<p>实现一个简单的移位密码,像 Caesar 和，一个更安全的替换密码.</p>
 <a class="header" href="#a步骤-1-2" id="a步骤-1-2"><h2>步骤 1</h2></a>
-<p>“如果他有什么秘密要说的话,他就是用密码写的,也就是说,通过改变字母表的字母顺序,一个字也说不出来.如果有人想破译这些并理解它们的意思,他必须用字母表中的第四个字母,即 D,代替 A,以及其他的字母.</p>
-<p>密码是非常直截了当的算法,使我们能够使文本不可读,同时仍然允许容易破译.他们容易受到许多形式的密码分析,但我们幸运的是,我们的小姐妹通常不是密码分析家.</p>
-<p>凯撒密码被用来发送来自 Julius Caesar 的消息.现在罗楼迦知道密码不是很好,但他在这方面有一个盟友:几乎没有人能读得很好.所以即使是一对夫妇的信件是足够的,使人们无法识别他们所知道的几个字.</p>
-<p>你的任务是创建一个简单的移位密码,就像凯撒密码一样.这个图像是凯撒密码的一个很好的例子:</p>
+<p>“如果他有什么秘密要说的话，他就是用密码写的，也就是说，通过改变字母表的字母顺序，一个字也说不出来。如果有人想破译这些，并理解它们的意思，他必须用字母表中的第四个字母，即 D，代替 A，以及其他的字母。
+—Suetonius, Life of Julius Caesar</p>
+<p>密码是非常直截了当的算法，使文本不可读，同时仍容易允许破译。他们容易受到许多形式的密码分析，但我们幸运的是，我们的小姐妹通常不是密码学家。</p>
+<p>用 Caesar密码，加密来自 Julius Caesar 的消息。现在 Caesar 知道加密方式不是很好，但他还是有个好处: 几乎没有人能读对。所以对于一对夫妇的信件已经足够了，让人们无法识别他们所知道的几个字。</p>
+<p>你的任务是创建一个简单的移位密码，就像 Caesar 密码一样。这个图像是 Caesar 密码的一个很好的例子:</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png" alt="Caesar Cipher" /></p>
 <p>例如:</p>
-<p>将”IAMAPANDABLE”作为输入到 EnCODE 函数返回密码”LDPDSDQGDEHDU”.不足以让我们的信息在运输过程中保密.</p>
-<p>当将”ldpdsdqgdehdu”放入解码函数时,它将返回原始的”iamapandabear”,让您的朋友阅读您的原始消息.</p>
+<p>将”iamapandabear”作为输入到 <code>encode</code> 函数返回密码”ldpdsdqgdehdu”。(虽不足以让我们的信息在运输过程中，确保高保密性).</p>
+<p>当将”ldpdsdqgdehdu”放入<code>decode</code>函数时，它将返回原始的”iamapandabear”，让您的朋友阅读您的原始消息.</p>
 <a class="header" href="#a步骤-2" id="a步骤-2"><h2>步骤 2</h2></a>
-<p>移位密码是没有乐趣,虽然当你的妹妹算了出来.尝试修改代码,允许我们指定一个键,并使用该移位距离.这称为代换密码.</p>
+<p>移位密码是没有乐趣，直到你的妹妹算了出来后！尝试修改代码,允许我们指定一个密钥(key)，并用作移位距离。这称为代换密码.</p>
 <p>下面是一个例子:</p>
-<p>给定密钥”AAAAAAAAAAAAAAAAAAA”,对字符串”IAMAPANDABAR”进行编码将返回原来的”IAMAPANDABLE”.</p>
-<p>给定密钥”DDDDDDDDDDDDD”,编码我们的字符串”IAMAPANDABORE”会返回模糊的”LDPDSDQGDHDU”.</p>
-<p>在上面的示例中,我们为键值设置了 a=0.因此,当明文添加到密钥时,我们最终得到相同的消息.所以”AAAA”不是一个理想的关键.但是,如果我们把密钥设置为 DDDD,我们将得到与凯撒密码相同的东西.</p>
+<p>给定密钥”aaaaaaaaaaaaaaaaaaa”，对字符串”iamapandabar”进行编码将返回原来的”iamapandable”.</p>
+<p>给定密钥”ddddddddddddd”，编码我们的字符串”iamapandabore”会返回疑惑的”ldpdsdqgdhdu”.</p>
+<p>在上面的示例中,我们为键值设置了 <code>a=0</code>。因此,当明文添加到密钥时,我们最终得到相同的消息。所以”aaaa”不是一个理想的密钥。但是,如果我们把密钥设置为<code>dddd</code>,我们将得到与 caesar 密码相同的东西.</p>
 <a class="header" href="#a步骤-3" id="a步骤-3"><h2>步骤 3</h2></a>
-<p>任何密码中最薄弱的环节都是人.让我们通过提供随机性来源并确保密钥仅包含小写字母来使替换密码更具容错性.</p>
+<p>任何密码中最薄弱的环节都是人。让我们通过提供随机性，并确保密钥仅包含小写字母，来使替换密码更具容错性.</p>
 <p>如果有人根本不提交密钥,则生成一个长度至少为 100 个字符的真正随机密钥.</p>
-<p>如果提交的密钥不只由小写字母组成,则解决方案应该以适合语言的方式处理错误.</p>
-<a class="header" href="#a扩展-2" id="a扩展-2"><h2>扩展</h2></a>
-<p>移位密码通过使文本略微奇特而工作,但易受频率分析的影响.替换密码有助于这一点,但当密钥较短或空间被保留时,仍然非常脆弱.稍后,你会看到一个解决这个问题的练习”密码广场”.</p>
-<p>如果你想在这一领域走得更远,问题就开始于我们如何以安全的方式交换密钥.看一看<a href="http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">维基百科上的 Diffie Hellman</a>对于该方案的第一个实现之一.</p>
+<p>如果提交的密钥不只由小写字母组成,那解决方案应该以适当提醒的方式处理错误.</p>
+<a class="header" href="#a扩展-4" id="a扩展-4"><h2>扩展</h2></a>
+<p>移位密码通过使文本略微疑惑，达到目的，但易受频率分析的影响。替换密码有助于这一点,但当密钥较短，或空格被保留时,仍然非常脆弱。稍后,你会看到一个解决这个问题的练习”crypto-square”.</p>
+<p>如果你想在这一领域走得更远，问题引导你，走进如何以安全的方式交换密钥。看一看<a href="http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">维基百科上的 Diffie Hellman</a>对于该方案的最早实现之一.</p>
 <a class="header" href="#a资源-29" id="a资源-29"><h2>资源</h2></a>
 <p>维基百科的替代密码<a href="http://en.wikipedia.org/wiki/Substitution_cipher">http://en.wikipedia.org/wiki/Substitution_cipher</a></p>
 <a class="header" href="#a2-开始你的表演-39" id="a2-开始你的表演-39"><h2>2. 开始你的表演</h2></a>

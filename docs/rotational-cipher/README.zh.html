@@ -163,21 +163,21 @@
 <a class="header" href="#a1-readme" id="a1-readme"><h2>1. Readme</h2></a>
 <a class="header" href="#a旋转密码" id="a旋转密码"><h1>旋转密码</h1></a>
 <p>创建旋转密码的实现,有时也称为 Caesar 密码.</p>
-<p>Caesar 密码是一个简单的移位密码,它依赖于使用整数键在字母表中转置所有字母<code>0</code>和<code>26</code>.使用密钥<code>0</code>要么<code>26</code>由于模运算,总是会产生相同的输出.将字母移动为与键值一样多的值.</p>
-<p>旋转密码的一般表示法是<code>ROT + &lt;key&gt;</code>.最常用的旋转密码是<code>ROT13</code>.</p>
-<p>一个<code>ROT13</code>拉丁字母表如下:</p>
-<pre><code class="language-text">Plain:  abcdefghijklmnopqrstuvwxyz
-Cipher: nopqrstuvwxyzabcdefghijklm
+<p>Caesar 密码是一个简单的移位密码，它依赖于使用<code>0</code>到<code>26</code>整数(key)，在字母表中转置所有字母。由于模运算，使用<code>0</code>要么<code>26</code>，总是会产生相同的输出。将字母移动为与 key 值一样多的值。</p>
+<p>旋转密码的一般表示法是<code>ROT + &lt;key&gt;</code>。最常用的旋转密码是<code>ROT13</code>.</p>
+<p>一个拉丁字母表的<code>ROT13</code>加密如下:</p>
+<pre><code class="language-text">原文:  abcdefghijklmnopqrstuvwxyz
+密文:  nopqrstuvwxyzabcdefghijklm
 </code></pre>
-<p>它比 Atbash 密码更强大,因为它有 27 个可能的密钥和 25 个可用的密钥.</p>
-<p>密文以与输入相同的格式写出,包括空格和标点符号.</p>
+<p>它比 Atbash 密码更强大,因为它有 27 个可能性 key，和 25 个可用的密文.</p>
+<p>密文会与输入相同的格式写出,包括空格和标点符号.</p>
 <a class="header" href="#a例子" id="a例子"><h2>例子</h2></a>
 <ul>
-<li>ROT5<code>omg</code>给<code>trl</code></li>
-<li>ROT0<code>c</code>给<code>c</code></li>
-<li>ROT26<code>Cool</code>给<code>Cool</code></li>
-<li>ROT13<code>The quick brown fox jumps over the lazy dog.</code>给<code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code></li>
-<li>ROT13<code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code>给<code>The quick brown fox jumps over the lazy dog.</code></li>
+<li>ROT5 <code>omg</code>给<code>trl</code></li>
+<li>ROT0 <code>c</code>给<code>c</code></li>
+<li>ROT26 <code>Cool</code>给<code>Cool</code></li>
+<li>ROT13 <code>The quick brown fox jumps over the lazy dog.</code>给<code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code></li>
+<li>ROT13 <code>Gur dhvpx oebja sbk whzcf bire gur ynml qbt.</code>给<code>The quick brown fox jumps over the lazy dog.</code></li>
 </ul>
 <a class="header" href="#a资源" id="a资源"><h2>资源</h2></a>
 <p>维基百科<a href="https://en.wikipedia.org/wiki/Caesar_cipher">https://en.wikipedia.org/wiki/Caesar_cipher</a></p>
