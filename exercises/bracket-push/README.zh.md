@@ -1,6 +1,6 @@
-# 托架推动
+# 括号配套
 
-给定包含括号的字符串`[]`大括号`{}`括号`()`或它们的任何组合,验证任何和所有对都被正确地匹配和嵌套.
+给定包含括号`[]`大括号`{}`括号`()`或它们的任何组合的字符串，验证任何和所有对，都被正确地匹配和嵌套。
 
 [help-page]: https://exercism.io/tracks/rust/learning
 [modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
@@ -9,4 +9,4 @@
 
 ## 资源
 
-吉纳贝克
+Ginna Baker
