@@ -37,9 +37,9 @@ ETL，是英文 `Extract-Transform-Load` 的缩写，用来描述将数据从来
 关于得分的最后一点是,Scrabble 这款游戏在世界各地，多个国家，每种语言都有自己独特的得分表。例如,在毛利(Māori)语版本的游戏中,"E"得分为 2 分,而在夏威夷语版本中为 4 分。
 
 [help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 

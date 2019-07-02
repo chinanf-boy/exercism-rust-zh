@@ -1,30 +1,30 @@
 # 罗唆
 
-解析并评估简单的数学单词问题,将答案作为整数返回.
+解析并运算简单的数学单词问题，将答案作为整数返回。
 
 ## 迭代 1 - 加法
 
-一起添加两个数字.
+将两个数字相加
 
-> 什么是 5 加 13?
+> What is 5 plus 13?
 
-评估为 18.
+运算为 18.
 
-处理大数和负数.
+处理大数和负数。
 
-## 迭代 2 - 减法,乘法和除法
+## 迭代 2 - 减法，乘法和除法
 
-现在,执行其他三个操作.
+现在，执行其他三个操作.
 
-> 什么是 7 减 5?
+> What is 7 minus 5?
 
 2
 
-> 什么是 6 乘以 4?
+> What is 6 multiplied by 4?
 
 24
 
-> 什么是 25 除以 5?
+> What is 25 divided by 5?
 
 五
 
@@ -32,28 +32,28 @@
 
 按顺序处理一组操作.
 
-由于这些是口头语言问题,从左到右评估表达,_忽略了典型的操作顺序._
+由于这些是口头语言问题，从左到右运算表达式，_忽略了典型的操作顺序(乘法优先级比加法高)。_
 
-> 什么是 5 加 13 加 6?
+> What is 5 plus 13 plus 6?
 
 24
 
-> 什么是 3 加 2 加 3?
+> What is 3 plus 2 multiplied by 3?
 
-15(即不是 9)
+15(不是 9)
 
 ## 奖金 - 指数
 
-如果你愿意,处理指数.
+如果你愿意，处理指数.
 
-> 什么是 2 提升到 5 的力量?
+> What is 2 raised to the 5th power?
 
 32
 
 [help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 

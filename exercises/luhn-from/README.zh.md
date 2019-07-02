@@ -13,9 +13,9 @@ exercism download --exercise=luhn --track=rust
 在本练习中，您将实现[From trait](https://doc.rust-lang.org/std/convert/trait.From.html)，用来将字符串、strs 和无符号整数转换为执行验证的结构。
 
 [help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 

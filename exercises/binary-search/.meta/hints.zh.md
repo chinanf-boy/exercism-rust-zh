@@ -4,7 +4,7 @@ Rust 已在其标准库中提供了一个[binary search function](https://doc.ru
 
 ## 提示
 
-[Slices](https://doc.rust-lang.org/book/2018-edition/ch04-03-slices.html)另外还有通过索引的正常元素访问(切片[指数])很多有用的功能[split_at](https://doc.rust-lang.org/std/primitive.slice.html#method.split_at)要么[getting
+[Slices](https://doc.rust-lang.org/book/ch04-03-slices.html)另外还有通过索引的正常元素访问(切片[指数])很多有用的功能[split_at](https://doc.rust-lang.org/std/primitive.slice.html#method.split_at)要么[getting
 subslices](https://doc.rust-lang.org/std/primitive.slice.html#method.get)(切片[start..end]).
 
 您可以通过索引使用无聊的旧元素访问来解决此练习,但也许其他提供的函数可以使您的代码更清晰,更安全.

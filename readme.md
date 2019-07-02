@@ -37,9 +37,10 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
 <!-- repo = 'exercism/rust' -->
 <!-- commit = 'a390d5d84b51507f04d6125979abe5e42a42e7ae' -->
 <!-- time = '2018-11-04' -->
-翻译的原文 | 与日期 | 最新更新 | 更多
----|---|---|---
-[commit] | ⏰ 2018-11-04 | ![last] | [中文翻译][translate-list]
+
+| 翻译的原文 | 与日期        | 最新更新 | 更多                       |
+| ---------- | ------------- | -------- | -------------------------- |
+| [commit]   | ⏰ 2018-11-04 | ![last]  | [中文翻译][translate-list] |
 
 [last]: https://img.shields.io/github/last-commit/exercism/rust.svg
 [commit]: https://github.com/exercism/rust/tree/a390d5d84b51507f04d6125979abe5e42a42e7ae
@@ -106,41 +107,41 @@ git clone https://github.com/chinanf-boy/exercism-rust-zh
   - [x] [Luhn From](./exercises/luhn-from/README.zh.md)
   - [x] [皇后 攻击](./exercises/queen-attack/README.zh.md)
   - [x] [保龄球](./exercises/bowling/README.zh.md)
-  - [ ] [Sublist](./exercises/sublist/README.zh.md)
-  - [ ] [Space Age](./exercises/space-age/README.zh.md)
-  - [ ] [Luhn Trait](./exercises/luhn-trait/README.zh.md)
-  - [ ] [Macros](./exercises/macros/README.zh.md)
-  - [ ] [Allergies](./exercises/allergies/README.zh.md)
-  - [ ] [Variable Length Quantity](./exercises/variable-length-quantity/README.zh.md)
-  - [ ] [Phone Number](./exercises/phone-number/README.zh.md)
-  - [ ] [Wordy](./exercises/wordy/README.zh.md)
-  - [ ] [Tournament](./exercises/tournament/README.zh.md)
-  - [ ] [Custom Set](./exercises/custom-set/README.zh.md)
-  - [ ] [Alphametics](./exercises/alphametics/README.zh.md)
-  - [ ] [Two Bucket](./exercises/two-bucket/README.zh.md)
-  - [ ] [Pig Latin](./exercises/pig-latin/README.zh.md)
-  - [ ] [Diamond](./exercises/diamond/README.zh.md)
-  - [ ] [Spiral Matrix](./exercises/spiral-matrix/README.zh.md)
-  - [ ] [Palindrome Products](./exercises/palindrome-products/README.zh.md)
-  - [ ] [Poker](./exercises/poker/README.zh.md)
-  - [ ] [Grep](./exercises/grep/README.zh.md)
-  - [ ] [Scale Generator](./exercises/scale-generator/README.zh.md)
-  - [ ] [Decimal](./exercises/decimal/README.zh.md)
-  - [ ] [Anagram](./exercises/anagram/README.zh.md)
-  - [ ] [Protein Translation](./exercises/protein-translation/README.zh.md)
-  - [ ] [Robot Name](./exercises/robot-name/README.zh.md)
-  - [ ] [Book Store](./exercises/book-store/README.zh.md)
-  - [ ] [OCR Numbers](./exercises/ocr-numbers/README.zh.md)
-  - [ ] [Minesweeper](./exercises/minesweeper/README.zh.md)
-  - [ ] [Dominoes](./exercises/dominoes/README.zh.md)
-  - [ ] [Parallel Letter Frequency](./exercises/parallel-letter-frequency/README.zh.md)
-  - [ ] [Rectangles](./exercises/rectangles/README.zh.md)
-  - [ ] [Forth](./exercises/forth/README.zh.md)
-  - [ ] [Circular Buffer](./exercises/circular-buffer/README.zh.md)
-  - [ ] [React](./exercises/react/README.zh.md)
-  - [ ] [hexadecimal](./exercises/hexadecimal/README.zh.md)
-  - [ ] [nucleotide-codons](./exercises/nucleotide-codons/README.zh.md)
-  - [ ] [two-fer](./exercises/two-fer/README.zh.md)
+  - [x] [子列表](./exercises/sublist/README.zh.md)
+  - [x] [地球年](./exercises/space-age/README.zh.md)
+  - [x] [Luhn Trait](./exercises/luhn-trait/README.zh.md)
+  - [x] [宏](./exercises/macros/README.zh.md)
+  - [x] [过敏](./exercises/allergies/README.zh.md)
+  - [x] [可变长度数量](./exercises/variable-length-quantity/README.zh.md)
+  - [x] [电话号码](./exercises/phone-number/README.zh.md)
+  - [x] [罗唆](./exercises/wordy/README.zh.md)
+  - [x] [比赛](./exercises/tournament/README.zh.md)
+  - [x] [自定义 set](./exercises/custom-set/README.zh.md)
+  - [x] [字母谜题](./exercises/alphametics/README.zh.md)
+  - [x] [两个桶](./exercises/two-bucket/README.zh.md)
+  - [x] [猪的拉丁文](./exercises/pig-latin/README.zh.md)
+  - [x] [钻石](./exercises/diamond/README.zh.md)
+  - [x] [螺旋矩阵](./exercises/spiral-matrix/README.zh.md)
+  - [x] [回文产品](./exercises/palindrome-products/README.zh.md)
+  - [x] [扑克](./exercises/poker/README.zh.md)
+  - [x] [grep](./exercises/grep/README.zh.md)
+  - [x] [音阶生成器](./exercises/scale-generator/README.zh.md)
+  - [x] [十进制](./exercises/decimal/README.zh.md)
+  - [x] [字谜](./exercises/anagram/README.zh.md)
+  - [x] [蛋白质翻译](./exercises/protein-translation/README.zh.md)
+  - [x] [机器人名称](./exercises/robot-name/README.zh.md)
+  - [ ] [书店](./exercises/book-store/README.zh.md)
+  - [ ] [OCR 号码](./exercises/ocr-numbers/README.zh.md)
+  - [ ] [扫雷](./exercises/minesweeper/README.zh.md)
+  - [ ] [骨牌](./exercises/dominoes/README.zh.md)
+  - [ ] [并行字母频率](./exercises/parallel-letter-frequency/README.zh.md)
+  - [ ] [矩形](./exercises/rectangles/README.zh.md)
+  - [ ] [向前](./exercises/forth/README.zh.md)
+  - [ ] [循环缓冲区](./exercises/circular-buffer/README.zh.md)
+  - [ ] [应对](./exercises/react/README.zh.md)
+  - [ ] [十六进制](./exercises/hexadecimal/README.zh.md)
+  - [ ] [核苷酸密码子](./exercises/nucleotide-codons/README.zh.md)
+  - [ ] [两 FER](./exercises/two-fer/README.zh.md)
 
 ### 贡献
 

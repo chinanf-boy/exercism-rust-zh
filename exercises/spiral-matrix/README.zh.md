@@ -1,10 +1,10 @@
 # 螺旋矩阵
 
-给定大小,以螺旋顺序返回数字的方阵.
+给定大小，以螺旋顺序返回数字的方阵.
 
-矩阵应填充自然数字,从左上角的 1​​ 开始,以向内,顺时针螺旋顺序增加,如下例所示:
+矩阵应填充自然数字，从左上角的 1​​ 开始，以向内，顺时针螺旋顺序增加，如下例所示:
 
-###### 螺旋矩阵大小为 3
+###### 大小为 3 的螺旋矩阵
 
 ```text
 1 2 3
@@ -22,14 +22,10 @@
 ```
 
 [help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 
-Reddit r / dailyprogrammer 挑战#320[简单]螺旋升天.<https://www.reddit.com/r/dailyprogrammer/comments/6i60lr/20170619_challenge_320_easy_spiral_ascension/>
-
-```
-
-```
+Reddit r/dailyprogrammer 挑战 #320 [简单]螺旋升天.<https://www.reddit.com/r/dailyprogrammer/comments/6i60lr/20170619_challenge_320_easy_spiral_ascension/>

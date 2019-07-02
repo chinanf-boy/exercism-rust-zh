@@ -24,7 +24,7 @@ Rust 已在其标准库中提供了一个[二分查找 函数](https://doc.rust-
 
 ## 提示
 
-[Slices](https://doc.rust-lang.org/book/2018-edition/ch04-03-slices.html)除了具有通过索引，正常访问元素(slice[索引])，还有很多有用的函数，像[split_at](https://doc.rust-lang.org/std/primitive.slice.html#method.split_at)[给予 子区间](https://doc.rust-lang.org/std/primitive.slice.html#method.get)(slice[start..end]).
+[Slices](https://doc.rust-lang.org/book/ch04-03-slices.html)除了具有通过索引，正常访问元素(slice[索引])，还有很多有用的函数，像[split_at](https://doc.rust-lang.org/std/primitive.slice.html#method.split_at)[给予 子区间](https://doc.rust-lang.org/std/primitive.slice.html#method.get)(slice[start..end]).
 
 您可以通过索引，使用无聊的旧元素访问来解决此练习，但也许其他提供的函数可以使您的代码更清晰，更安全.
 
@@ -47,9 +47,9 @@ $ cargo test --features generic
 - 要使您的函数直接在 Vec 和 Array 上运行，您可以使用[AsRef Trait](https://doc.rust-lang.org/std/convert/trait.AsRef.html)
 
 [help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 

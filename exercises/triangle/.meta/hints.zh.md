@@ -4,8 +4,8 @@
 
 实现这一点可以采取多种形式.以下是一些可以帮助你的话题,这取决于你采取的方法.
 
--   [Enums](https://doc.rust-lang.org/book/2018-edition/ch06-00-enums.html)
--   [Traits](https://doc.rust-lang.org/book/2018-edition/ch10-02-traits.html)
+-   [Enums](https://doc.rust-lang.org/book/ch06-00-enums.html)
+-   [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
 -   [BTreeSet](https://doc.rust-lang.org/std/collections/btree_set/struct.BTreeSet.html)
 
 或者也许你会想出一种不用那些方法的方法!

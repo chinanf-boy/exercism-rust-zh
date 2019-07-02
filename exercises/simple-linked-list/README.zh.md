@@ -50,9 +50,9 @@ struct Node<T> {
 这个错误在于,编译时,rust 必须知道下一个节点的大小。因`next`会是递归的("一个节点，有一个节点-有一个节点…")，编译器不知道要分配多少内存。相反,[Box](https://doc.rust-lang.org/std/boxed/)是一个具有定义大小的堆指针.
 
 [help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 

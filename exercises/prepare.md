@@ -32,7 +32,7 @@ $ cargo test some_test -- --ignored
 
 要了解有关Rust测试的更多信息,请参阅[在线测试文档][rust-tests]
 
-如果你还没有，请务必阅读[Modules](https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html)章节，它将帮助你组织你的文件.
+如果你还没有，请务必阅读[Modules](https://doc.rust-lang.org/book/ch07-00-modules.html)章节，它将帮助你组织你的文件.
 
 ## 反馈、提问、拉取请求
 
@@ -42,11 +42,11 @@ $ cargo test some_test -- --ignored
 
 [help-page]: https://exercism.io/tracks/rust/learning
 
-[modules]: https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
+[modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
 
-[cargo]: https://doc.rust-lang.org/book/2018-edition/ch14-00-more-about-cargo.html
+[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
 
-[rust-tests]: https://doc.rust-lang.org/book/2018-edition/ch11-02-running-tests.html
+[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## 资源
 

@@ -15,5 +15,5 @@
 # 提示
 
 -   不要从头开始实现任意精度算术,而是考虑在上面构建类型[num_bigint](https://crates.io/crates/num-bigint)箱.
--   你也许能够[derive](https://doc.rust-lang.org/book/2018-edition/appendix-03-derivable-traits.html)一些必要的特征.
+-   你也许能够[derive](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)一些必要的特征.
 -   `Decimal`假定是签名类型.您不必创建单独的无符号类型,但如果您愿意,可以将其作为实现细节.

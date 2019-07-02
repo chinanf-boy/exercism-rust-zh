@@ -4,7 +4,7 @@
 
 以下步骤，假设您处于与练习相同的目录中.
 
-你必须安装rust.跟随[Rust的安装步骤](https://doc.rust-lang.org/book/2018-edition/ch01-01-installation.html). 这个Exercism带来的[Rust 语言 部分](http://exercism.io/languages/rust)也是有用的.
+你必须安装rust.跟随[Rust的安装步骤](https://doc.rust-lang.org/book/ch01-01-installation.html). 这个Exercism带来的[Rust 语言 部分](http://exercism.io/languages/rust)也是有用的.
 
 ## 步骤1
 
