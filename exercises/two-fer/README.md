@@ -11,7 +11,6 @@ When X is a name or "you".
 If the given name is "Alice", the result should be "One for Alice, one for me."
 If no name is given, the result should be "One for you, one for me."
 
-
 ## Rust Installation
 
 Refer to the [exercism help page][help-page] for Rust installation and learning
@@ -70,4 +69,5 @@ If you want to know more about Exercism, take a look at the [contribution guide]
 [https://en.wikipedia.org/wiki/Two-fer](https://en.wikipedia.org/wiki/Two-fer)
 
 ## Submitting Incomplete Solutions
+
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.

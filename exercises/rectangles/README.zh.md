@@ -1,6 +1,6 @@
 # 矩形
 
-计数 ASCII 图中的矩形,如下所示.
+计算 ASCII 图中的矩形的数目，如下所示.
 
 ```text
    +--+
@@ -49,7 +49,7 @@
   ++
 ```
 
-你可以假设输入总是一个适当的矩形(即每行的长度等于第一行的长度).
+你可以假设输入总是一个适当的矩形(即每行的长度，等于第一行的长度)。
 
 [help-page]: https://exercism.io/tracks/rust/learning
 [modules]: https://doc.rust-lang.org/book/ch07-00-modules.html

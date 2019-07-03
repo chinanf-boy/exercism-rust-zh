@@ -1,10 +1,11 @@
-# 十六进制的
+# 十六进制
 
-使用第一原理将十六进制数(表示为字符串)(例如"10af8c")转换为其十进制等效数(即,不可以使用内置或外部库来完成转换).
+使用第一原理，将用字符串表示的十六进制数，(例如"10af8c")，转换为其十进制等效数(即，不可以使用内置或外部库来完成转换)。
 
-在 Web 上,我们使用十六进制表示颜色,例如 Green:008000,TEAL:008080,海军:000080).
+在 Web 上，我们使用十六进制表示颜色，例如( green: 008000,
+teal: 008080, navy: 000080)。
 
-程序应该处理无效十六进制字符串.
+程序应该处理无效十六进制字符串。
 
 [help-page]: https://exercism.io/tracks/rust/learning
 [modules]: https://doc.rust-lang.org/book/ch07-00-modules.html
@@ -13,4 +14,4 @@
 
 ## 资源
 
-所有的计算机科学<http://www.wolframalpha.com/examples/NumberBases.html>
+计算机科学的所有<http://www.wolframalpha.com/examples/NumberBases.html>

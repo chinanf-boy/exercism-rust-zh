@@ -1,35 +1,47 @@
-> 本库由，对[exercism/rust 的中文翻译](https://github.com/chinanf-boy/exercism-rust-zh)起头
+> 本库在[exercism/rust 的中文翻译](https://github.com/chinanf-boy/exercism-rust-zh)
 
-### 但缺少网页练习功能，借助[mdBook]工具，完成
+exercism 是一个不错的题目网站，但是它的过程并不是很方便，需要下载，构建测试才能知道，你的对错。所以有没有方便点的方式呢？
+
+### 网页练习功能
+
+这项功能是借助[mdBook]工具完成的，在 mdBook 生成的静态页面中，Rust 代码可以直接执行，它的工作原理是 js 底层与 [Rust 游乐场](https://play.rust-lang.org) API 的交互。但是，原有的实现并不是 Rust 测试模式，所以我们要改些事情。(请往下阅读)
 
 [mdbook]: https://github.com/rust-lang-nursery/mdBook
 
 ## TODO
 
-- [x] [测试改造] , 如果如果有需要，[请看自动化测试](https://github.com/chinanf-boy/exercism-rust-zh-webdriver)
-
-> 游乐场可能会有超时返回`Playground Communication: timeout`，多次不行，请看合并代码与测试代码给官方游乐场使用`Cargo test`
+我们要改造的关键：
 
 - `theme/book.js` 改造
   - [x] 使用`cargo test`
   - [x] 合并用户输入与测试用例
 
-修改默认主题的`book.js`
+修改默认主题的`book.js`，如果你对这个修改过程感兴趣，请查阅[使用 Cargo test](./add-test-code.md)
 
-如果你对这个修改过程感兴趣，请查阅[使用 Cargo test](./add-test-code.md)
+- [x] 自动化测试静态页面的代码执行。
 
-## 说明，每个练习网页主要分为四个部分
+为了对改造代码的有效性，有一定了解，我选择对页面进行自动化测试，我把它放在了[github 上](https://github.com/chinanf-boy/exercism-rust-zh-webdriver)，不过我不建议你自行运行，因为会耗费时间与计算机资源，甚至无法完整通过测试(需要浏览器，打开 88 个网页)。其中借助 webdriver 测试项目，如有相关需求，可以自行了解，它的 API 还是很好用的。
+
+## 说明
+
+每个练习网页主要分为四个部分
 
 - 1. 说明/题目
 - 2. 未完成的代码(可编辑，直接运行就好)
 - 3. 测试代码(不可编辑)
 - 4. 示例答案(不可编辑，直接运行就好)
 
-### 以下为
+### 中文翻译列表
+
+每个练习，最初来自英文人群，所以可能在某些说明上，和我国国情并不吻合，如遇到这种情况，完全可以 Issue/PR 该 github 项目，改成符合国情的问题。
+
+测试代码与未完成代码之间，会有重叠的库导入（因我会把他俩合并，扔给 Rust 游乐场），所以需要修正。
+
+还有，每个练习本身，都是完整的 Cargo 项目。其中自然少不了对其他非内置箱子的导入，在这时，我能做的，只是提示你们，某某项目无法通过网页测试(因，Rust 游乐场并没有该箱子)：
 
 - [x] 为中文校对
 - `>` 为测试修正，
-- `no` 具有[非内置 crate](https://github.com/integer32llc/rust-playground/blob/master/compiler/base/Cargo.toml)，无法编译成功, 需要非内置的其他 crate，这时，只能抱歉
+- `no` 具有[非内置箱子](https://github.com/integer32llc/rust-playground/blob/master/compiler/base/Cargo.toml)，无法编译成功, 需要非内置的其他箱子，这时，只能说句“抱歉，要本机下载”。
 
 > [Issue me , if you want](https://github.com/chinanf-boy/exercism-rust-zh/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
 
