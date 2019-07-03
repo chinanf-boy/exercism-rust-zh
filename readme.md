@@ -7,11 +7,7 @@
 [translate-svg]: http://llever.com/translate.svg
 [translate-list]: https://github.com/chinanf-boy/chinese-translate-list
 
-「 [exercism.io](exercism.io) 的 Rust 练习(网页版) 」
-
-| 网页版                                                                                     |
-| ------------------------------------------------------------------------------------------ |
-| 答案测试已完成([工作进度](http://llever.com/exercism-rust-zh)), [mdBook 源文件-src](./src) |
+「 [exercism.io](exercism.io) 的 Rust 练习([网页版](http://llever.com/exercism-rust-zh)) 」
 
 <p align="center">
 <img src="./hello-world.gif" width="680px;">
