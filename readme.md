@@ -1,6 +1,4 @@
-# exercism/rust [![translate-svg]][translate-list]
-
-<!-- [![explain]][source]  -->
+# exercism/rust [![translate-svg]][translate-list] [![explain]][source]
 
 [explain]: http://llever.com/explain.svg
 [source]: https://github.com/chinanf-boy/Source-Explain
