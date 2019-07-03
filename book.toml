@@ -7,7 +7,10 @@ language = "zh-CN"
 [build]
 build-dir = "docs"
 create-missing = false
-preprocess = ["links", "index"]
+use-default-preprocessors = false
+
+[preprocessor.links]
+# renderers = ["html"]
 
 [output.html]
 mathjax-support = false
@@ -18,6 +21,11 @@ additional-css = ["theme/custom.css"]
 git_repository_url = "https://github.com/chinanf-boy/exercism-rust-zh"
 git_repository_icon = "fa-github"
 # additional-js = ["theme/custom.js"]
+
+# [output.linkcheck]
+# follow-web-links = true
+# traverse-parent-directories = false
+# exclude = [ "google\\.com" ]
 
 [output.html.playpen]
 # editor = "./path/to/editor"
